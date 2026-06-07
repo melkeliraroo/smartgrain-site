@@ -2158,29 +2158,62 @@
           <div class="inf-item"><div class="inf-ico">📱</div><div class="inf-txt"><strong>WhatsApp</strong><p>Atendimento via WhatsApp Business</p></div></div>
         </div>
       </div>
-      <div class="form-card reveal d2">
-        <div class="frow">
-          <div class="fg"><label>Nome</label><input type="text" placeholder="Seu nome completo"/></div>
-          <div class="fg"><label>Telefone</label><input type="tel" placeholder="(65) 9 0000-0000"/></div>
-        </div>
-        <div class="fg"><label>E-mail</label><input type="email" placeholder="seu@email.com"/></div>
-        <div class="fg"><label>Propriedade / Cidade</label><input type="text" placeholder="Ex: Juína — MT"/></div>
-        <div class="fg">
-          <label>Serviço de Interesse</label>
-          <select>
-            <option value="">Selecione um serviço...</option>
-            <option>Diagnóstico Operacional Agrícola</option>
-            <option>AgroCheck 360</option>
-            <option>Agricultura Digital</option>
-            <option>Agricultura de Precisão</option>
-            <option>Geoprocessamento</option>
-            <option>Mecanização Agrícola</option>
-            <option>Não sei ainda — quero conversar</option>
-          </select>
-        </div>
-        <div class="fg"><label>Mensagem</label><textarea placeholder="Conte sobre sua propriedade e o que você precisa..."></textarea></div>
-        <button class="btn-form">Enviar Mensagem →</button>
-      </div>
+     <form class="form-card reveal d2"
+      action="https://api.web3forms.com/submit"
+      method="POST">
+
+  <input type="hidden" name="access_key" value="57c7a7ff-fc38-42e7-a941-2cd974fb3565">
+
+  <input type="hidden" name="subject" value="Nova Solicitação de Orçamento - SmartGrain">
+
+  <div class="frow">
+    <div class="fg">
+      <label>Nome</label>
+      <input type="text" name="nome" placeholder="Seu nome completo" required>
+    </div>
+
+    <div class="fg">
+      <label>Telefone</label>
+      <input type="tel" name="telefone" placeholder="(65) 9 0000-0000">
+    </div>
+  </div>
+
+  <div class="fg">
+    <label>E-mail</label>
+    <input type="email" name="email" placeholder="seu@email.com" required>
+  </div>
+
+  <div class="fg">
+    <label>Propriedade / Cidade</label>
+    <input type="text" name="propriedade" placeholder="Ex: Juína — MT">
+  </div>
+
+  <div class="fg">
+    <label>Serviço de Interesse</label>
+    <select name="servico">
+      <option value="">Selecione um serviço...</option>
+      <option>Diagnóstico Operacional Agrícola</option>
+      <option>AgroCheck 360</option>
+      <option>Agricultura Digital</option>
+      <option>Agricultura de Precisão</option>
+      <option>Geoprocessamento</option>
+      <option>Mecanização Agrícola</option>
+      <option>Não sei ainda — quero conversar</option>
+    </select>
+  </div>
+
+  <div class="fg">
+    <label>Mensagem</label>
+    <textarea name="mensagem"
+      placeholder="Conte sobre sua propriedade e o que você precisa..."
+      required></textarea>
+  </div>
+
+  <button type="submit" class="btn-form">
+    Enviar Mensagem →
+  </button>
+
+</form>
     </div>
   </div>
 </section>
