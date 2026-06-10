@@ -1,33 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X6LPX2KVYL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-X6LPX2KVYL');
-</script>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Blog — SmartGrain Consultoria Agrícola</title>
-  <meta name="description" content="Tecnologia e inovação no campo. Artigos técnicos da SmartGrain Consultoria Agrícola. TEste VS CODe"/>
+  <meta name="description" content="Tecnologia e inovação no campo. Artigos técnicos da SmartGrain Consultoria Agrícola sobre agricultura digital, telemetria, NDVI e mecanização."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{
-      --vd:#1a3a2a;--vm:#2d5a3d;--vc:#3d7a50;
-      --dou:#c8960c;--doul:#e8b422;--dous:#f5d87a;
-      --creme:#faf7f0;--branco:#fff;--te:#111a14;--tm:#3a4a3e;
-    }
+    :root{--vd:#1a3a2a;--vm:#2d5a3d;--vc:#3d7a50;--dou:#c8960c;--doul:#e8b422;--dous:#f5d87a;--creme:#faf7f0;--branco:#fff;--te:#111a14;--tm:#3a4a3e}
     html{scroll-behavior:smooth}
     body{font-family:"DM Sans",sans-serif;background:var(--creme);color:var(--te);overflow-x:hidden}
-
-    /* NAV */
     nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:72px;background:rgba(26,58,42,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(200,150,12,.2);transition:box-shadow .3s}
     nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,.3)}
     .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
@@ -36,118 +21,105 @@
     .nav-logo-text span{color:var(--doul)}
     .nav-links{display:flex;gap:2rem;list-style:none}
     .nav-links a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
-    .nav-links a:hover{color:var(--doul)}
-    .nav-links a.active{color:var(--doul)}
-    .nav-cta{background:var(--dou);color:var(--vd)!important;font-weight:600!important;padding:.45rem 1.2rem;border-radius:6px;transition:background .2s,transform .2s!important}
-    .nav-cta:hover{background:var(--doul)!important;transform:translateY(-1px)}
+    .nav-links a:hover,.nav-links a.active{color:var(--doul)}
+    .nav-cta{background:var(--dou);color:var(--vd)!important;font-weight:600!important;padding:.45rem 1.2rem;border-radius:6px}
     .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
     .hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px}
 
-    /* HERO BLOG */
-    .blog-hero{
-      min-height:420px;background:var(--vd);position:relative;
-      display:flex;align-items:flex-end;overflow:hidden;padding-bottom:0;
-    }
+    /* HERO */
+    .blog-hero{min-height:400px;background:var(--vd);position:relative;display:flex;align-items:flex-end;overflow:hidden}
     .blog-hero-bg{position:absolute;inset:0;width:100%;height:100%}
     .blog-hero-overlay{position:absolute;inset:0;background:linear-gradient(120deg,rgba(15,35,20,.92) 0%,rgba(26,58,42,.75) 60%,rgba(15,35,20,.6) 100%)}
     .blog-hero-grid{position:absolute;inset:0;opacity:.05;background-image:linear-gradient(rgba(255,255,255,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.6) 1px,transparent 1px);background-size:55px 55px;animation:gridMove 22s linear infinite}
     @keyframes gridMove{from{background-position:0 0}to{background-position:55px 55px}}
-    .blog-hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:120px 5% 60px;width:100%}
-    .breadcrumb{display:flex;align-items:center;gap:.5rem;margin-bottom:1.5rem;font-size:.82rem;color:rgba(255,255,255,.5)}
-    .breadcrumb a{color:rgba(255,255,255,.5);text-decoration:none;transition:color .2s}
+    .blog-hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:110px 5% 50px;width:100%}
+    .breadcrumb{display:flex;align-items:center;gap:.5rem;margin-bottom:1.2rem;font-size:.82rem;color:rgba(255,255,255,.45)}
+    .breadcrumb a{color:rgba(255,255,255,.45);text-decoration:none;transition:color .2s}
     .breadcrumb a:hover{color:var(--doul)}
     .breadcrumb span{color:var(--doul)}
     .blog-hero-tag{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--doul);margin-bottom:.8rem}
-    .blog-hero-title{font-family:"Fraunces",serif;font-weight:900;font-size:clamp(2.2rem,4vw,3.8rem);line-height:1.1;color:#fff;letter-spacing:-.03em;max-width:680px;animation:fadeUp .8s ease both}
+    .blog-hero-title{font-family:"Fraunces",serif;font-weight:900;font-size:clamp(2rem,4vw,3.5rem);line-height:1.1;color:#fff;letter-spacing:-.03em;max-width:680px}
     .blog-hero-title em{font-style:italic;color:var(--doul)}
-    .blog-hero-sub{font-size:1.05rem;color:rgba(255,255,255,.6);max-width:520px;line-height:1.75;margin-top:1rem;animation:fadeUp .8s ease .15s both}
-    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+    .blog-hero-sub{font-size:1rem;color:rgba(255,255,255,.6);max-width:500px;line-height:1.7;margin-top:.8rem}
 
-    /* SEARCH + FILTER BAR */
-    .filter-bar{background:var(--branco);border-bottom:1px solid rgba(26,58,42,.08);padding:1.2rem 5%;position:sticky;top:72px;z-index:100}
+    /* FILTER BAR */
+    .filter-bar{background:var(--branco);border-bottom:1px solid rgba(26,58,42,.08);padding:1rem 5%;position:sticky;top:72px;z-index:100}
     .filter-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
-    .search-box{display:flex;align-items:center;gap:.6rem;background:var(--creme);border:1px solid rgba(26,58,42,.12);border-radius:8px;padding:.55rem 1rem;flex:1;min-width:200px}
+    .search-box{display:flex;align-items:center;gap:.6rem;background:var(--creme);border:1px solid rgba(26,58,42,.12);border-radius:8px;padding:.5rem 1rem;flex:1;min-width:180px}
     .search-box input{border:none;background:transparent;font-family:"DM Sans",sans-serif;font-size:.9rem;color:var(--te);outline:none;width:100%}
     .search-box input::placeholder{color:rgba(58,74,62,.4)}
-    .search-icon{font-size:1rem;opacity:.5}
     .cats{display:flex;gap:.5rem;flex-wrap:wrap}
-    .cat-btn{font-size:.8rem;font-weight:600;padding:.4rem .9rem;border-radius:20px;border:1px solid rgba(26,58,42,.15);background:transparent;color:var(--tm);cursor:pointer;transition:all .2s;font-family:"DM Sans",sans-serif}
+    .cat-btn{font-size:.8rem;font-weight:600;padding:.38rem .85rem;border-radius:20px;border:1px solid rgba(26,58,42,.15);background:transparent;color:var(--tm);cursor:pointer;transition:all .2s;font-family:"DM Sans",sans-serif}
     .cat-btn:hover,.cat-btn.active{background:var(--vd);color:#fff;border-color:var(--vd)}
     .cat-btn.active{background:var(--dou);border-color:var(--dou);color:var(--vd)}
 
-    /* MAIN LAYOUT */
-    .blog-main{max-width:1200px;margin:0 auto;padding:3rem 5% 5rem;display:grid;grid-template-columns:1fr 320px;gap:4rem;align-items:start}
+    /* MAIN */
+    .blog-main{max-width:1200px;margin:0 auto;padding:3rem 5% 5rem;display:grid;grid-template-columns:1fr 300px;gap:4rem;align-items:start}
 
-    /* FEATURED ARTICLE */
+    /* FEATURED */
     .featured-card{background:var(--branco);border-radius:20px;overflow:hidden;border:1px solid rgba(26,58,42,.08);margin-bottom:2.5rem;transition:box-shadow .3s,transform .3s;text-decoration:none;display:block}
     .featured-card:hover{box-shadow:0 12px 40px rgba(26,58,42,.12);transform:translateY(-4px)}
-    .featured-img{height:340px;position:relative;overflow:hidden}
+    .featured-img{height:320px;position:relative;overflow:hidden}
     .featured-img svg{width:100%;height:100%;display:block;transition:transform .6s}
     .featured-card:hover .featured-img svg{transform:scale(1.04)}
-    .featured-label{position:absolute;top:1.2rem;left:1.2rem;background:var(--dou);color:var(--vd);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .8rem;border-radius:4px}
+    .featured-label{position:absolute;top:1rem;left:1rem;background:var(--dou);color:var(--vd);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.28rem .75rem;border-radius:4px}
     .featured-body{padding:2rem}
-    .article-meta{display:flex;align-items:center;gap:1rem;margin-bottom:1rem;flex-wrap:wrap}
+    .article-meta{display:flex;align-items:center;gap:.8rem;margin-bottom:.9rem;flex-wrap:wrap}
     .article-cat{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--dou)}
-    .article-date{font-size:.8rem;color:rgba(58,74,62,.5)}
-    .article-read{font-size:.8rem;color:rgba(58,74,62,.5)}
+    .article-date,.article-read{font-size:.8rem;color:rgba(58,74,62,.5)}
     .article-dot{width:3px;height:3px;background:rgba(58,74,62,.3);border-radius:50%}
-    .featured-title{font-family:"Fraunces",serif;font-weight:800;font-size:1.8rem;line-height:1.2;letter-spacing:-.03em;color:var(--te);margin-bottom:.8rem}
-    .featured-excerpt{font-size:.98rem;color:var(--tm);line-height:1.75;margin-bottom:1.5rem}
+    .featured-title{font-family:"Fraunces",serif;font-weight:800;font-size:1.7rem;line-height:1.2;letter-spacing:-.03em;color:var(--te);margin-bottom:.8rem}
+    .featured-excerpt{font-size:.97rem;color:var(--tm);line-height:1.75;margin-bottom:1.4rem}
     .read-more{display:inline-flex;align-items:center;gap:.4rem;color:var(--vd);font-weight:600;font-size:.9rem;transition:gap .2s}
     .featured-card:hover .read-more{gap:.7rem}
 
-    /* ARTICLES GRID */
+    /* GRID ARTIGOS */
     .articles-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2.5rem}
     .art-card{background:var(--branco);border-radius:16px;overflow:hidden;border:1px solid rgba(26,58,42,.08);transition:box-shadow .3s,transform .3s;text-decoration:none;display:block}
     .art-card:hover{box-shadow:0 8px 28px rgba(26,58,42,.12);transform:translateY(-3px)}
-    .art-img{height:180px;overflow:hidden;position:relative}
+    .art-img{height:170px;overflow:hidden}
     .art-img svg{width:100%;height:100%;display:block;transition:transform .5s}
     .art-card:hover .art-img svg{transform:scale(1.06)}
     .art-body{padding:1.4rem}
-    .art-title{font-family:"Fraunces",serif;font-weight:700;font-size:1.1rem;line-height:1.3;letter-spacing:-.02em;color:var(--te);margin:0.5rem 0 .5rem}
-    .art-excerpt{font-size:.85rem;color:var(--tm);line-height:1.65;margin-bottom:1rem}
+    .art-title{font-family:"Fraunces",serif;font-weight:700;font-size:1.05rem;line-height:1.3;letter-spacing:-.02em;color:var(--te);margin:.45rem 0 .45rem}
+    .art-excerpt{font-size:.84rem;color:var(--tm);line-height:1.65;margin-bottom:.9rem}
 
-    /* LOAD MORE */
-    .load-more-wrap{text-align:center;margin-top:1rem}
-    .btn-load{background:transparent;border:1.5px solid var(--vd);color:var(--vd);font-family:"DM Sans",sans-serif;font-weight:600;font-size:.9rem;padding:.75rem 2rem;border-radius:8px;cursor:pointer;transition:all .2s}
-    .btn-load:hover{background:var(--vd);color:#fff}
+    /* LOADING */
+    .loading-state{text-align:center;padding:4rem 0;color:var(--tm)}
+    .spinner{width:40px;height:40px;border:3px solid rgba(26,58,42,.1);border-top-color:var(--dou);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 1rem}
+    @keyframes spin{to{transform:rotate(360deg)}}
 
     /* SIDEBAR */
-    .sidebar{display:flex;flex-direction:column;gap:2rem}
-    .sidebar-card{background:var(--branco);border-radius:16px;padding:1.8rem;border:1px solid rgba(26,58,42,.08)}
-    .sidebar-title{font-family:"Fraunces",serif;font-weight:700;font-size:1.1rem;color:var(--te);margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:2px solid var(--dou)}
-    /* Newsletter sidebar */
-    .newsletter-card{background:var(--vd);border-radius:16px;padding:1.8rem}
-    .newsletter-card .sidebar-title{color:#fff;border-bottom-color:var(--dou)}
-    .newsletter-desc{font-size:.88rem;color:rgba(255,255,255,.65);line-height:1.65;margin-bottom:1.2rem}
-    .newsletter-form{display:flex;flex-direction:column;gap:.7rem}
-    .newsletter-form input{background:rgba(255,255,255,.08);border:1px solid rgba(200,150,12,.25);border-radius:8px;padding:.75rem 1rem;color:#fff;font-family:"DM Sans",sans-serif;font-size:.9rem;outline:none;transition:border-color .2s}
+    .sidebar{display:flex;flex-direction:column;gap:2rem;position:sticky;top:130px}
+    .sidebar-card{background:var(--branco);border-radius:16px;padding:1.6rem;border:1px solid rgba(26,58,42,.08)}
+    .sidebar-title{font-family:"Fraunces",serif;font-weight:700;font-size:1rem;color:var(--te);margin-bottom:1rem;padding-bottom:.7rem;border-bottom:2px solid var(--dou)}
+    .newsletter-card{background:var(--vd);border-radius:16px;padding:1.6rem}
+    .newsletter-card .sidebar-title{color:#fff}
+    .newsletter-desc{font-size:.87rem;color:rgba(255,255,255,.65);line-height:1.65;margin-bottom:1.1rem}
+    .newsletter-form{display:flex;flex-direction:column;gap:.6rem}
+    .newsletter-form input{background:rgba(255,255,255,.08);border:1px solid rgba(200,150,12,.25);border-radius:8px;padding:.7rem 1rem;color:#fff;font-family:"DM Sans",sans-serif;font-size:.88rem;outline:none;transition:border-color .2s}
     .newsletter-form input:focus{border-color:var(--dou)}
     .newsletter-form input::placeholder{color:rgba(255,255,255,.3)}
-    .btn-news{background:var(--dou);color:var(--vd);font-family:"DM Sans",sans-serif;font-weight:700;font-size:.9rem;padding:.75rem 1rem;border:none;border-radius:8px;cursor:pointer;transition:background .2s,transform .2s}
-    .btn-news:hover{background:var(--doul);transform:translateY(-1px)}
-    /* Popular posts */
-    .pop-item{display:flex;gap:.9rem;padding:.9rem 0;border-bottom:1px solid rgba(26,58,42,.07);text-decoration:none}
+    .btn-news{background:var(--dou);color:var(--vd);font-family:"DM Sans",sans-serif;font-weight:700;font-size:.88rem;padding:.72rem 1rem;border:none;border-radius:8px;cursor:pointer;transition:background .2s}
+    .btn-news:hover{background:var(--doul)}
+    .pop-item{display:flex;gap:.9rem;padding:.85rem 0;border-bottom:1px solid rgba(26,58,42,.07);text-decoration:none}
     .pop-item:last-child{border-bottom:none;padding-bottom:0}
-    .pop-num{font-family:"Fraunces",serif;font-weight:900;font-size:1.6rem;color:rgba(200,150,12,.2);flex-shrink:0;line-height:1;width:28px}
-    .pop-title{font-size:.88rem;font-weight:600;color:var(--te);line-height:1.4;transition:color .2s}
+    .pop-num{font-family:"Fraunces",serif;font-weight:900;font-size:1.5rem;color:rgba(200,150,12,.2);flex-shrink:0;line-height:1;width:26px}
+    .pop-title{font-size:.86rem;font-weight:600;color:var(--te);line-height:1.4;transition:color .2s}
     .pop-item:hover .pop-title{color:var(--dou)}
-    .pop-date{font-size:.75rem;color:var(--tm);margin-top:.25rem}
-    /* Tags cloud */
+    .pop-date{font-size:.74rem;color:var(--tm);margin-top:.2rem}
     .tags-cloud{display:flex;flex-wrap:wrap;gap:.5rem}
-    .tag-item{font-size:.78rem;font-weight:600;padding:.35rem .8rem;border-radius:20px;background:var(--creme);border:1px solid rgba(26,58,42,.12);color:var(--tm);text-decoration:none;transition:all .2s;cursor:pointer}
+    .tag-item{font-size:.77rem;font-weight:600;padding:.3rem .75rem;border-radius:20px;background:var(--creme);border:1px solid rgba(26,58,42,.12);color:var(--tm);cursor:pointer;transition:all .2s}
     .tag-item:hover{background:var(--vd);color:#fff;border-color:var(--vd)}
-    /* Sobre a SmartGrain sidebar */
-    .sobre-sidebar{text-align:center}
-    .sobre-sidebar img{width:56px;height:56px;object-fit:contain;border-radius:10px;margin-bottom:1rem}
-    .sobre-sidebar p{font-size:.88rem;color:var(--tm);line-height:1.65;margin-bottom:1.2rem}
-    .btn-site{display:block;background:var(--vd);color:#fff;font-weight:600;font-size:.88rem;padding:.7rem 1rem;border-radius:8px;text-decoration:none;text-align:center;transition:background .2s}
-    .btn-site:hover{background:var(--vm)}
 
-    /* REVEAL */
-    .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
-    .reveal.visible{opacity:1;transform:translateY(0)}
-    .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+    /* WHATSAPP */
+    .wa-btn{position:fixed;bottom:28px;right:28px;z-index:999;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;font-family:"DM Sans",sans-serif;font-weight:600;padding:.75rem 1.2rem .75rem .85rem;border-radius:50px;text-decoration:none;box-shadow:0 6px 24px rgba(37,211,102,.45);transition:transform .25s,box-shadow .25s,max-width .3s,padding .3s;overflow:hidden;max-width:56px}
+    .wa-btn:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(37,211,102,.55);max-width:260px;padding:.75rem 1.4rem .75rem .85rem}
+    .wa-icon{flex-shrink:0;width:32px;height:32px}
+    .wa-text{white-space:nowrap;opacity:0;transition:opacity .2s ease .1s}
+    .wa-btn:hover .wa-text{opacity:1}
+    .wa-ring{position:fixed;bottom:28px;right:28px;z-index:998;width:56px;height:56px;border-radius:50%;border:3px solid rgba(37,211,102,.5);animation:waPulse 2.5s ease-out infinite;pointer-events:none}
+    @keyframes waPulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(2.2);opacity:0}}
 
     /* FOOTER */
     footer{background:#0a1a10;padding:3rem 5%;border-top:1px solid rgba(200,150,12,.12)}
@@ -159,42 +131,36 @@
     .foot-links a{color:rgba(255,255,255,.35);text-decoration:none;font-size:.85rem;transition:color .2s}
     .foot-links a:hover{color:var(--doul)}
 
-    /* WHATSAPP */
-    .wa-btn{position:fixed;bottom:28px;right:28px;z-index:999;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;font-family:"DM Sans",sans-serif;font-size:.92rem;font-weight:600;padding:.75rem 1.2rem .75rem .85rem;border-radius:50px;text-decoration:none;box-shadow:0 6px 24px rgba(37,211,102,.45);transition:transform .25s,box-shadow .25s,max-width .3s,padding .3s;overflow:hidden;max-width:56px}
-    .wa-btn:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(37,211,102,.55);max-width:260px;padding:.75rem 1.4rem .75rem .85rem}
-    .wa-icon{flex-shrink:0;width:32px;height:32px}
-    .wa-text{white-space:nowrap;opacity:0;transition:opacity .2s ease .1s}
-    .wa-btn:hover .wa-text{opacity:1}
-    .wa-ring{position:fixed;bottom:28px;right:28px;z-index:998;width:56px;height:56px;border-radius:50%;border:3px solid rgba(37,211,102,.5);animation:waPulse 2.5s ease-out infinite;pointer-events:none}
-    @keyframes waPulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(2.2);opacity:0}}
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
 
     /* RESPONSIVE */
-    @media(max-width:1024px){.blog-main{grid-template-columns:1fr}.sidebar{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}}
+    @media(max-width:1024px){.blog-main{grid-template-columns:1fr}.sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}}
     @media(max-width:768px){.articles-grid{grid-template-columns:1fr}.nav-links{display:none}.hamburger{display:flex}.sidebar{grid-template-columns:1fr}}
-    @media(max-width:600px){.blog-hero-title{font-size:2rem}.filter-inner{flex-direction:column;align-items:stretch}.search-box{min-width:unset}}
   </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav id="navbar">
-  <a href="index.html" class="nav-logo">
+  <a href="../index.html" class="nav-logo">
     <img src="data:image/jpeg;base64,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" alt="SmartGrain"/>
     <span class="nav-logo-text">Smart<span>Grain</span></span>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html#sobre">Sobre</a></li>
-    <li><a href="index.html#servicos">Serviços</a></li>
-    <li><a href="index.html#agrocheck">AgroCheck 360</a></li>
-    <li><a href="blog.html" class="active">Blog</a></li>
-    <li><a href="index.html#contato" class="nav-cta">Fale Conosco</a></li>
+    <li><a href="../index.html#sobre">Sobre</a></li>
+    <li><a href="../index.html#servicos">Serviços</a></li>
+    <li><a href="../index.html#agrocheck">AgroCheck 360</a></li>
+    <li><a href="index.html" class="active">Blog</a></li>
+    <li><a href="../index.html#contato" class="nav-cta">Fale Conosco</a></li>
   </ul>
   <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
 </nav>
 
 <!-- HERO -->
 <div class="blog-hero">
-  <svg class="blog-hero-bg" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <svg class="blog-hero-bg" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="hbg" x1="0" y1="0" x2="0" y2="1">
         <stop offset="0%" stop-color="#0a2018"/><stop offset="100%" stop-color="#1a3a28"/>
@@ -203,46 +169,33 @@
         <stop offset="0%" stop-color="rgba(200,150,12,0.18)"/><stop offset="100%" stop-color="transparent"/>
       </radialGradient>
     </defs>
-    <rect width="1440" height="420" fill="url(#hbg)"/>
-    <rect width="1440" height="420" fill="url(#hglow)"/>
-    <!-- Field rows -->
-    <path d="M0 280 Q360 260 720 270 Q1080 280 1440 265 L1440 420 L0 420Z" fill="#1e4228" opacity="0.8"/>
-    <g stroke="#2d5a30" stroke-width="2" opacity="0.5">
-      <line x1="0" y1="300" x2="1440" y2="285"/>
-      <line x1="0" y1="325" x2="1440" y2="308"/>
-      <line x1="0" y1="350" x2="1440" y2="331"/>
-      <line x1="0" y1="375" x2="1440" y2="354"/>
-      <line x1="0" y1="400" x2="1440" y2="377"/>
+    <rect width="1440" height="400" fill="url(#hbg)"/>
+    <rect width="1440" height="400" fill="url(#hglow)"/>
+    <path d="M0 260 Q360 240 720 252 Q1080 264 1440 250 L1440 400 L0 400Z" fill="#1e4228" opacity=".8"/>
+    <g stroke="#2d5a30" stroke-width="2" opacity=".4">
+      <line x1="0" y1="278" x2="1440" y2="265"/><line x1="0" y1="300" x2="1440" y2="285"/>
+      <line x1="0" y1="322" x2="1440" y2="305"/><line x1="0" y1="344" x2="1440" y2="325"/>
     </g>
-    <!-- Drone top right -->
-    <g transform="translate(1280 120)" opacity="0.7">
-      <line x1="-25" y1="0" x2="25" y2="0" stroke="#e8b422" stroke-width="2"/>
-      <line x1="0" y1="-25" x2="0" y2="25" stroke="#e8b422" stroke-width="2"/>
-      <circle cx="-25" cy="0" r="8" fill="none" stroke="#e8b422" stroke-width="1.5"/>
-      <circle cx="25" cy="0" r="8" fill="none" stroke="#e8b422" stroke-width="1.5"/>
-      <circle cx="0" cy="-25" r="8" fill="none" stroke="#e8b422" stroke-width="1.5"/>
-      <circle cx="0" cy="25" r="8" fill="none" stroke="#e8b422" stroke-width="1.5"/>
-      <rect x="-7" y="-7" width="14" height="14" rx="3" fill="#1a3a28" stroke="#e8b422" stroke-width="1.5"/>
+    <g transform="translate(1260 110)" opacity=".7">
+      <line x1="-22" y1="0" x2="22" y2="0" stroke="#e8b422" stroke-width="2"/>
+      <line x1="0" y1="-22" x2="0" y2="22" stroke="#e8b422" stroke-width="2"/>
+      <circle cx="-22" cy="0" r="7" fill="none" stroke="#e8b422" stroke-width="1.5"/>
+      <circle cx="22" cy="0" r="7" fill="none" stroke="#e8b422" stroke-width="1.5"/>
+      <circle cx="0" cy="-22" r="7" fill="none" stroke="#e8b422" stroke-width="1.5"/>
+      <circle cx="0" cy="22" r="7" fill="none" stroke="#e8b422" stroke-width="1.5"/>
+      <rect x="-6" y="-6" width="12" height="12" rx="3" fill="#1a3a28" stroke="#e8b422" stroke-width="1.5"/>
       <circle cx="0" cy="0" r="3" fill="#e8b422"/>
-    </g>
-    <!-- Data points scattered -->
-    <g fill="#e8b422" opacity="0.3">
-      <circle cx="100" cy="80" r="2"/><circle cx="300" cy="50" r="1.5"/>
-      <circle cx="600" cy="100" r="2"/><circle cx="900" cy="60" r="1.5"/>
-      <circle cx="1100" cy="90" r="2"/><circle cx="1350" cy="55" r="1.5"/>
     </g>
   </svg>
   <div class="blog-hero-overlay"></div>
   <div class="blog-hero-grid"></div>
   <div class="blog-hero-content">
     <div class="breadcrumb">
-      <a href="index.html">Início</a>
-      <span>›</span>
-      <span>Blog</span>
+      <a href="../index.html">Início</a><span>›</span><span>Blog</span>
     </div>
     <div class="blog-hero-tag">Tecnologia & Inovação no Campo</div>
     <h1 class="blog-hero-title">Inteligência que<br/><em>transforma o campo</em></h1>
-    <p class="blog-hero-sub">Artigos técnicos, tendências e novidades sobre agricultura digital, precisão e mecanização para o produtor moderno.</p>
+    <p class="blog-hero-sub">Artigos técnicos sobre agricultura digital, telemetria, NDVI, mecanização e muito mais. <span id="artCount" style="color:var(--doul);font-weight:600;"></span> artigos publicados.</p>
   </div>
 </div>
 
@@ -250,7 +203,7 @@
 <div class="filter-bar">
   <div class="filter-inner">
     <div class="search-box">
-      <span class="search-icon">🔍</span>
+      <span style="opacity:.5">🔍</span>
       <input type="text" placeholder="Buscar artigos..." id="searchInput"/>
     </div>
     <div class="cats">
@@ -267,389 +220,22 @@
 <!-- MAIN -->
 <div class="blog-main">
   <main>
-    <!-- FEATURED -->
-    <a href="#" class="featured-card reveal">
-      <div class="featured-img">
-        <svg viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="fsky" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#0a2018"/><stop offset="100%" stop-color="#2a5a35"/>
-            </linearGradient>
-            <radialGradient id="fglow" cx="75%" cy="35%" r="35%">
-              <stop offset="0%" stop-color="rgba(232,180,34,0.3)"/><stop offset="100%" stop-color="transparent"/>
-            </radialGradient>
-          </defs>
-          <rect width="800" height="340" fill="url(#fsky)"/>
-          <rect width="800" height="340" fill="url(#fglow)"/>
-          <!-- Dashboard UI overlay -->
-          <rect x="40" y="40" width="320" height="200" rx="12" fill="rgba(26,58,42,0.92)" stroke="rgba(200,150,12,0.4)" stroke-width="1.5"/>
-          <text x="58" y="68" fill="rgba(255,255,255,0.5)" font-size="10" font-family="sans-serif">AGROCHECK 360 — DASHBOARD</text>
-          <!-- Gauge -->
-          <circle cx="130" cy="140" r="45" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="10"/>
-          <path d="M130 95 A45 45 0 1 1 91 168" fill="none" stroke="#e8b422" stroke-width="10" stroke-linecap="round"/>
-          <text x="119" y="145" fill="#e8b422" font-size="20" font-family="sans-serif" font-weight="bold">87</text>
-          <text x="116" y="160" fill="rgba(255,255,255,0.5)" font-size="10" font-family="sans-serif">Score</text>
-          <!-- Bar chart -->
-          <g fill="#e8b422" opacity="0.8">
-            <rect x="210" y="180" width="18" height="38" rx="3"/>
-            <rect x="234" y="158" width="18" height="60" rx="3"/>
-            <rect x="258" y="168" width="18" height="50" rx="3"/>
-            <rect x="282" y="148" width="18" height="70" rx="3"/>
-            <rect x="306" y="160" width="18" height="58" rx="3"/>
-          </g>
-          <line x1="205" y1="220" x2="335" y2="220" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-          <text x="210" y="100" fill="rgba(255,255,255,0.5)" font-size="9" font-family="sans-serif">UTILIZAÇÃO FROTA</text>
-          <!-- Line chart -->
-          <rect x="40" y="252" width="320" height="65" rx="8" fill="rgba(26,58,42,0.85)" stroke="rgba(200,150,12,0.25)" stroke-width="1"/>
-          <polyline points="58,298 108,285 158,290 208,272 258,278 308,260 348,265" fill="none" stroke="#32CD32" stroke-width="2.5" stroke-linejoin="round"/>
-          <circle cx="348" cy="265" r="5" fill="#32CD32"/>
-          <text x="58" y="270" fill="rgba(255,255,255,0.45)" font-size="9" font-family="sans-serif">EFICIÊNCIA MENSAL</text>
-          <!-- Tractor scene right side -->
-          <path d="M380 220 Q590 200 800 210 L800 340 L380 340Z" fill="#1e4228"/>
-          <g stroke="#2d5a30" stroke-width="2.5" opacity="0.7">
-            <line x1="380" y1="240" x2="800" y2="228"/>
-            <line x1="380" y1="265" x2="800" y2="252"/>
-            <line x1="380" y1="290" x2="800" y2="276"/>
-            <line x1="380" y1="315" x2="800" y2="300"/>
-          </g>
-          <!-- Tractor -->
-          <g transform="translate(530 190)">
-            <circle cx="20" cy="55" r="28" fill="#1a2a0a" stroke="#2a3c14" stroke-width="3"/>
-            <circle cx="20" cy="55" r="11" fill="#2a3c14"/>
-            <rect x="18" y="15" width="110" height="52" rx="7" fill="#2e6b1a"/>
-            <rect x="120" y="22" width="45" height="34" rx="5" fill="#245514"/>
-            <rect x="25" y="5" width="70" height="38" rx="6" fill="#336b1e"/>
-            <rect x="31" y="10" width="30" height="22" rx="3" fill="#7ec8d8" opacity="0.85"/>
-            <circle cx="135" cy="65" r="17" fill="#1a2a0a" stroke="#2a3c14" stroke-width="2.5"/>
-            <line x1="90" y1="5" x2="90" y2="-10" stroke="#e8b422" stroke-width="2"/>
-            <circle cx="90" cy="-13" r="4" fill="#e8b422"/>
-          </g>
-          <!-- Signal arcs from tractor to dashboard -->
-          <path d="M580 185 Q500 120 355 140" fill="none" stroke="#e8b422" stroke-width="1.5" stroke-dasharray="8,6" opacity="0.5"/>
-          <path d="M580 185 Q510 100 355 100" fill="none" stroke="#e8b422" stroke-width="1" stroke-dasharray="6,5" opacity="0.3"/>
-        </svg>
-        <div class="featured-label">⭐ Destaque</div>
-      </div>
-      <div class="featured-body">
-        <div class="article-meta">
-          <span class="article-cat">Gestão de Dados</span>
-          <span class="article-dot"></span>
-          <span class="article-date">28 Mai 2026</span>
-          <span class="article-dot"></span>
-          <span class="article-read">8 min de leitura</span>
-        </div>
-        <div class="featured-title">Como o AgroCheck 360 transformou a gestão de uma fazenda de 3.200 ha no Norte do MT</div>
-        <p class="featured-excerpt">Descubra como a integração de telemetria, NDVI e dashboards ao vivo permitiu reduzir o consumo de combustível em 18% e aumentar a eficiência operacional da frota em uma safra. Um case real de tecnologia aplicada ao campo mato-grossense.</p>
-        <span class="read-more">Ler artigo completo →</span>
-      </div>
-    </a>
-
-    <!-- ARTICLES GRID -->
-    <div class="articles-grid" id="articlesGrid">
-
-      <a href="#" class="art-card reveal d1">
-        <div class="art-img">
-          <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="180" fill="#0a1e28"/>
-            <!-- NDVI map -->
-            <rect x="0" y="30" width="400" height="150" fill="#1a3a20"/>
-            <rect x="10" y="40" width="75" height="55" rx="3" fill="#8B0000" opacity="0.85"/>
-            <rect x="95" y="35" width="85" height="60" rx="3" fill="#228B22" opacity="0.9"/>
-            <rect x="190" y="40" width="70" height="58" rx="3" fill="#32CD32" opacity="0.85"/>
-            <rect x="270" y="36" width="120" height="60" rx="3" fill="#006400" opacity="0.9"/>
-            <rect x="10" y="105" width="100" height="50" rx="3" fill="#3CB371" opacity="0.85"/>
-            <rect x="120" y="103" width="80" height="52" rx="3" fill="#ADFF2F" opacity="0.75"/>
-            <rect x="210" y="105" width="90" height="50" rx="3" fill="#228B22" opacity="0.9"/>
-            <rect x="310" y="107" width="80" height="48" rx="3" fill="#8B0000" opacity="0.7"/>
-            <g stroke="rgba(255,255,255,0.1)" stroke-width="0.8">
-              <line x1="0" y1="100" x2="400" y2="100"/>
-              <line x1="133" y1="30" x2="133" y2="180"/>
-              <line x1="266" y1="30" x2="266" y2="180"/>
-            </g>
-            <rect x="8" y="8" width="120" height="20" rx="4" fill="rgba(0,0,0,0.6)"/>
-            <text x="14" y="21" fill="#e8b422" font-size="9" font-family="sans-serif" font-weight="bold">MAPA NDVI — TALHÃO 04</text>
-            <!-- Drone small -->
-            <g transform="translate(355 20)" opacity="0.8">
-              <line x1="-12" y1="0" x2="12" y2="0" stroke="#e8b422" stroke-width="1.5"/>
-              <line x1="0" y1="-12" x2="0" y2="12" stroke="#e8b422" stroke-width="1.5"/>
-              <circle cx="-12" cy="0" r="5" fill="none" stroke="#e8b422" stroke-width="1.2"/>
-              <circle cx="12" cy="0" r="5" fill="none" stroke="#e8b422" stroke-width="1.2"/>
-              <circle cx="0" cy="-12" r="5" fill="none" stroke="#e8b422" stroke-width="1.2"/>
-              <circle cx="0" cy="12" r="5" fill="none" stroke="#e8b422" stroke-width="1.2"/>
-              <circle cx="0" cy="0" r="3" fill="#e8b422"/>
-            </g>
-          </svg>
-        </div>
-        <div class="art-body">
-          <div class="article-meta">
-            <span class="article-cat">NDVI & Precisão</span>
-            <span class="article-dot"></span>
-            <span class="article-date">20 Mai 2026</span>
-          </div>
-          <div class="art-title">NDVI na soja: como interpretar os mapas e tomar decisões por zona de manejo</div>
-          <p class="art-excerpt">Entenda como os índices de vegetação captados por drone e satélite revelam variabilidades ocultas que custam produtividade na lavoura.</p>
-          <span class="read-more" style="font-size:.85rem;color:var(--vd);font-weight:600">Ler artigo →</span>
-        </div>
-      </a>
-
-      <a href="#" class="art-card reveal d2">
-        <div class="art-img">
-          <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="180" fill="#0d2218"/>
-            <!-- IoT network visualization -->
-            <!-- Central hub -->
-            <circle cx="200" cy="90" r="28" fill="#1a3a28" stroke="#e8b422" stroke-width="2"/>
-            <text x="186" y="86" fill="#e8b422" font-size="8" font-family="sans-serif" font-weight="bold">HUB</text>
-            <text x="183" y="98" fill="#e8b422" font-size="7" font-family="sans-serif">IoT</text>
-            <!-- Sensor nodes -->
-            <circle cx="80" cy="40" r="18" fill="#1a3a28" stroke="#32CD32" stroke-width="1.5"/>
-            <text x="66" y="43" fill="#32CD32" font-size="7" font-family="sans-serif">SENSOR</text>
-            <text x="70" y="53" fill="#32CD32" font-size="7" font-family="sans-serif">SOLO</text>
-            <circle cx="320" cy="40" r="18" fill="#1a3a28" stroke="#32CD32" stroke-width="1.5"/>
-            <text x="305" y="43" fill="#32CD32" font-size="7" font-family="sans-serif">SENSOR</text>
-            <text x="308" y="53" fill="#32CD32" font-size="7" font-family="sans-serif">UMID.</text>
-            <circle cx="60" cy="145" r="18" fill="#1a3a28" stroke="#e8b422" stroke-width="1.5"/>
-            <text x="50" y="148" fill="#e8b422" font-size="7" font-family="sans-serif">TELM.</text>
-            <text x="52" y="158" fill="#e8b422" font-size="7" font-family="sans-serif">TRAT.</text>
-            <circle cx="340" cy="145" r="18" fill="#1a3a28" stroke="#e8b422" stroke-width="1.5"/>
-            <text x="326" y="148" fill="#e8b422" font-size="7" font-family="sans-serif">TELM.</text>
-            <text x="328" y="158" fill="#e8b422" font-size="7" font-family="sans-serif">COLH.</text>
-            <circle cx="200" cy="165" r="18" fill="#1a3a28" stroke="#7ec8d8" stroke-width="1.5"/>
-            <text x="184" y="168" fill="#7ec8d8" font-size="7" font-family="sans-serif">ESTAÇÃO</text>
-            <text x="188" y="178" fill="#7ec8d8" font-size="7" font-family="sans-serif">METEO.</text>
-            <!-- Connection lines animated-looking -->
-            <line x1="95" y1="52" x2="175" y2="75" stroke="#32CD32" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.7"/>
-            <line x1="305" y1="52" x2="225" y2="75" stroke="#32CD32" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.7"/>
-            <line x1="75" y1="130" x2="177" y2="100" stroke="#e8b422" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.7"/>
-            <line x1="325" y1="130" x2="223" y2="100" stroke="#e8b422" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.7"/>
-            <line x1="200" y1="147" x2="200" y2="118" stroke="#7ec8d8" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.7"/>
-            <!-- Cloud/satellite top -->
-            <g transform="translate(200 15)" opacity="0.6">
-              <rect x="-12" y="-5" width="24" height="14" rx="3" fill="#1a3a50" stroke="#7ec8d8" stroke-width="1"/>
-              <line x1="-20" y1="2" x2="-12" y2="2" stroke="#7ec8d8" stroke-width="1.5"/>
-              <line x1="12" y1="2" x2="20" y2="2" stroke="#7ec8d8" stroke-width="1.5"/>
-              <rect x="-20" y="-2" width="8" height="8" rx="1" fill="#7ec8d8" opacity="0.7"/>
-              <rect x="12" y="-2" width="8" height="8" rx="1" fill="#7ec8d8" opacity="0.7"/>
-            </g>
-            <line x1="200" y1="25" x2="200" y2="62" stroke="#7ec8d8" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
-          </svg>
-        </div>
-        <div class="art-body">
-          <div class="article-meta">
-            <span class="article-cat">IoT Agrícola</span>
-            <span class="article-dot"></span>
-            <span class="article-date">15 Mai 2026</span>
-          </div>
-          <div class="art-title">IoT no agro: conectando sensores, máquinas e dados em uma única plataforma</div>
-          <p class="art-excerpt">A Internet das Coisas está transformando fazendas em redes inteligentes. Saiba como implementar e o que esperar dos primeiros 90 dias de operação.</p>
-          <span class="read-more" style="font-size:.85rem;color:var(--vd);font-weight:600">Ler artigo →</span>
-        </div>
-      </a>
-
-      <a href="#" class="art-card reveal d1">
-        <div class="art-img">
-          <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="tsky" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#0a1e14"/><stop offset="100%" stop-color="#1e4228"/>
-              </linearGradient>
-            </defs>
-            <rect width="400" height="180" fill="url(#tsky)"/>
-            <!-- Telemetry HUD scene -->
-            <path d="M0 110 Q200 98 400 105 L400 180 L0 180Z" fill="#1a3820"/>
-            <g stroke="#2d5a2a" stroke-width="2" opacity="0.6">
-              <line x1="0" y1="125" x2="400" y2="118"/>
-              <line x1="0" y1="142" x2="400" y2="135"/>
-              <line x1="0" y1="159" x2="400" y2="152"/>
-            </g>
-            <!-- Tractor small -->
-            <g transform="translate(180 82)">
-              <circle cx="15" cy="40" r="20" fill="#1a2a0a" stroke="#2a3c14" stroke-width="2.5"/>
-              <circle cx="15" cy="40" r="8" fill="#2a3c14"/>
-              <rect x="13" y="10" width="85" height="40" rx="6" fill="#2e6b1a"/>
-              <rect x="92" y="16" width="35" height="28" rx="4" fill="#245514"/>
-              <rect x="18" y="2" width="55" height="32" rx="5" fill="#336b1e"/>
-              <rect x="22" y="7" width="24" height="18" rx="2" fill="#7ec8d8" opacity="0.85"/>
-              <circle cx="108" cy="48" r="14" fill="#1a2a0a" stroke="#2a3c14" stroke-width="2"/>
-              <line x1="68" y1="2" x2="68" y2="-10" stroke="#e8b422" stroke-width="2"/>
-              <circle cx="68" cy="-13" r="3" fill="#e8b422"/>
-            </g>
-            <!-- HUD panels -->
-            <rect x="10" y="12" width="155" height="85" rx="8" fill="rgba(10,30,16,0.88)" stroke="rgba(200,150,12,0.4)" stroke-width="1.2"/>
-            <text x="20" y="30" fill="#e8b422" font-size="8" font-family="sans-serif" font-weight="bold">● TELEMETRIA AO VIVO</text>
-            <text x="20" y="46" fill="rgba(255,255,255,0.75)" font-size="8" font-family="sans-serif">Velocidade: 7.8 km/h</text>
-            <text x="20" y="60" fill="rgba(255,255,255,0.75)" font-size="8" font-family="sans-serif">Rotação: 1.840 RPM</text>
-            <text x="20" y="74" fill="rgba(255,255,255,0.75)" font-size="8" font-family="sans-serif">Combustível: 11.2 L/h</text>
-            <text x="20" y="88" fill="rgba(50,200,80,0.9)" font-size="8" font-family="sans-serif">Eficiência: ▲ 94%</text>
-            <!-- Efficiency gauge right -->
-            <circle cx="360" cy="70" r="42" fill="rgba(10,30,16,0.88)" stroke="rgba(200,150,12,0.35)" stroke-width="1.2"/>
-            <circle cx="360" cy="70" r="30" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="7"/>
-            <path d="M360 40 A30 30 0 1 1 332 93" fill="none" stroke="#e8b422" stroke-width="7" stroke-linecap="round"/>
-            <text x="350" y="74" fill="#e8b422" font-size="14" font-family="sans-serif" font-weight="bold">94%</text>
-          </svg>
-        </div>
-        <div class="art-body">
-          <div class="article-meta">
-            <span class="article-cat">Telemetria</span>
-            <span class="article-dot"></span>
-            <span class="article-date">8 Mai 2026</span>
-          </div>
-          <div class="art-title">Telemetria agrícola: o que os dados da sua frota revelam sobre desperdício operacional</div>
-          <p class="art-excerpt">RPM fora da faixa ideal, marcha errada, tempo ocioso excessivo — veja como a telemetria identifica automaticamente onde sua fazenda perde dinheiro.</p>
-          <span class="read-more" style="font-size:.85rem;color:var(--vd);font-weight:600">Ler artigo →</span>
-        </div>
-      </a>
-
-      <a href="#" class="art-card reveal d2">
-        <div class="art-img">
-          <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="180" fill="#0d2218"/>
-            <!-- Geoprocessing map -->
-            <polygon points="20,25 150,18 165,95 35,108" fill="#2d6030" stroke="#e8b422" stroke-width="1.5" opacity="0.85"/>
-            <polygon points="158,16 290,12 308,88 172,96" fill="#3a7540" stroke="#e8b422" stroke-width="1.5" opacity="0.8"/>
-            <polygon points="300,14 390,12 390,85 315,92" fill="#245028" stroke="#e8b422" stroke-width="1.5" opacity="0.85"/>
-            <polygon points="25,118 168,105 182,168 40,175" fill="#4a8a48" stroke="#e8b422" stroke-width="1.5" opacity="0.75"/>
-            <polygon points="175,98 305,90 320,162 188,170" fill="#2a5c2a" stroke="#e8b422" stroke-width="1.5" opacity="0.85"/>
-            <polygon points="315,92 390,88 390,165 328,170" fill="#386838" stroke="#e8b422" stroke-width="1.5" opacity="0.8"/>
-            <text x="65" y="68" fill="rgba(232,180,34,0.9)" font-size="9" font-family="sans-serif" font-weight="bold">T-01</text>
-            <text x="210" y="58" fill="rgba(232,180,34,0.9)" font-size="9" font-family="sans-serif" font-weight="bold">T-02</text>
-            <text x="338" y="55" fill="rgba(232,180,34,0.9)" font-size="9" font-family="sans-serif" font-weight="bold">T-03</text>
-            <text x="80" y="148" fill="rgba(232,180,34,0.9)" font-size="9" font-family="sans-serif" font-weight="bold">T-04</text>
-            <text x="228" y="138" fill="rgba(232,180,34,0.9)" font-size="9" font-family="sans-serif" font-weight="bold">T-05</text>
-            <rect x="8" y="8" width="105" height="18" rx="3" fill="rgba(0,0,0,0.6)"/>
-            <text x="14" y="20" fill="#e8b422" font-size="8" font-family="sans-serif" font-weight="bold">GEOPROCESSAMENTO</text>
-          </svg>
-        </div>
-        <div class="art-body">
-          <div class="article-meta">
-            <span class="article-cat">NDVI & Precisão</span>
-            <span class="article-dot"></span>
-            <span class="article-date">2 Mai 2026</span>
-          </div>
-          <div class="art-title">Geoprocessamento agrícola: como delimitar talhões com precisão usando SIG</div>
-          <p class="art-excerpt">A delimitação correta de talhões é a base de toda a agricultura de precisão. Entenda as ferramentas, os formatos de arquivo e as melhores práticas do campo.</p>
-          <span class="read-more" style="font-size:.85rem;color:var(--vd);font-weight:600">Ler artigo →</span>
-        </div>
-      </a>
-
-      <a href="#" class="art-card reveal d1">
-        <div class="art-img">
-          <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="180" fill="#0d2218"/>
-            <!-- Piloto automático / guidance system -->
-            <!-- Field top down -->
-            <rect x="0" y="0" width="400" height="180" fill="#1a3820"/>
-            <g stroke="#2d5a28" stroke-width="3" opacity="0.7">
-              <line x1="0" y1="20" x2="400" y2="20"/>
-              <line x1="0" y1="44" x2="400" y2="44"/>
-              <line x1="0" y1="68" x2="400" y2="68"/>
-              <line x1="0" y1="92" x2="400" y2="92"/>
-              <line x1="0" y1="116" x2="400" y2="116"/>
-              <line x1="0" y1="140" x2="400" y2="140"/>
-              <line x1="0" y1="164" x2="400" y2="164"/>
-            </g>
-            <!-- GPS guidance path (perfect straight line) -->
-            <line x1="200" y1="0" x2="200" y2="180" stroke="#e8b422" stroke-width="3" stroke-dasharray="12,6" opacity="0.9"/>
-            <!-- Tractor icon top view -->
-            <g transform="translate(186 75)">
-              <rect x="0" y="0" width="28" height="38" rx="4" fill="#2e6b1a" stroke="#3d8a28" stroke-width="1.5"/>
-              <rect x="4" y="4" width="20" height="14" rx="2" fill="#7ec8d8" opacity="0.7"/>
-              <circle cx="-6" cy="8" r="7" fill="#1a2a0a" stroke="#2a3c14" stroke-width="1.5"/>
-              <circle cx="34" cy="8" r="7" fill="#1a2a0a" stroke="#2a3c14" stroke-width="1.5"/>
-              <circle cx="-6" cy="30" r="7" fill="#1a2a0a" stroke="#2a3c14" stroke-width="1.5"/>
-              <circle cx="34" cy="30" r="7" fill="#1a2a0a" stroke="#2a3c14" stroke-width="1.5"/>
-              <!-- GPS dot on top -->
-              <circle cx="14" cy="0" r="4" fill="#e8b422"/>
-            </g>
-            <!-- GPS accuracy indicator -->
-            <rect x="10" y="10" width="140" height="50" rx="6" fill="rgba(10,25,16,0.85)" stroke="rgba(200,150,12,0.4)" stroke-width="1"/>
-            <text x="20" y="27" fill="#e8b422" font-size="8" font-family="sans-serif" font-weight="bold">PILOTO AUTOMÁTICO</text>
-            <text x="20" y="41" fill="rgba(255,255,255,0.75)" font-size="8" font-family="sans-serif">Precisão: ±2.5 cm RTK</text>
-            <text x="20" y="53" fill="rgba(50,200,80,0.9)" font-size="8" font-family="sans-serif">● Sinal GPS: EXCELENTE</text>
-            <!-- Overlap indicator -->
-            <rect x="250" y="10" width="140" height="35" rx="6" fill="rgba(10,25,16,0.85)" stroke="rgba(200,150,12,0.4)" stroke-width="1"/>
-            <text x="260" y="26" fill="#e8b422" font-size="8" font-family="sans-serif" font-weight="bold">SOBREPOSIÇÃO</text>
-            <rect x="260" y="32" width="120" height="8" rx="4" fill="rgba(255,255,255,0.1)"/>
-            <rect x="260" y="32" width="12" height="8" rx="4" fill="#e8b422"/>
-            <text x="376" y="40" fill="rgba(255,255,255,0.6)" font-size="7" font-family="sans-serif">3%</text>
-          </svg>
-        </div>
-        <div class="art-body">
-          <div class="article-meta">
-            <span class="article-cat">Mecanização</span>
-            <span class="article-dot"></span>
-            <span class="article-date">25 Abr 2026</span>
-          </div>
-          <div class="art-title">Piloto automático no trator: RTK vs GNSS e quando vale o investimento</div>
-          <p class="art-excerpt">A diferença entre um sistema de guia básico e o RTK pode significar economia de centenas de litros de herbicida por safra. Conheça os sistemas disponíveis no mercado.</p>
-          <span class="read-more" style="font-size:.85rem;color:var(--vd);font-weight:600">Ler artigo →</span>
-        </div>
-      </a>
-
-      <a href="#" class="art-card reveal d2">
-        <div class="art-img">
-          <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="180" fill="#0d2218"/>
-            <!-- KPIs / gestão de dados dashboard -->
-            <rect x="10" y="12" width="115" height="72" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.2"/>
-            <text x="22" y="30" fill="rgba(255,255,255,0.5)" font-size="8" font-family="sans-serif">PRODUTIVIDADE</text>
-            <text x="22" y="55" fill="#e8b422" font-size="22" font-family="sans-serif" font-weight="bold">68</text>
-            <text x="55" y="55" fill="rgba(255,255,255,0.5)" font-size="10" font-family="sans-serif">sc/ha</text>
-            <text x="22" y="72" fill="#32CD32" font-size="9" font-family="sans-serif">▲ +6 vs safra ant.</text>
-            <rect x="135" y="12" width="115" height="72" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.2"/>
-            <text x="147" y="30" fill="rgba(255,255,255,0.5)" font-size="8" font-family="sans-serif">CUSTO/SACA</text>
-            <text x="147" y="55" fill="#e8b422" font-size="22" font-family="sans-serif" font-weight="bold">R$42</text>
-            <text x="147" y="72" fill="#32CD32" font-size="9" font-family="sans-serif">▼ –R$8 vs anterior</text>
-            <rect x="260" y="12" width="130" height="72" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.2"/>
-            <text x="272" y="30" fill="rgba(255,255,255,0.5)" font-size="8" font-family="sans-serif">MARGEM BRUTA</text>
-            <text x="272" y="55" fill="#e8b422" font-size="22" font-family="sans-serif" font-weight="bold">34%</text>
-            <text x="272" y="72" fill="#32CD32" font-size="9" font-family="sans-serif">▲ Meta atingida ✓</text>
-            <!-- Trend line bottom -->
-            <rect x="10" y="95" width="380" height="75" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.2"/>
-            <text x="22" y="112" fill="rgba(255,255,255,0.5)" font-size="8" font-family="sans-serif">PRODUTIVIDADE — 5 SAFRAS</text>
-            <polyline points="28,155 90,145 150,148 210,132 270,136 330,120 375,118" fill="none" stroke="#e8b422" stroke-width="2.5" stroke-linejoin="round"/>
-            <g fill="#e8b422">
-              <circle cx="28" cy="155" r="3"/><circle cx="90" cy="145" r="3"/>
-              <circle cx="150" cy="148" r="3"/><circle cx="210" cy="132" r="3"/>
-              <circle cx="270" cy="136" r="3"/><circle cx="330" cy="120" r="3"/>
-              <circle cx="375" cy="118" r="4"/>
-            </g>
-          </svg>
-        </div>
-        <div class="art-body">
-          <div class="article-meta">
-            <span class="article-cat">Gestão de Dados</span>
-            <span class="article-dot"></span>
-            <span class="article-date">18 Abr 2026</span>
-          </div>
-          <div class="art-title">KPIs essenciais para gestão agrícola: quais indicadores toda fazenda deveria monitorar</div>
-          <p class="art-excerpt">Produtividade por talhão, custo por saca, eficiência de frota — conheça os 12 indicadores que separam uma fazenda gerenciada de uma fazenda tecnológica.</p>
-          <span class="read-more" style="font-size:.85rem;color:var(--vd);font-weight:600">Ler artigo →</span>
-        </div>
-      </a>
-
+    <!-- DESTAQUE (preenchido pelo BlogEngine) -->
+    <div id="featuredCard">
+      <div class="loading-state"><div class="spinner"></div><p>Carregando artigos...</p></div>
     </div>
 
-    <div class="load-more-wrap reveal">
-      <button class="btn-load">Carregar mais artigos ↓</button>
-    </div>
+    <!-- GRID (preenchido pelo BlogEngine) -->
+    <div class="articles-grid" id="articlesGrid"></div>
   </main>
 
   <!-- SIDEBAR -->
   <aside class="sidebar">
 
-    <!-- Sobre -->
-    <div class="sidebar-card sobre-sidebar reveal d2">
-      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCADIAMgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDxCijNJXQcwppKKKACkApaKACiiigAooooAKKKTIoAWimlxS5yKAFooooFcKKKKBhRRRQAUUUUALmkoooAKKKKACiiigAooooAKKKKACiimlgKAHUh+tR7yzBUBZj0AGSa6nRPAev6qqyfZjbRN0ab5c/hWdSrCmrzdiZSUVds5okYrovBXhh/EN47SsY7KI/Ow6k+grU8V/D5/DvhuTUZ74SzKyr5arxyfWuw+G8C2/g2zZQA0xaRj684/pUQrwqx5qbujgx2KdGg503q9Am8BaA9v5SQuj44kD815V4l0afQNUa0mO+M/NHJ/eWveAea4T4xQKdKsrkD50kK59iKuMtbM83LsbUdZU5u6Z5iCDS122nfDe91HRLW/tLuImeMOI2GMe2a5/WfDGs6Nlryyk8of8tEG5fzFZwxVKcuVS1PfVSLdkzJoqNZAfrUgOa6CwooooAKKKKBhRRRQAUUUUAFFAooAKKKKACiioyWZwkalnY4Cjkk0ADvjpXZ+EPh7qGuhLm83WlkehYfMw9hXWfDv4eLbCHUtejDTkbo7duQnufevRdX1Ww0SxNxqNwkESjgHqfYCvExeaNS9lh9Wc1Su78sDN0DwppGhRqLG0TzR1lcbnJ+tW9W1rTdJiMmo3kMAHZm5P4V5F4q+KV/fmS30NfskB480j5yPb0rz6Z5rmUy3Usk0p5LO2SaypZZWrvnru35kRw8pazZ6V8S/HWl65oMmnacJXYuG8xlwMCup8DDHg3Sh/0y/qa8JdAFNe8eB/8AkTdL/wCuX9TXr0sPHDw5IHBm8VChFLubC9a4z4vjPhqD/ruP5Gu0HWuP+Lf/ACLEP/Xdf5GtI7nkYB/7TD1HeCfHui22iWOn3kj280KBCzL8pP1r0Kzu7a/g32s8VxEw/gIYGvlxUzVvTdQvtKnE+nXMsEg/ung/UV5uIyqM25U5WZ9TLCp6p6nuPiT4faPrAeSCMWd2ed8YwCfcV5B4m8M6j4buNt5GWgP3Jl5U16D4T+J8Vw6W2vqsMh489fuk+47V6NPDZ6pYlJkiubSVfqpFccMVicDLkqq6/rYxU6lF2lqj5gBBpa7Px/4Gl0BmvdODS6cTyOpi+vtXEo+4Zr3qNaFaCnB6HZCSmrofSUtFalBRRRQFwooooGFFFFABRRSE4FAhsjYFet/CrwUII4ta1WMGdxugjYfcH94+9cp8LvDI17WvtN2haxtSGYdmbsK9s1/V7XQtJmvrshYYhwo7nsBXiZni5N/V6W/X/I5q9R35IlPxh4os/C+mm4uiHnbiKEHlj/hXz54i12/8Sai13qMhP9yMfdQegFJ4i1q78SavJfXrHk4jj7IvYCqargV14HAxw8eaXxfka06fIvMRUA6U+gClr0DQil+6a938Dj/ijtL/AOuX9TXg833TXvHgn/kTtK/65f1NTI8jOtKMfU2AOa474uf8itF/13X+tdiOtcd8XP8AkVov+u6/1qI7niYD/eIep5HH2p9Rp0FSVqfZjGQGuq8EeM7vw5OsE5afTmPMZP3PcVzFNZc1nVoxrR5ZoUoqSsz6ctbqz1fTVlhZJ7WdenUEHsa8Q+InhFvD159qs1J06VuO/ln+7R8OPFT6DqQtLpydPnbBz0Q+te26nYW+r6bLaXIDwTpjI9+hFfPJ1Mtr2fws4bPDz8mfMqtkU4Va8QaVNoOs3Fhcc+W3yN/eXsaqCvo4yU0pLZncndXFoooqgENFNY0UAPooooGFN2tK6xxqWdiFAHcmnV13wp0saj4uhkkXdFajzjnpkdP1rKtUVKm5voTKXKnI9i8G6KmgeHrWyVQJsb5j6ueteQ/FzxEdX1z+zrdz9jszhsHhn7/lXrXjfWf7E8O3l5n99t2xe7HgV82oWd2eRizsSzE9ya8XKqLq1JYif9M5sPHmbnIcq4FPFN3AUbxXvnUPpDQCDS0DIZele4/D2dZ/BlgFOTGGjb2INeIsOK774Sav5N3PpczYWX95Hn+8Oo/KplsebmtJ1cO2ump6gvWuG+Ms6R6LY2+fnkm3Y9gK7tR83NeLfE3VhqniVoYm3Q2g8sHsW71MdzxcrpOpiFLotTl0HFPzTVGBTsVofWC0U0nFM3885oELIuRXs/wi8QHUNLbTbmTdcWo+TJ5Kf/WrxnINanhPVW0XxFaXgJCBtsg9VPBrjx+HVek11WxnUhzxaPTfjLoS3elR6tCn7+2O2Qjuh/wrx2I5FfT95bxalp00D4eG4jI+oIr5nvrN9O1K5s5c74ZCh98GuTKa7lB0pbozw07rlfQZRQKDXrnSMfpRSkZooEx1FFITgUDA1veEvFlz4Xe4a0ghkMwAYydRimeD/Dd14m1BoIW8uGMZllI4Uf416Bc/CmwaDFvfTLPj7zAEflXBisVh4v2VV7mU6kF7sjiPFnje/wDEtpHbXUMUUSNvwmeTWFpum32pzCHTrWWdycfIuQPxr03w98K445S+t3QlVW+WOLgMPc16Xp1jaadbiDT7aOCIDogx+dcVTMaOGj7PDq/5GUq0aatA8r8P/CuVysuuXGxephiPP0JrvF8H+Hl097JdOhEbDBf+PPrmofEvjXSNCQiacXFyOkMRyfx9K53wx8SrbVdXa0v4Fs43P7mQtxn0NccpY3EL2mtkZv2s1zHA+NfCV34Yu9wDS2Dn93Ljp7H3rnVORxX07f2dvqNnJa3sazW8q4IPce1eD+OfCFz4ZuvNhDTac5+STuvsa9LAZiqv7up8X5m1Gtz6S3OcPvS21zJY3kN3btiSFw4x7VCZQQMc16B4O+HNzq9ul3qrta2zjKoB87D19q761eFGPNNms5RUXzG7qvjuwPhX7VZyqb6Zdixd0buTXkMYLFmclmY5JPc17g/wv8O+TsVbgSf89N/P5V5z4y8IXXhqUSKTPYucLKB932Nc+Hx9CrLki7PzOPCU6NG8afU5oCkdto5pDIMda7j4f+BpNbdL/U1aPT1OVU8GX/61dVavChDnmdkpqKuyHwB4Kn8QSrd3qtFpqnqeDJ7CvVtS8I6Ff2UdrLYxosa7UaMYZfxrbRbeys8DZb2sK/RVArzi++KllBrMkEVq01kpx5ynkn1A9K+cnWxOMqOVPocjnUqv3TE8RfDC9tFebRpvtUY58puHx/WvP7u3ntZWiu4ZIZF6q4wa+jdE8QabrcIk0+6RmPWMnDD8KdrOiafrEJj1G1SUEcMRhh9DW9LNKtJ8mIX+ZUa8ou00eSaV8TNVsLG3tRBBKsKBAzZyQPWuY1vU31jVZr+aNI5JTllTpmu+1P4UbrtTpt8EtyfmEoyQPatBvhVZfZSsV/L9oxwSoxmuqGLwVKXPHRs0VWlF3R5OOlJVrWdOuNG1SaxuxiSM9ezDsaqGvWjJSSktje99UJRS0Uxi0jDilooEeufA+5tzpmoWgYC68wOR3K4r0Uxtu4r5k069u9LvUu7CZoZ06Mv9a6i8+JXiG4tTCssUTEYMiLhq8LGZXUq1nUpvRnLVw7lPmj1PUPE3jDS/DwZLiXzrsDiCPk/j6V5X4k+IGr6yrQwObO1PG2I4Yj3Ncm7PNK8s7tJK5yzMckmjbxXXhstpUfelrI1p0IwIwpZieWY/iaUqGr2r4ZL4dutNDWdnGNQVdswlwzfUZ7Vg/EHwGbcyajokWYhlpYF/h9xVQzCDrOjNcvqL265uV6EHw/8AHcli8Wm6w5a1+7HMxyU9j7V67cQ21/ZNFOkc9tKuCDyGBr5eyGGD1rvPh944fSZE0/VnZ7E8JIeTH/8AWrlx+X8372juTWoX96G5rw/DRLXxjbTpiXRgTIUY8qR0U+oruvF2vw+HdFkvZF3YwkcY4y3YVpxyJPCksLh4nGVZTkEVg+N9BHiLQZbMNtmU74z/ALQryniHWqRVd6LQ5efnkuc8wi+KGs/bhNOsLW2eYQvb6166Psvibw0DtDW97DkBh0z/AIGvENP+Huv3V6LeS1MEQbDSueMeo9a930mwi0rS7WwtzmOBAgJ7+prpzD2EeV0d/I1rcity7nmPgj4cSNePc6+v7mKQhIf+emD1PtXrMsltp9kZZ2jt7WFfoqgU27uoLC0kur2VYreMZZmNeE/EDxlP4lujb2xaLTI2+ROm/wBzSpxrZhUvLZfcJKVZ3ZN4/wDHU/iCd7OwZotNU4wODJ7n2riwoHHU0iIzMqRqWdjgADkmvZvhv4EWxjXUdahV7luY4XGQg9SPWvYnOjgaVkdUpRoxPHYXlt5RJBI8Uq9GU4IrvvDnxMvrHbDq8f2uEceYOHH+NbXxbXQLa32LboNWfG3ysLgerYrykLkc04KnjaalOIK1WN2j6O0HXNP1+187TZw5A+ZDwy/UVqxxsHFfMOnXt1pd4tzYTvDKvdT1+tdZN8SPEEtr5IljRiMeYq/NXlVsmnzfunp5nPPCu/usl+Mc8E/i1UgILxQhZCPX0riR0pZHkmmeWd2klc7mZjkk0Yr3cPS9jTjT7HVGPLFIKKKK2LFopTSUCA12Pw48Nad4kmuo7+aVJIsMqJj5h3rjq3vAOrjRvFNpNI22CQ+VIfY9658UpulLkdmTNNxdjr/iX4UsNH8PW9xpcGwRSbZGzkkH1rzFDla+mda06LV9JurGYAxzoVB9D2NfNV3ay6ffz2dwCssLlCPpXDlWIdWDhJ6oyw9TmjZ7kunX91pV/HeWMhjmQ547j0Ne7eCvFlr4ltP4Yr1B+8iJ/Ue1eB9qdZXdxpt5Hd2MrRTxnIYV0YzBRxMf7xpVpKovM9R+IvgDzvM1TQ4wJeWlgUfe9x715L1yrghhwQRyK9+8CeMoPEdqI5SsWoRj548/e9xWJ8RPASagJNS0ZAt4PmkiHST3HvXDhMbKjL2GJ6bMwpVXB8kzkPAPjabQJFsr8tLprHjuY/ce1e2QTRXVvHcWsiyQyDcrKeCK+X3DIzRTKUkU4KsMEGut+Hfi280XVLfT5CZrC4kCbCfuEnGRV5hgFVi6tPf8y61BSXMtz3bJqDUb220yykvL6URQRjJJ7+wqzMVhjeSThEBY/QV89eNfFN14m1Bskx2ETERRA8fU+9eRgsJLFTt0W5y0qTm/IseOfGNz4mufKi3Q6bG3yRf3vc1zMMMk0yQ28bPK5wqqMkmn2NpPe3UdrZxNLM5wqqK90+H/AIIt9AiW6vAsuosOW7R+wr6CvXpYGnyxXojsnKNKNir8OfAMelLHqGqIsl+eVQ8iP/69WviF42t/D8L2toyy6kw4UHIT3NVviP49XRY30/SnV9QYYZhyIv8A69eJO8lzO89y7STOdzMxySa4cNhJ4qXt8Rt/X4GMKbqvnmOuLie+u5Lq8kaWeQ5ZmNIAzOqIMsxwBR0FdX8MNFOseJopZEzbWv71zjgnsK9irONGm5bJHU2oq56Db/DbSbjRLKO6V4bxYwZZIzyWPJzXkfiOzg03XryytJGkigfYGbqcda+hfE2prpGiXl9If9UhK+57CvmbzJJ5ZJpm3SSMXY+pJzXm5XUq1eac3oY4eUpXbJKWkor2DoEJwKKR+lFAElIaWkNABTJBxx1FPpCM0Ae7fDHxCNb0FIZmzeWoCOD1I7Gud+L/AIZaXGt2UeWUbbgKO3Zq8+8Ka7P4c1qK9iyYs7ZU/vL3r6Isbq11fTUnhKzWs6fUEHqDXzmJhLA4hVoL3X/TRxTToz5lsfMiNkU4jIrq/iF4Rl8PXzXVojNp0rZUj+A+hrkkcMK96lVjWgpwejOuMlJXQ+2nnsbuO6s5WinjOVdTzXt/gHxtF4giFtdYi1FByvQSe4rw84NX/CpaPxVpTIxU/aUGQcd65sdhYYim+bddSatNTWp6X8WvC1pLpk2twARXUIBkwOJB7+9eT6Fzrmnn/pun/oQr3z4pr/xRWp4/uj+YrwPQP+Q3p/8A13T+Yrly2cp4aXM72uZ0JNwdz6Y1kZ0m9/64t/KvlpTgGvqXWf8AkEXv/XFv5V8sms8m+GZOG6n0D8OfDFnpOjW18qiS8uYldpG6qCM4FZXxF8erpXmabpLhr4jDyDkR/wD166/QG2+EtPI4Is1P/jtfNJ3SXMskjFnZySx6nmscFQWJrSqVXewqcPaScpdBxLyytLM7PI5yzMckmn9BQBxSMeQByT2r6HY6wVXllSKJS8jkKqjua+hPAPh4eHdDjhfBu5cPMff0/CuT+F3gtrdo9Y1aLEvWCJv4f9o12HjbxJB4b0eS4Yg3TjbDH3Lf4V8/mGJeImqFLU5K0+d+zicD8aPEHmzxaJbNlUxJNg9+wrzNBgU6eea9upbm5cvNKxd2PcmivZwtBUKagjohFQjZC0UUuK6CxtFLiigB1BoooASiiigBrLkV1nw98XyeHLv7NdFn06VvmH/PM+orlaayg1lVoxrQcJ7ClFSVmfTpFnq2nYPl3NncJ9QwNeO+Ofh7caUz3ujK81l1aMctH/iKyfBfjK88MyiJsz6ex+aIn7vute46DrthrloLjTplkXHzJ/EvsRXz8418unzR1j+BxuM6Dutj5oV+x4PetPwwQfE+lY/5+Y//AEIV7L4n8A6VrTvPCPsd23JeMfKT7ivPbbwNrWieKdNlMP2m0S5QmWLnAyOSO1elTzGjXg1eztszeFaM0emfFQ/8UTqeP7o/nXgnh0Z1zT/+u6fzFe8fFFs+CtS91H8xXhXh3jW9P/67p/6EK58q/wB2n8/yM8P8DPpPWD/xKL3/AK4t/Kvls9D9a+o9Z40a+P8A0xb+VfLh6Glk/wAMx4bqfTGiH/ikLL2s1/8AQa+a0I3tn1P86+ktEBbwrZIvU2igf9815NoPwz1O9mL6i62kBYkjqxGfSs8BXp0XUc3YmjOMOZyZxtvHLdTrDbRtLK5wqqMk1614A+HwtHTUNdRXnHMcB5Cn1PvXWeGvC2l+H1zZQAzkYaZ+WP8AhTfFXizT/DsBNzJvuCMpCp+Y/wCFTicfUxL9lQWn4inXc3ywRpa9q9pounyXl9IqRoOB3Y+gr538U67c+JNWe7ufljHEUfZV/wAad4m8Q33iS+8+9ciNf9XEPuoP8ay1GK9DAYBYdc0vi/I1pUvZ6vcFGBTqKBXpG4tFFLigBKKKKAFoNFBoASiiigAooooAYVzU+nX15pd0LjT7iSCYd1PX6+tR0mKTSasxeR6d4c+KXyrDr0HPTz4h/MV6HpOuaZrEe7T72GU913YYfhXzaVzSR74nDxOyOOjKcEV5dfKKNTWHusxlh4vbQ98+J6keCL/3C/zFeG6ED/bVh/13T+Yq1Pr+rXNg1lcX08tscZR2zWl8N7a0ufFtot8wCLl0BOAzjoKrD4aWDoTUnfdjhD2cWme6ayc6LegcnyX/AJV8vHJB9a+rXiUwyCbAiKndu6Yr5i1mO2XWL1bE5tRKwi/3c1yZM/jiZ4V7n0Z4fTHh3TSTj/R4+v8AuiqeseJ9H0jK3l9F5g/5ZodzfkK8JuNe1a4t44JL+48mNQiorEAAfSsvZlix5J6k96qOT80nKpL7gWH1u2eieJvibdXQaDRI/s8Z481uWP0HavPppJbqdp7qV5ZnOWdzkmkC4pcV6tDDU6CtBG8YRh8ImMUtLRW5YUUUUAApaKKACiiigAooooASilxSUAFFFLigBKKKKACiiigQUmWVgyMVYHIIOCKWigZoT+INYntjbzalcvARgoXOCKzQMU6ipjGMfhVg22CiiiqEFFFFAwooooAKWjFFABRRRQAUUUUAFFFFABRiiigApKKKACiiigAooooAKKKKACiiigAooooAKKKKACgUUUALRRRQAUUUUAFFFFAH/9k=" alt="SmartGrain"/>
-      <div class="sidebar-title" style="text-align:left">SmartGrain</div>
-      <p>Consultoria em Sistemas Agrícolas Inteligentes. Especialistas em tecnologia, mecanização e agricultura de precisão no coração do agronegócio mato-grossense.</p>
-      <a href="index.html#contato" class="btn-site">Solicitar Diagnóstico →</a>
-    </div>
-
     <!-- Newsletter -->
-    <div class="newsletter-card reveal d1">
+    <div class="newsletter-card">
       <div class="sidebar-title">📩 Newsletter</div>
-      <p class="newsletter-desc">Receba artigos técnicos, novidades do agro e dicas de tecnologia toda semana direto no seu e-mail.</p>
+      <p class="newsletter-desc">Receba artigos técnicos e novidades do agro toda semana no seu e-mail.</p>
       <div class="newsletter-form">
         <input type="text" placeholder="Seu nome"/>
         <input type="email" placeholder="seu@email.com"/>
@@ -657,46 +243,37 @@
       </div>
     </div>
 
-    <!-- Artigos populares -->
-    <div class="sidebar-card reveal d2">
+    <!-- Populares (preenchido pelo BlogEngine) -->
+    <div class="sidebar-card">
       <div class="sidebar-title">🔥 Mais lidos</div>
-      <a href="#" class="pop-item">
-        <div class="pop-num">01</div>
-        <div><div class="pop-title">Como o AgroCheck 360 reduziu 18% do consumo de combustível</div><div class="pop-date">28 Mai 2026</div></div>
-      </a>
-      <a href="#" class="pop-item">
-        <div class="pop-num">02</div>
-        <div><div class="pop-title">NDVI na soja: interpretando mapas e zonas de manejo</div><div class="pop-date">20 Mai 2026</div></div>
-      </a>
-      <a href="#" class="pop-item">
-        <div class="pop-num">03</div>
-        <div><div class="pop-title">KPIs essenciais para gestão agrícola moderna</div><div class="pop-date">18 Abr 2026</div></div>
-      </a>
-      <a href="#" class="pop-item">
-        <div class="pop-num">04</div>
-        <div><div class="pop-title">Piloto automático RTK vs GNSS: quando vale o investimento</div><div class="pop-date">25 Abr 2026</div></div>
-      </a>
+      <div id="popularPosts">
+        <div class="loading-state" style="padding:1rem 0"><div class="spinner" style="width:24px;height:24px;border-width:2px"></div></div>
+      </div>
     </div>
 
     <!-- Tags -->
-    <div class="sidebar-card reveal d1">
+    <div class="sidebar-card">
       <div class="sidebar-title">🏷️ Tópicos</div>
       <div class="tags-cloud">
-        <span class="tag-item">Telemetria</span>
-        <span class="tag-item">NDVI</span>
-        <span class="tag-item">IoT Agrícola</span>
-        <span class="tag-item">Piloto Automático</span>
-        <span class="tag-item">Soja</span>
-        <span class="tag-item">Mato Grosso</span>
-        <span class="tag-item">AgroCheck 360</span>
-        <span class="tag-item">Geoprocessamento</span>
-        <span class="tag-item">RTK</span>
-        <span class="tag-item">Gestão de Frota</span>
-        <span class="tag-item">Agricultura Digital</span>
-        <span class="tag-item">NDVI</span>
-        <span class="tag-item">Precisão</span>
-        <span class="tag-item">Dashboard</span>
+        <span class="tag-item" onclick="document.getElementById('searchInput').value='Telemetria';document.getElementById('searchInput').dispatchEvent(new Event('input'))">Telemetria</span>
+        <span class="tag-item" onclick="document.getElementById('searchInput').value='NDVI';document.getElementById('searchInput').dispatchEvent(new Event('input'))">NDVI</span>
+        <span class="tag-item" onclick="document.getElementById('searchInput').value='IoT';document.getElementById('searchInput').dispatchEvent(new Event('input'))">IoT Agrícola</span>
+        <span class="tag-item" onclick="document.getElementById('searchInput').value='Piloto';document.getElementById('searchInput').dispatchEvent(new Event('input'))">Piloto Automático</span>
+        <span class="tag-item" onclick="document.getElementById('searchInput').value='Soja';document.getElementById('searchInput').dispatchEvent(new Event('input'))">Soja</span>
+        <span class="tag-item" onclick="document.getElementById('searchInput').value='RTK';document.getElementById('searchInput').dispatchEvent(new Event('input'))">RTK</span>
+        <span class="tag-item" onclick="document.getElementById('searchInput').value='Geoprocessamento';document.getElementById('searchInput').dispatchEvent(new Event('input'))">Geoprocessamento</span>
+        <span class="tag-item" onclick="document.getElementById('searchInput').value='Dashboard';document.getElementById('searchInput').dispatchEvent(new Event('input'))">Dashboard</span>
+        <span class="tag-item" onclick="document.getElementById('searchInput').value='Precisão';document.getElementById('searchInput').dispatchEvent(new Event('input'))">Precisão</span>
+        <span class="tag-item" onclick="document.getElementById('searchInput').value='KPI';document.getElementById('searchInput').dispatchEvent(new Event('input'))">KPIs</span>
       </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="sidebar-card" style="background:var(--creme);border:2px solid rgba(200,150,12,.3);text-align:center;">
+      <div style="font-size:2rem;margin-bottom:.8rem;">📊</div>
+      <div class="sidebar-title" style="text-align:center;">AgroCheck 360</div>
+      <p style="font-size:.84rem;color:var(--tm);line-height:1.6;margin-bottom:1.1rem;">Diagnóstico completo e personalizado para sua propriedade.</p>
+      <a href="../index.html#contato" style="display:block;background:var(--vd);color:#fff;font-weight:600;font-size:.87rem;padding:.7rem 1rem;border-radius:8px;text-decoration:none;text-align:center;transition:background .2s;" onmouseover="this.style.background='var(--vm)'" onmouseout="this.style.background='var(--vd)'">Solicitar diagnóstico →</a>
     </div>
 
   </aside>
@@ -707,20 +284,19 @@
   <div class="foot-in">
     <div class="foot-logo">
       <img src="data:image/jpeg;base64,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" alt="SmartGrain"/>
-      <span class="foot-copy">© 2026 SmartGrain Consultoria Agrícola — Juína, Mato Grosso</span>
+      <span class="foot-copy">© 2026 SmartGrain Consultoria Agrícola — Brasnorte, Mato Grosso</span>
     </div>
     <ul class="foot-links">
-      <li><a href="index.html">Início</a></li>
-      <li><a href="index.html#servicos">Serviços</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="index.html#contato">Contato</a></li>
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="index.html">Blog</a></li>
+      <li><a href="../index.html#contato">Contato</a></li>
     </ul>
   </div>
 </footer>
 
 <!-- WHATSAPP -->
 <div class="wa-ring"></div>
-<a class="wa-btn" href="https://wa.me/5566992225475?text=Ol%C3%A1%21+Vim+pelo+Blog+da+SmartGrain+e+gostaria+de+saber+mais." target="_blank" rel="noopener noreferrer">
+<a class="wa-btn" href="https://wa.me/5566992225475" target="_blank" rel="noopener noreferrer">
   <svg class="wa-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="24" cy="24" r="24" fill="#25D366"/>
     <path d="M34.6 13.4A14.9 14.9 0 0 0 24 9C16.3 9 10 15.3 10 23c0 2.5.7 4.9 1.9 7L10 39l9.3-2.4c2 1.1 4.3 1.7 6.7 1.7 7.7 0 14-6.3 14-14 0-3.7-1.5-7.3-4.1-10.1 0 0-.1-.1-.3-.2zM24 36.7c-2.1 0-4.2-.6-6-1.6l-.4-.2-4.4 1.1 1.2-4.2-.3-.4C13 29.6 12.3 26.3 12.3 23c0-6.5 5.3-11.7 11.7-11.7 3.1 0 6 1.2 8.2 3.4a11.6 11.6 0 0 1 3.4 8.3c0 6.5-5.3 11.7-11.6 11.7zm6.4-8.8c-.3-.2-2-.9-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4 0-.1-.2-.2-.5-.4z" fill="white"/>
@@ -728,46 +304,17 @@
   <span class="wa-text">Fale pelo WhatsApp</span>
 </a>
 
+<!-- BLOG ENGINE -->
+<script src="blog-engine.js"></script>
 <script>
-  // Nav scroll
+  BlogEngine.init('blog');
   window.addEventListener('scroll', () => {
     document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
   }, {passive:true});
-
-  // Scroll reveal
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
-  }, {threshold:0.08});
-  document.querySelectorAll('.reveal').forEach(r => obs.observe(r));
-
-  // Category filter
-  document.querySelectorAll('.cat-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-    });
-  });
-
-  // Search (visual filter)
-  document.getElementById('searchInput').addEventListener('input', (e) => {
-    const q = e.target.value.toLowerCase();
-    document.querySelectorAll('.art-card').forEach(card => {
-      const text = card.textContent.toLowerCase();
-      card.style.opacity = text.includes(q) || q === '' ? '1' : '0.3';
-    });
-  });
-
-  // Hamburger
   document.getElementById('hamburger').addEventListener('click', () => {
     const nl = document.querySelector('.nav-links');
     const open = nl.style.display === 'flex';
-    Object.assign(nl.style, {
-      display: open ? 'none' : 'flex',
-      position:'fixed', top:'72px', left:'0', right:'0',
-      flexDirection:'column', background:'rgba(10,26,16,0.98)',
-      padding:'2rem 5%', gap:'1.5rem',
-      borderBottom:'1px solid rgba(200,150,12,.2)'
-    });
+    Object.assign(nl.style, {display:open?'none':'flex',position:'fixed',top:'72px',left:'0',right:'0',flexDirection:'column',background:'rgba(10,26,16,0.98)',padding:'2rem 5%',gap:'1.5rem',borderBottom:'1px solid rgba(200,150,12,.2)'});
   });
 </script>
 </body>
