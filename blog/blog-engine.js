@@ -3,7 +3,7 @@ async function carregarArtigos() {
     const resposta = await fetch('artigos.json');
     const artigos = await resposta.json();
 
-    const container = document.getElementById('artigos-container');
+    const container = document.getElementById('articlesGrid');
 
     artigos.reverse().forEach(artigo => {
 

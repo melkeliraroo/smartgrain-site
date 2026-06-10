@@ -5,7 +5,17 @@
     "categoria": "Telemetria Agrícola",
     "data": "2026-06-09",
     "tempoLeitura": "8 min",
-    "imagem": "imagens/telemetria.jpg",
+    "imagem": "imagens/telemetria.png",
     "url": "telemetria-agricola-potencial-nao-utilizado.html"
+  },
+
+  {
+    "titulo": "NDVI na Soja: Como Utilizar Índices de Vegetação para Delimitação de Zonas de Manejo",
+    "descricao": "Entenda como o NDVI pode auxiliar na identificação da variabilidade espacial e na definição de zonas de manejo mais eficientes.",
+    "categoria": "Agricultura de Precisão",
+    "data": "2026-06-10",
+    "tempoLeitura": "10 min",
+    "imagem": "imagens/ndvi-soja.png",
+    "url": "ndvi-na-soja-zonas-de-manejo.html"
   }
 ]
