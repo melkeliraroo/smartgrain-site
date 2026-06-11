@@ -17,5 +17,15 @@
     "tempoLeitura": "10 min",
     "imagem": "imagens/ndvi-soja.png",
     "url": "ndvi-na-soja-zonas-de-manejo.html"
-  }
+  },
+  
+  {
+    "titulo": "Geoprocessamento Agrícola:Como delimitar talhões com precisão usando SIG",
+    "descricao": "Metodologia completa para delimitar talhões com SIG, QGIS e GPS para produtores de Juína e norte do Mato Grosso — com ferramentas gratuitas.",
+    "categoria": "Geoprocessamento Agrícola",
+    "data": "2026-06-10",
+    "tempoLeitura": "10 min",
+    "imagem": "imagens/geoprocessamento.png",
+    "url": "geoprocessamento-agricola-delimitar-talhoes-sig.html"
+ }
 ]
