@@ -3,33 +3,9 @@ async function carregarArtigos() {
     const resposta = await fetch('artigos.json');
     const artigos = await resposta.json();
 
-    const popularContainer = document.getElementById('popularPosts');
-
-if (popularContainer) {
-
-    popularContainer.innerHTML = '';
-
-    artigos.slice(0, 5).forEach(artigo => {
-
-        const item = document.createElement('div');
-
-        item.className = 'popular-post';
-
-        item.innerHTML = `
-            <a href="${artigo.url}" style="text-decoration:none;color:inherit;">
-                <strong>${artigo.titulo}</strong>
-            </a>
-        `;
-
-        popularContainer.appendChild(item);
-
-    });
-
-}
-
     const container = document.getElementById('articlesGrid');
 
-    artigos.reverse().forEach(artigo => {
+    artigos.slice().reverse().forEach(artigo => {
 
         const card = document.createElement('article');
 
@@ -64,6 +40,30 @@ if (popularContainer) {
         container.appendChild(card);
 
     });
+
+    const popularContainer = document.getElementById('popularPosts');
+
+    if (popularContainer) {
+
+        popularContainer.innerHTML = '';
+
+        artigos.slice().reverse().slice(0,5).forEach(artigo => {
+
+            const item = document.createElement('div');
+
+            item.className = 'popular-post';
+
+            item.innerHTML = `
+                <a href="${artigo.url}">
+                    ${artigo.titulo}
+                </a>
+            `;
+
+            popularContainer.appendChild(item);
+
+        });
+
+    }
 
 }
 
