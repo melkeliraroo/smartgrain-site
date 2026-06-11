@@ -3,7 +3,7 @@
     "titulo": "Telemetria Agrícola: O Potencial Não Utilizado dos Dados Operacionais",
     "descricao": "Descubra como transformar dados operacionais em decisões estratégicas para aumentar a eficiência das máquinas agrícolas.",
     "categoria": "Telemetria Agrícola",
-    "data": "2026-06-09",
+    "data": "2026-06-07",
     "tempoLeitura": "8 min",
     "imagem": "imagens/telemetria.png",
     "url": "telemetria-agricola-potencial-nao-utilizado.html"
@@ -13,8 +13,8 @@
     "titulo": "NDVI na Soja: Como Utilizar Índices de Vegetação para Delimitação de Zonas de Manejo",
     "descricao": "Entenda como o NDVI pode auxiliar na identificação da variabilidade espacial e na definição de zonas de manejo mais eficientes.",
     "categoria": "Agricultura de Precisão",
-    "data": "2026-06-10",
-    "tempoLeitura": "10 min",
+    "data": "2026-06-09",
+    "tempoLeitura": "12 min",
     "imagem": "imagens/ndvi-soja.png",
     "url": "ndvi-na-soja-zonas-de-manejo.html"
   },
@@ -23,8 +23,8 @@
     "titulo": "Geoprocessamento Agrícola:Como delimitar talhões com precisão usando SIG",
     "descricao": "Metodologia completa para delimitar talhões com SIG, QGIS e GPS para produtores de Juína e norte do Mato Grosso — com ferramentas gratuitas.",
     "categoria": "Geoprocessamento Agrícola",
-    "data": "2026-06-10",
-    "tempoLeitura": "10 min",
+    "data": "2026-05-02",
+    "tempoLeitura": "9 min",
     "imagem": "imagens/geoprocessamento.png",
     "url": "geoprocessamento-agricola-delimitar-talhaes-sig.html"
  }
