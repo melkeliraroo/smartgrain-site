@@ -3,6 +3,30 @@ async function carregarArtigos() {
     const resposta = await fetch('artigos.json');
     const artigos = await resposta.json();
 
+    const popularContainer = document.getElementById('popularPosts');
+
+if (popularContainer) {
+
+    popularContainer.innerHTML = '';
+
+    artigos.slice(0, 5).forEach(artigo => {
+
+        const item = document.createElement('div');
+
+        item.className = 'popular-post';
+
+        item.innerHTML = `
+            <a href="${artigo.url}" style="text-decoration:none;color:inherit;">
+                <strong>${artigo.titulo}</strong>
+            </a>
+        `;
+
+        popularContainer.appendChild(item);
+
+    });
+
+}
+
     const container = document.getElementById('articlesGrid');
 
     artigos.reverse().forEach(artigo => {

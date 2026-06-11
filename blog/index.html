@@ -116,6 +116,33 @@
     /* SIDEBAR */
     .sidebar{display:flex;flex-direction:column;gap:2rem;position:sticky;top:130px}
     .sidebar-card{background:var(--branco);border-radius:16px;padding:1.6rem;border:1px solid rgba(26,58,42,.08)}
+    .sidebar-card{
+    background:var(--branco);
+    border-radius:16px;
+    padding:1.6rem;
+    border:1px solid rgba(26,58,42,.08)
+}
+
+.popular-post{
+    padding:0.75rem 0;
+    border-bottom:1px solid rgba(26,58,42,.08);
+}
+
+.popular-post:last-child{
+    border-bottom:none;
+}
+
+.popular-post a{
+    color:var(--te);
+    font-size:.9rem;
+    line-height:1.4;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.popular-post a:hover{
+    color:var(--ouro);
+}
     .sidebar-title{font-family:"Fraunces",serif;font-weight:700;font-size:1rem;color:var(--te);margin-bottom:1rem;padding-bottom:.7rem;border-bottom:2px solid var(--dou)}
     .newsletter-card{background:var(--vd);border-radius:16px;padding:1.6rem}
     .newsletter-card .sidebar-title{color:#fff}
