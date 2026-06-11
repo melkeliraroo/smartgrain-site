@@ -5,7 +5,13 @@ async function carregarArtigos() {
 
     const container = document.getElementById('articlesGrid');
 
-    artigos.slice().reverse().forEach(artigo => {
+    function renderizarArtigos(listaArtigos) {
+
+    const container = document.getElementById('articlesGrid');
+
+    container.innerHTML = '';
+
+    listaArtigos.slice().reverse().forEach(artigo => {
 
         const card = document.createElement('article');
 
@@ -16,9 +22,7 @@ async function carregarArtigos() {
 
             <div class="blog-content">
 
-                <span class="categoria">
-                    ${artigo.categoria}
-                </span>
+                <span class="categoria">${artigo.categoria}</span>
 
                 <h2>${artigo.titulo}</h2>
 
@@ -40,6 +44,38 @@ async function carregarArtigos() {
         container.appendChild(card);
 
     });
+
+}
+renderizarArtigos(artigos);
+const filtros = document.querySelectorAll('.cat-btn');
+
+filtros.forEach(botao => {
+
+    botao.addEventListener('click', () => {
+
+        filtros.forEach(b => b.classList.remove('active'));
+
+        botao.classList.add('active');
+
+        const categoria = botao.dataset.category;
+
+        if (categoria === 'Todos') {
+
+            renderizarArtigos(artigos);
+
+        } else {
+
+            const filtrados = artigos.filter(
+                artigo => artigo.categoria === categoria
+            );
+
+            renderizarArtigos(filtrados);
+
+        }
+
+    });
+
+});
 
     const popularContainer = document.getElementById('popularPosts');
 

@@ -2,7 +2,7 @@
   {
     "titulo": "Telemetria Agrícola: O Potencial Não Utilizado dos Dados Operacionais",
     "descricao": "Descubra como transformar dados operacionais em decisões estratégicas para aumentar a eficiência das máquinas agrícolas.",
-    "categoria": "Telemetria Agrícola",
+    "categoria": "Telemetria",
     "data": "2026-06-07",
     "tempoLeitura": "8 min",
     "imagem": "imagens/telemetria.png",
@@ -22,7 +22,7 @@
   {
     "titulo": "Geoprocessamento Agrícola:Como delimitar talhões com precisão usando SIG",
     "descricao": "Metodologia completa para delimitar talhões com SIG, QGIS e GPS para produtores de Juína e norte do Mato Grosso — com ferramentas gratuitas.",
-    "categoria": "Geoprocessamento Agrícola",
+    "categoria": "Geoprocessamento",
     "data": "2026-05-02",
     "tempoLeitura": "9 min",
     "imagem": "imagens/geoprocessamento.png",
