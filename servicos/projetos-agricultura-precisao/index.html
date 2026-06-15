@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Serviços — SmartGrain Consultoria Agrícola</title>
+  <meta name="description" content="Conheça a metodologia de Engenharia Agrícola aplicada pela SmartGrain para transformar dados agrícolas em projetos executáveis de Agricultura de Precisão."/>
+  <meta name="keywords" content="agricultura de precisão, geoprocessamento, zonas de manejo, NDVI, telemetria, SmartGrain, consultoria agrícola"/>
+  <meta name="author" content="SmartGrain Consultoria Agrícola"/>
+  <meta property="og:title" content="Como desenvolvemos um projeto de Agricultura de Precisão">
+  <meta property="og:description" content="Da caracterização da propriedade à implantação em campo — conheça a metodologia de Engenharia Agrícola que transforma dados agrícolas em projetos executáveis e economicamente viáveis.">
+  <meta property="og:image" content="https://smartgrain.com.br/blog/imagens/agricultura de precisao.png">
+  <meta property="og:url" content="https://smartgrain.com.br/servicos/projetos-agricultura-precisao/index.html">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Como desenvolvemos um projeto de Agricultura de Precisão">
+  <meta name="twitter:description" content="Da caracterização da propriedade à implantação em campo — conheça a metodologia de Engenharia Agrícola que transforma dados agrícolas em projetos executáveis e economicamente viáveis.">
+  <meta name="twitter:image" content="https://smartgrain.com.br/blog/imagens/agricultura de precisao.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --vd:#1a3a2a;--vm:#2d5a3d;--vc:#3d7a50;
+      --dou:#c8960c;--doul:#e8b422;--dous:#f5d87a;
+      --creme:#faf7f0;--branco:#fff;--te:#111a14;--tm:#3a4a3e;
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:"DM Sans",sans-serif;background:var(--creme);color:var(--te);overflow-x:hidden}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:72px;background:rgba(26,58,42,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(200,150,12,.2);transition:box-shadow .3s}
+    nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,.3)}
+    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .nav-logo-text{font-family:"Fraunces",serif;font-weight:700;font-size:1.2rem;color:#fff;letter-spacing:-.02em}
+    .nav-logo-text span{color:var(--doul)}
+    .nav-logo-img{width:40px;height:40px;object-fit:contain;}
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
+    .nav-links a:hover{color:var(--doul)}
+    .nav-links a.active{color:var(--doul)}
+    .nav-cta{background:var(--dou);color:var(--vd)!important;font-weight:600!important;padding:.45rem 1.2rem;border-radius:6px;transition:background .2s,transform .2s!important}
+    .nav-cta:hover{background:var(--doul)!important;transform:translateY(-1px)}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+    .hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px}
+
+    /* HERO */
+    .page-hero{min-height:480px;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:linear-gradient(rgba(26,58,42,0.75),rgba(26,58,42,0.85)),url('../../blog/imagens/agricultura de precisao.png');background-size:cover;background-position:center;background-repeat:no-repeat;}
+    .art-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;}
+    .page-hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.35}
+    .page-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,25,16,.98) 0%,rgba(10,25,16,.7) 50%,rgba(10,25,16,.25) 100%)}
+    .page-hero-content{position:relative;z-index:2;max-width:1100px;margin:0 auto;padding:120px 5% 4rem;width:100%}
+    .breadcrumb{display:flex;align-items:center;gap:.5rem;margin-bottom:1.5rem;font-size:.82rem;color:rgba(255,255,255,.45);flex-wrap:wrap}
+    .breadcrumb a{color:rgba(255,255,255,.45);text-decoration:none;transition:color .2s}
+    .breadcrumb a:hover{color:var(--doul)}
+    .breadcrumb span{color:var(--doul)}
+    .page-cat-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(200,150,12,.18);border:1px solid rgba(200,150,12,.4);color:var(--dous);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.35rem .9rem;border-radius:50px;margin-bottom:1.2rem}
+    .page-hero-title{font-family:"Fraunces",serif;font-weight:900;font-size:clamp(2rem,4.5vw,3.6rem);line-height:1.08;letter-spacing:-.03em;color:#fff;margin-bottom:1.4rem;max-width:820px}
+    .page-hero-title em{font-style:italic;color:var(--doul)}
+    .page-hero-sub{font-size:1.1rem;color:rgba(255,255,255,.68);line-height:1.75;max-width:680px;font-weight:300}
+
+    /* PROGRESS */
+    .reading-progress{position:fixed;top:72px;left:0;right:0;height:3px;background:rgba(255,255,255,.1);z-index:199}
+    .reading-progress-bar{height:100%;width:0%;background:linear-gradient(to right,var(--dou),var(--doul));transition:width .1s linear}
+
+    /* INTRO STRIP */
+    .intro-strip{background:var(--branco);border-bottom:1px solid rgba(26,58,42,.08)}
+    .intro-strip-inner{max-width:1100px;margin:0 auto;padding:3rem 5%;display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem}
+    .intro-item{display:flex;flex-direction:column;align-items:flex-start;gap:.5rem}
+    .intro-icon{font-size:1.8rem}
+    .intro-label{font-family:"Fraunces",serif;font-weight:700;font-size:1rem;color:var(--te)}
+    .intro-desc{font-size:.88rem;color:var(--tm);line-height:1.6}
+
+    /* SECTION */
+    .section{max-width:1100px;margin:0 auto;padding:5rem 5%}
+    .section-label{font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--dou);margin-bottom:.8rem}
+    .section-title{font-family:"Fraunces",serif;font-weight:900;font-size:clamp(1.8rem,3.5vw,2.8rem);line-height:1.15;letter-spacing:-.02em;color:var(--te);margin-bottom:1.4rem}
+    .section-title em{font-style:italic;color:var(--vm)}
+    .section-lead{font-size:1.05rem;color:var(--tm);line-height:1.85;max-width:720px;margin-bottom:3rem}
+
+    /* ETAPAS */
+    .etapas{display:flex;flex-direction:column;gap:0}
+    .etapa{display:grid;grid-template-columns:80px 1fr;gap:0 2.5rem;position:relative}
+    .etapa::before{content:'';position:absolute;left:39px;top:80px;bottom:-20px;width:2px;background:rgba(200,150,12,.2)}
+    .etapa:last-child::before{display:none}
+    .etapa-num-wrap{display:flex;flex-direction:column;align-items:center;padding-top:4px}
+    .etapa-num{width:54px;height:54px;border-radius:50%;background:var(--vd);border:2px solid rgba(200,150,12,.4);display:flex;align-items:center;justify-content:center;font-family:"Fraunces",serif;font-weight:900;font-size:1.1rem;color:var(--doul);flex-shrink:0;position:relative;z-index:1}
+    .etapa-body{padding:0 0 4rem}
+    .etapa-tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--doul);background:rgba(200,150,12,.12);padding:.25rem .7rem;border-radius:20px;margin-bottom:.8rem}
+    .etapa-title{font-family:"Fraunces",serif;font-weight:800;font-size:1.4rem;color:var(--te);margin-bottom:.8rem;letter-spacing:-.01em}
+    .etapa-text{font-size:1rem;color:var(--tm);line-height:1.8;margin-bottom:1.2rem}
+    .etapa-checks{display:flex;flex-direction:column;gap:.45rem;margin:.8rem 0 1.2rem}
+    .etapa-check{display:flex;align-items:flex-start;gap:.7rem;font-size:.92rem;color:var(--tm);line-height:1.5}
+    .etapa-check::before{content:"✔";color:var(--dou);font-weight:700;flex-shrink:0;margin-top:.05rem}
+    .etapa-list{display:grid;grid-template-columns:1fr 1fr;gap:.35rem .8rem;margin:.8rem 0 1.2rem}
+    .etapa-list li{font-size:.9rem;color:var(--tm);line-height:1.5;list-style:none;padding-left:1rem;position:relative}
+    .etapa-list li::before{content:"·";position:absolute;left:0;color:var(--dou);font-weight:700;font-size:1.2rem;line-height:1.1}
+    .etapa-note{background:rgba(200,150,12,.06);border-left:3px solid var(--dou);border-radius:0 8px 8px 0;padding:.9rem 1.2rem;font-size:.9rem;color:var(--tm);line-height:1.65;margin-top:.8rem;font-style:italic}
+
+    /* TECNOLOGIAS */
+    .tech-section{background:var(--vd);padding:5rem 5%}
+    .tech-inner{max-width:1100px;margin:0 auto}
+    .tech-section .section-label{color:var(--dous)}
+    .tech-section .section-title{color:#fff}
+    .tech-section .section-title em{color:var(--doul)}
+    .tech-section .section-lead{color:rgba(255,255,255,.65)}
+    .tech-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.2rem;margin-top:2.5rem}
+    .tech-card{background:rgba(255,255,255,.05);border:1px solid rgba(200,150,12,.15);border-radius:14px;padding:1.6rem 1.4rem}
+    .tech-card-icon{font-size:1.6rem;margin-bottom:.8rem}
+    .tech-card-title{font-family:"Fraunces",serif;font-weight:700;font-size:.95rem;color:#fff;margin-bottom:.9rem}
+    .tech-card ul{list-style:none;display:flex;flex-direction:column;gap:.4rem}
+    .tech-card ul li{font-size:.82rem;color:rgba(255,255,255,.58);line-height:1.5;padding-left:.9rem;position:relative}
+    .tech-card ul li::before{content:"›";position:absolute;left:0;color:var(--doul);font-weight:700}
+
+    /* DIFERENCIAL */
+    .diferencial-section{background:var(--creme);padding:5rem 5%}
+    .diferencial-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+    .diferencial-text .section-label{margin-bottom:.8rem}
+    .diferencial-text .section-title{margin-bottom:1.4rem}
+    .diferencial-text blockquote{font-family:"Fraunces",serif;font-style:italic;font-size:1.15rem;line-height:1.7;color:var(--te);border-left:4px solid var(--dou);padding:1.2rem 1.6rem;background:rgba(200,150,12,.06);border-radius:0 12px 12px 0;margin:1.6rem 0}
+    .diferencial-text p{font-size:1rem;color:var(--tm);line-height:1.85;margin-bottom:1.2rem}
+    .diferencial-visual{display:flex;flex-direction:column;gap:1rem}
+    .dif-item{background:var(--branco);border-radius:12px;padding:1.4rem;border:1px solid rgba(26,58,42,.08);display:flex;align-items:flex-start;gap:1rem;transition:box-shadow .2s}
+    .dif-item:hover{box-shadow:0 4px 20px rgba(26,58,42,.1)}
+    .dif-icon{width:40px;height:40px;border-radius:8px;background:rgba(200,150,12,.12);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+    .dif-info strong{display:block;font-size:.95rem;color:var(--te);font-weight:700;margin-bottom:.25rem}
+    .dif-info span{font-size:.83rem;color:var(--tm);line-height:1.5}
+
+    /* CTA FINAL */
+    .cta-section{background:linear-gradient(135deg,var(--vd) 0%,#0d2218 100%);padding:5rem 5%;text-align:center;position:relative;overflow:hidden;border-top:1px solid rgba(200,150,12,.15)}
+    .cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 70% 50%,rgba(200,150,12,.08) 0%,transparent 70%);pointer-events:none}
+    .cta-inner{max-width:700px;margin:0 auto;position:relative;z-index:1}
+    .cta-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(200,150,12,.15);border:1px solid rgba(200,150,12,.35);color:var(--dous);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.35rem .9rem;border-radius:50px;margin-bottom:1.4rem}
+    .cta-title{font-family:"Fraunces",serif;font-weight:900;font-size:clamp(1.8rem,3vw,2.6rem);color:#fff;line-height:1.2;margin-bottom:1rem;letter-spacing:-.02em}
+    .cta-title em{font-style:italic;color:var(--doul)}
+    .cta-sub{font-size:1rem;color:rgba(255,255,255,.65);line-height:1.75;margin-bottom:2.2rem}
+    .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+    .btn-primary{background:var(--dou);color:var(--vd);font-weight:700;font-size:1rem;padding:1rem 2.2rem;border-radius:10px;text-decoration:none;transition:background .2s,transform .2s}
+    .btn-primary:hover{background:var(--doul);transform:translateY(-2px)}
+    .btn-secondary{background:rgba(255,255,255,.08);color:#fff;font-weight:600;font-size:.95rem;padding:1rem 2rem;border-radius:10px;text-decoration:none;border:1px solid rgba(255,255,255,.2);transition:background .2s}
+    .btn-secondary:hover{background:rgba(255,255,255,.15)}
+
+    /* WHATSAPP */
+    .wa-btn{position:fixed;bottom:28px;right:28px;z-index:999;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;font-family:"DM Sans",sans-serif;font-size:.92rem;font-weight:600;padding:.75rem 1.2rem .75rem .85rem;border-radius:50px;text-decoration:none;box-shadow:0 6px 24px rgba(37,211,102,.45);transition:transform .25s,box-shadow .25s,max-width .3s,padding .3s;overflow:hidden;max-width:56px}
+    .wa-btn:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(37,211,102,.55);max-width:260px;padding:.75rem 1.4rem .75rem .85rem}
+    .wa-icon{flex-shrink:0;width:32px;height:32px}
+    .wa-text{white-space:nowrap;opacity:0;transition:opacity .2s ease .1s}
+    .wa-btn:hover .wa-text{opacity:1}
+    .wa-ring{position:fixed;bottom:28px;right:28px;z-index:998;width:56px;height:56px;border-radius:50%;border:3px solid rgba(37,211,102,.5);animation:waPulse 2.5s ease-out infinite;pointer-events:none}
+    @keyframes waPulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(2.2);opacity:0}}
+
+    /* FOOTER */
+    footer{background:#0a1a10;padding:3rem 5%;border-top:1px solid rgba(200,150,12,.12)}
+    .foot-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
+    .foot-copy{font-size:.85rem;color:rgba(255,255,255,.35)}
+    .foot-links{display:flex;gap:2rem;list-style:none}
+    .foot-links a{color:rgba(255,255,255,.35);text-decoration:none;font-size:.85rem;transition:color .2s}
+    .foot-links a:hover{color:var(--doul)}
+
+    /* RESPONSIVE */
+    @media(max-width:1000px){
+      .tech-grid{grid-template-columns:repeat(3,1fr)}
+      .diferencial-inner{grid-template-columns:1fr;gap:3rem}
+    }
+    @media(max-width:700px){
+      .intro-strip-inner{grid-template-columns:1fr}
+      .tech-grid{grid-template-columns:1fr 1fr}
+      .etapa{grid-template-columns:56px 1fr;gap:0 1.5rem}
+      .etapa::before{left:27px}
+      .etapa-num{width:42px;height:42px;font-size:.95rem}
+      .etapa-list{grid-template-columns:1fr}
+      .nav-links{display:none}
+      .hamburger{display:flex}
+    }
+    @media(max-width:480px){
+      .tech-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+<div class="reading-progress"><div class="reading-progress-bar" id="progressBar"></div></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="/favicon.png" alt="SmartGrain" class="nav-logo-img">
+    <span class="nav-logo-text">Smart<span>Grain</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#sobre">Sobre</a></li>
+    <li><a href="index.html#servicos" class="active">Serviços</a></li>
+    <li><a href="index.html#agrocheck">AgroCheck 360</a></li>
+    <li><a href="blog/index.html">Blog</a></li>
+    <li><a href="index.html#contato" class="nav-cta">Fale Conosco</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero">
+  <!-- padrão geométrico sutil -->
+  <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.06" preserveAspectRatio="xMidYMid slice" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+    <defs><pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0L0 0 0 60" fill="none" stroke="#e8b422" stroke-width="1"/></pattern></defs>
+    <rect width="800" height="500" fill="url(#grid)"/>
+  </svg>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Início</a><span>›</span>
+      <span>Serviços</span>
+    </div>
+    <div class="page-cat-badge">🛠 Metodologia Técnica</div>
+    <h1 class="page-hero-title">Como desenvolvemos um projeto de<br/><em>Agricultura de Precisão</em></h1>
+    <p class="page-hero-sub">Da caracterização da propriedade à implantação em campo — conheça a metodologia de Engenharia Agrícola que transforma dados agrícolas em projetos executáveis e economicamente viáveis.</p>
+  </div>
+</div>
+
+<!-- INTRO STRIP -->
+<div class="intro-strip">
+  <div class="intro-strip-inner">
+    <div class="intro-item">
+      <div class="intro-icon">🎯</div>
+      <div class="intro-label">Abordagem multidisciplinar</div>
+      <div class="intro-desc">Engenharia Agrícola, Geoprocessamento, Mecanização e Agricultura Digital integrados em um único projeto.</div>
+    </div>
+    <div class="intro-item">
+      <div class="intro-icon">📐</div>
+      <div class="intro-label">Metodologia estruturada</div>
+      <div class="intro-desc">7 etapas técnicas com critérios definidos — do diagnóstico à validação em campo.</div>
+    </div>
+    <div class="intro-item">
+      <div class="intro-icon">⚙️</div>
+      <div class="intro-label">Foco na execução</div>
+      <div class="intro-desc">O objetivo não é apenas entregar mapas, mas garantir que a tecnologia seja efetivamente aplicada na operação.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ETAPAS -->
+<div class="section">
+  <div class="section-label">Processo de trabalho</div>
+  <h2 class="section-title">As 7 etapas do projeto</h2>
+  <p class="section-lead">Cada projeto SmartGrain segue um fluxo técnico rigoroso. Essa estrutura garante que as recomendações sejam fundamentadas em dados confiáveis e aplicáveis à realidade da propriedade.</p>
+
+  <div class="etapas">
+
+    <!-- ETAPA 1 -->
+    <div class="etapa">
+      <div class="etapa-num-wrap"><div class="etapa-num">01</div></div>
+      <div class="etapa-body">
+        <span class="etapa-tag">Diagnóstico</span>
+        <div class="etapa-title">Diagnóstico Técnico da Propriedade</div>
+        <p class="etapa-text">Todo projeto inicia com uma caracterização detalhada do sistema produtivo. São levantadas informações sobre área cultivada, histórico produtivo, culturas exploradas, sistemas de plantio, infraestrutura, máquinas agrícolas disponíveis, tecnologias embarcadas e objetivos estratégicos do produtor.</p>
+        <p class="etapa-text">Também são avaliados:</p>
+        <div class="etapa-checks">
+          <div class="etapa-check">Histórico de produtividade dos talhões</div>
+          <div class="etapa-check">Mapas existentes e análises de solo</div>
+          <div class="etapa-check">Dados de telemetria e sistemas de piloto automático</div>
+          <div class="etapa-check">Plataformas digitais utilizadas</div>
+        </div>
+        <div class="etapa-note">O objetivo é compreender quais dados já existem e quais informações precisam ser geradas — evitando coletar o que já se tem e retrabalho desnecessário.</div>
+      </div>
+    </div>
+
+    <!-- ETAPA 2 -->
+    <div class="etapa">
+      <div class="etapa-num-wrap"><div class="etapa-num">02</div></div>
+      <div class="etapa-body">
+        <span class="etapa-tag">Geoespacial</span>
+        <div class="etapa-title">Estruturação da Base Geoespacial</div>
+        <p class="etapa-text">Nesta fase é criada a base cartográfica da propriedade. São organizados e georreferenciados todos os elementos que compõem a estrutura espacial da fazenda.</p>
+        <ul class="etapa-list">
+          <li>Limites da fazenda</li>
+          <li>Talhões</li>
+          <li>Estradas internas</li>
+          <li>Curvas de nível</li>
+          <li>Áreas de preservação</li>
+          <li>Infraestrutura operacional</li>
+        </ul>
+        <p class="etapa-text">Dependendo do projeto, também são incorporadas imagens de satélite, modelos digitais de elevação e levantamentos GNSS de alta precisão.</p>
+        <div class="etapa-note">O resultado é uma base geoespacial confiável que servirá de suporte para todas as análises posteriores. Sem essa base, as análises espaciais perdem consistência e reprodutibilidade.</div>
+      </div>
+    </div>
+
+    <!-- ETAPA 3 -->
+    <div class="etapa">
+      <div class="etapa-num-wrap"><div class="etapa-num">03</div></div>
+      <div class="etapa-body">
+        <span class="etapa-tag">Dados</span>
+        <div class="etapa-title">Coleta e Processamento dos Dados Agrícolas</div>
+        <p class="etapa-text">Os dados operacionais são organizados e tratados para eliminar inconsistências. Entre os dados normalmente processados estão:</p>
+        <ul class="etapa-list">
+          <li>Mapas de produtividade</li>
+          <li>Dados de colhedoras</li>
+          <li>Mapas de aplicação</li>
+          <li>Análises químicas de solo</li>
+          <li>Dados meteorológicos</li>
+          <li>Imagens NDVI</li>
+          <li>Dados de telemetria</li>
+        </ul>
+        <p class="etapa-text">Nesta etapa são realizadas correções de posicionamento, filtragem de valores anômalos e padronização das bases de dados.</p>
+        <div class="etapa-note">Decisões erradas normalmente começam com dados de baixa qualidade. O tratamento rigoroso nesta etapa é o que garante a confiabilidade de tudo que vem depois.</div>
+      </div>
+    </div>
+
+    <!-- ETAPA 4 -->
+    <div class="etapa">
+      <div class="etapa-num-wrap"><div class="etapa-num">04</div></div>
+      <div class="etapa-body">
+        <span class="etapa-tag">Análise Espacial</span>
+        <div class="etapa-title">Análise Espacial e Identificação da Variabilidade</div>
+        <p class="etapa-text">Após o tratamento dos dados, são realizadas análises espaciais para compreender a variabilidade existente na área. São avaliados fatores como:</p>
+        <ul class="etapa-list">
+          <li>Produtividade histórica</li>
+          <li>Fertilidade do solo</li>
+          <li>Topografia</li>
+          <li>Compactação</li>
+          <li>Disponibilidade hídrica</li>
+          <li>Vigor vegetativo</li>
+        </ul>
+        <div class="etapa-note">É nesta etapa que a agricultura de precisão deixa de ser apenas coleta de dados e passa a gerar conhecimento para tomada de decisão. A variabilidade espacial identificada aqui fundamenta toda a estratégia de manejo.</div>
+      </div>
+    </div>
+
+    <!-- ETAPA 5 -->
+    <div class="etapa">
+      <div class="etapa-num-wrap"><div class="etapa-num">05</div></div>
+      <div class="etapa-body">
+        <span class="etapa-tag">Zoneamento</span>
+        <div class="etapa-title">Delimitação de Zonas de Manejo</div>
+        <p class="etapa-text">Com base nos resultados obtidos, são definidas as zonas de manejo — áreas relativamente homogêneas que podem receber recomendações específicas. A definição considera:</p>
+        <div class="etapa-checks">
+          <div class="etapa-check">Produtividade histórica dos talhões</div>
+          <div class="etapa-check">Características químicas e físicas do solo</div>
+          <div class="etapa-check">Relevo e topografia</div>
+          <div class="etapa-check">Índices vegetativos (NDVI e derivados)</div>
+          <div class="etapa-check">Aspectos operacionais e logísticos</div>
+        </div>
+        <div class="etapa-note">Essa segmentação permite abandonar o manejo uniforme e direcionar investimentos para os locais onde eles geram maior retorno. É a base técnica da agricultura de precisão aplicada.</div>
+      </div>
+    </div>
+
+    <!-- ETAPA 6 -->
+    <div class="etapa">
+      <div class="etapa-num-wrap"><div class="etapa-num">06</div></div>
+      <div class="etapa-body">
+        <span class="etapa-tag">Prescrições</span>
+        <div class="etapa-title">Desenvolvimento das Recomendações Técnicas</div>
+        <p class="etapa-text">Após a definição das zonas de manejo, são elaboradas as recomendações agronômicas e operacionais. Dependendo dos objetivos do projeto, podem ser desenvolvidos:</p>
+        <ul class="etapa-list">
+          <li>Mapas de calagem em taxa variável</li>
+          <li>Mapas de gessagem</li>
+          <li>Prescrições de fertilizantes</li>
+          <li>Estratégias de amostragem de solo</li>
+          <li>Planos de monitoramento</li>
+          <li>Recomendações de mecanização</li>
+          <li>Indicadores operacionais (KPIs)</li>
+        </ul>
+        <div class="etapa-note">Todas as recomendações são fundamentadas em critérios técnicos e econômicos — equilibrando o potencial produtivo da área com a viabilidade financeira do produtor.</div>
+      </div>
+    </div>
+
+    <!-- ETAPA 7 -->
+    <div class="etapa">
+      <div class="etapa-num-wrap"><div class="etapa-num">07</div></div>
+      <div class="etapa-body">
+        <span class="etapa-tag">Implantação</span>
+        <div class="etapa-title">Implantação e Validação em Campo</div>
+        <p class="etapa-text">A etapa final consiste na implantação prática do projeto. A SmartGrain oferece suporte completo para garantir que as prescrições saiam do mapa e cheguem efetivamente ao campo.</p>
+        <div class="etapa-checks">
+          <div class="etapa-check">Configuração dos equipamentos e controladores</div>
+          <div class="etapa-check">Importação dos mapas de prescrição</div>
+          <div class="etapa-check">Integração com sistemas embarcados</div>
+          <div class="etapa-check">Treinamento operacional das equipes</div>
+          <div class="etapa-check">Validação e monitoramento dos resultados</div>
+        </div>
+        <div class="etapa-note">O foco não é apenas entregar mapas ou relatórios. É garantir que a tecnologia seja efetivamente aplicada na operação agrícola — com resultado mensurável.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- TECNOLOGIAS -->
+<div class="tech-section">
+  <div class="tech-inner">
+    <div class="section-label">Ferramentas e plataformas</div>
+    <h2 class="section-title">Tecnologias <em>utilizadas</em></h2>
+    <p class="section-lead">Os projetos SmartGrain integram um conjunto de tecnologias especializadas em geoprocessamento, sensoriamento remoto, posicionamento e análise de dados.</p>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <div class="tech-card-icon">🗺</div>
+        <div class="tech-card-title">Geoprocessamento</div>
+        <ul>
+          <li>QGIS</li>
+          <li>Google Earth Pro</li>
+          <li>Sistemas GIS</li>
+          <li>Cartografia digital</li>
+        </ul>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-icon">🛰</div>
+        <div class="tech-card-title">Sensoriamento Remoto</div>
+        <ul>
+          <li>Sentinel-2</li>
+          <li>Landsat</li>
+          <li>NDVI e índices vegetativos</li>
+          <li>Imagens de alta resolução</li>
+        </ul>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-icon">📡</div>
+        <div class="tech-card-title">Posicionamento</div>
+        <ul>
+          <li>GNSS</li>
+          <li>RTK</li>
+          <li>Georreferenciamento</li>
+          <li>Piloto automático</li>
+        </ul>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-icon">🌐</div>
+        <div class="tech-card-title">Agricultura Digital</div>
+        <ul>
+          <li>Telemetria embarcada</li>
+          <li>IoT agrícola</li>
+          <li>Integração de plataformas</li>
+          <li>Taxa variável (VRA)</li>
+        </ul>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-icon">📊</div>
+        <div class="tech-card-title">Análise de Dados</div>
+        <ul>
+          <li>Power BI</li>
+          <li>Dashboards gerenciais</li>
+          <li>Indicadores operacionais</li>
+          <li>KPIs produtivos</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DIFERENCIAL -->
+<div class="diferencial-section">
+  <div class="diferencial-inner">
+    <div class="diferencial-text">
+      <div class="section-label">O diferencial SmartGrain</div>
+      <h2 class="section-title">Mais do que mapas.<br/><em>Projetos executáveis.</em></h2>
+      <blockquote>Os projetos desenvolvidos pela SmartGrain combinam conhecimentos de Engenharia Agrícola, Agricultura de Precisão, Geoprocessamento, Mecanização Agrícola e Agricultura Digital. Essa abordagem multidisciplinar permite transformar dados espaciais e operacionais em recomendações práticas, economicamente viáveis e alinhadas à realidade produtiva das propriedades rurais.</blockquote>
+      <p>Enquanto a maioria dos serviços entrega relatórios técnicos, a SmartGrain acompanha o projeto até a validação em campo — garantindo que a tecnologia realmente funcione na operação, e não apenas no papel.</p>
+      <p>Essa diferença é percebida especialmente por produtores tecnificados, gestores de fazenda, cooperativas e instituições como SENAR e sindicatos rurais que buscam soluções com rigor metodológico e aplicabilidade real.</p>
+    </div>
+    <div class="diferencial-visual">
+      <div class="dif-item">
+        <div class="dif-icon">🎓</div>
+        <div class="dif-info">
+          <strong>Engenharia Agrícola aplicada</strong>
+          <span>Formação técnica sólida traduzida em projetos práticos e economicamente viáveis para o produtor.</span>
+        </div>
+      </div>
+      <div class="dif-item">
+        <div class="dif-icon">🔗</div>
+        <div class="dif-info">
+          <strong>Integração de dados</strong>
+          <span>Combinação de dados operacionais, geoespaciais e agronômicos em uma visão única e coerente da propriedade.</span>
+        </div>
+      </div>
+      <div class="dif-item">
+        <div class="dif-icon">📍</div>
+        <div class="dif-info">
+          <strong>Suporte à implantação</strong>
+          <span>Acompanhamento do projeto até o campo — configuração, treinamento e validação dos resultados.</span>
+        </div>
+      </div>
+      <div class="dif-item">
+        <div class="dif-icon">💡</div>
+        <div class="dif-info">
+          <strong>Baixíssimo investimento inicial</strong>
+          <span>Aproveitamos as tecnologias que já existem na propriedade antes de recomendar qualquer novo equipamento.</span>
+        </div>
+      </div>
+      <div class="dif-item">
+        <div class="dif-icon">📈</div>
+        <div class="dif-info">
+          <strong>Resultado mensurável</strong>
+          <span>Cada projeto é estruturado com KPIs e indicadores para que o produtor consiga medir o retorno da decisão.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA FINAL -->
+<div class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-badge">SmartGrain · Consultoria Agrícola</div>
+    <h2 class="cta-title">Pronto para estruturar um projeto de <em>Agricultura de Precisão</em> na sua propriedade?</h2>
+    <p class="cta-sub">Entre em contato com a SmartGrain e descubra como a nossa metodologia pode transformar os dados da sua fazenda em decisões práticas, com baixo investimento e resultado real.</p>
+    <div class="cta-btns">
+      <a href="index.html#contato" class="btn-primary">Solicitar diagnóstico →</a>
+      <a href="https://wa.me/5566992225475?text=Ol%C3%A1!+Tenho+interesse+nos+servi%C3%A7os+de+Agricultura+de+Precis%C3%A3o+da+SmartGrain." target="_blank" class="btn-secondary">💬 Falar pelo WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-in">
+    <span class="foot-copy">© 2026 SmartGrain Consultoria Agrícola — Brasnorte, Mato Grosso</span>
+    <ul class="foot-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="index.html#contato">Contato</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<div class="wa-ring"></div>
+<a class="wa-btn" href="https://wa.me/5566992225475?text=Ol%C3%A1!+Tenho+interesse+nos+servi%C3%A7os+da+SmartGrain." target="_blank" rel="noopener noreferrer">
+  <svg class="wa-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="24" cy="24" r="24" fill="#25D366"/>
+    <path d="M34.6 13.4A14.9 14.9 0 0 0 24 9C16.3 9 10 15.3 10 23c0 2.5.7 4.9 1.9 7L10 39l9.3-2.4c2 1.1 4.3 1.7 6.7 1.7 7.7 0 14-6.3 14-14 0-3.7-1.5-7.3-4.1-10.1 0 0-.1-.1-.3-.2zM24 36.7c-2.1 0-4.2-.6-6-1.6l-.4-.2-4.4 1.1 1.2-4.2-.3-.4C13 29.6 12.3 26.3 12.3 23c0-6.5 5.3-11.7 11.7-11.7 3.1 0 6 1.2 8.2 3.4a11.6 11.6 0 0 1 3.4 8.3c0 6.5-5.3 11.7-11.6 11.7zm6.4-8.8c-.3-.2-2-.9-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4 0-.1-.2-.2-.5-.4z" fill="white"/>
+  </svg>
+  <span class="wa-text">Fale pelo WhatsApp</span>
+</a>
+
+<script>
+  window.addEventListener('scroll',()=>{
+    document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>60);
+    const d=document.documentElement;
+    document.getElementById('progressBar').style.width=(window.scrollY/(d.scrollHeight-d.clientHeight)*100)+'%';
+  },{passive:true});
+  document.getElementById('hamburger').addEventListener('click',()=>{
+    const nl=document.querySelector('.nav-links');
+    const open=nl.style.display==='flex';
+    Object.assign(nl.style,{display:open?'none':'flex',position:'fixed',top:'72px',left:'0',right:'0',flexDirection:'column',background:'rgba(10,26,16,.98)',padding:'2rem 5%',gap:'1.5rem',borderBottom:'1px solid rgba(200,150,12,.2)'});
+  });
+</script>
+</body>
+</html>
