@@ -57,5 +57,15 @@
     "tempoLeitura": "8 min",
     "imagem": "imagens/KPIs-gestao-agricola.png",
     "url": "kpis-agricola.html"
+ },
+
+  {
+    "titulo": "Quanto custa uma máquina parada durante a safra?",
+    "descricao": "A indisponibilidade pesa no resultado da fazenda e por que manutenção preventiva e preditiva fazem diferença.",
+    "categoria": "Mecanização",
+    "data": "2026-06-15",
+    "tempoLeitura": "8 min",
+    "imagem": "imagens/maquina-parada2.png",
+    "url": "custo-maquina-parada.html"
  }
 ]
