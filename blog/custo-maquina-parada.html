@@ -33,6 +33,17 @@
     "inLanguage": "pt-BR"
   }
   </script>
+  <script>
+window.onload = () => {
+  const largura = document.documentElement.clientWidth;
+
+  document.querySelectorAll('*').forEach(el => {
+    if (el.getBoundingClientRect().width > largura) {
+      console.log('Overflow:', el);
+    }
+  });
+};
+</script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link rel="icon" type="image/png" href="/favicon.png">
@@ -203,6 +214,7 @@
   .autor-foto {width: 180px;}
   .autor-info p {text-align: left;}
 }
+ * {outline: 1px solid red;}
   </style>
 </head>
 <body>
