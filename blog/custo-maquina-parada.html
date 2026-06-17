@@ -33,23 +33,13 @@
     "inLanguage": "pt-BR"
   }
   </script>
-  <script>
-window.onload = () => {
-  const largura = document.documentElement.clientWidth;
 
-  document.querySelectorAll('*').forEach(el => {
-    if (el.getBoundingClientRect().width > largura) {
-      console.log('Overflow:', el);
-    }
-  });
-};
-</script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link rel="icon" type="image/png" href="/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    *,*::before img, table, pre, iframe {max-width: 100%;}table {width: 100%;table-layout: fixed;}*::after{box-sizing:border-box;margin:0;padding:0}
     :root{--vd:#1a3a2a;--vm:#2d5a3d;--vc:#3d7a50;--dou:#c8960c;--doul:#e8b422;--dous:#f5d87a;--creme:#faf7f0;--branco:#fff;--te:#111a14;--tm:#3a4a3e}
     html{scroll-behavior:smooth}
     body{font-family:"DM Sans",sans-serif;background:var(--creme);color:var(--te);overflow-x:hidden}
@@ -92,7 +82,7 @@ window.onload = () => {
     /* SHARE BAR */
     .share-bar{display:flex;align-items:center;gap:.8rem;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.1);flex-wrap:wrap}
     .share-label{font-size:.8rem;color:rgba(255,255,255,.4);font-weight:600;letter-spacing:.05em;text-transform:uppercase}
-    .share-btn{display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;font-weight:600;padding:.4rem .9rem;border-radius:6px;text-decoration:none;transition:background .2s;cursor:pointer;border:none;font-family:"DM Sans",sans-serif}
+    .share-btn{white-space: nowrap;flex-shrink: 0;display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;font-weight:600;padding:.4rem .9rem;border-radius:6px;text-decoration:none;transition:background .2s;cursor:pointer;border:none;font-family:"DM Sans",sans-serif}
     .share-li{background:rgba(10,102,194,.25);border:1px solid rgba(10,102,194,.4);color:#6eb3f7}
     .share-li:hover{background:rgba(10,102,194,.4)}
     .share-wa{background:rgba(37,211,102,.15);border:1px solid rgba(37,211,102,.3);color:#25D366}
@@ -102,6 +92,7 @@ window.onload = () => {
     /* LAYOUT */
     .art-layout{max-width:1100px;margin:0 auto;padding:4rem 5% 6rem;display:grid;grid-template-columns:1fr 300px;gap:5rem;align-items:start}
     /* ARTICLE BODY */
+    .art-body {min-width: 0;overflow-wrap: break-word;word-break: break-word;}
     .art-body h2{font-family:"Fraunces",serif;font-weight:800;font-size:1.6rem;line-height:1.25;letter-spacing:-.02em;color:var(--te);margin:2.8rem 0 1rem}
     .art-body h3{font-family:"Fraunces",serif;font-weight:700;font-size:1.22rem;line-height:1.3;color:var(--vd);margin:2rem 0 .8rem}
     .art-body p{font-size:1.05rem;line-height:1.87;color:var(--tm);margin-bottom:1.4rem;text-align:justify}
@@ -117,7 +108,7 @@ window.onload = () => {
     .svg-block{margin:2.5rem 0;border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(26,58,42,.12)}
     .svg-caption{font-size:.82rem;color:var(--tm);text-align:center;padding:.75rem 1rem;background:var(--branco);border:1px solid rgba(26,58,42,.08);border-top:none;border-radius:0 0 16px 16px;font-style:italic}
     /* STAT CARDS */
-    .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2.5rem 0}
+    .stat-grid {display: grid;grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));gap: 1rem;margin: 2.5rem 0;}
     .stat-card{background:var(--branco);border-radius:12px;padding:1.4rem;border:1px solid rgba(26,58,42,.08);text-align:center;border-top:3px solid var(--dou)}
     .stat-num{font-family:"Fraunces",serif;font-weight:900;font-size:2rem;color:var(--dou);letter-spacing:-.04em;line-height:1;margin-bottom:.4rem}
     .stat-label{font-size:.82rem;color:var(--tm);line-height:1.4}
@@ -185,7 +176,7 @@ window.onload = () => {
     .wa-ring{position:fixed;bottom:28px;right:28px;z-index:998;width:56px;height:56px;border-radius:50%;border:3px solid rgba(37,211,102,.5);animation:waPulse 2.5s ease-out infinite;pointer-events:none}
     @keyframes waPulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(2.2);opacity:0}}
     /* FOOTER */
-    footer{background:#0a1a10;padding:3rem 5%;border-top:1px solid rgba(200,150,12,.12)}
+    .footer{background:#0a1a10;padding:3rem 5%;border-top:1px solid rgba(200,150,12,.12)}
     .foot-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
     .foot-logo{display:flex;align-items:center;gap:8px}
     .foot-logo img{width:30px;height:30px;object-fit:contain;border-radius:6px;opacity:.75}
@@ -194,8 +185,26 @@ window.onload = () => {
     .foot-links a{color:rgba(255,255,255,.35);text-decoration:none;font-size:.85rem;transition:color .2s}
     .foot-links a:hover{color:var(--doul)}
     /* RESPONSIVE */
-    @media(max-width:900px){.art-layout{grid-template-columns:1fr;gap:3rem}.sidebar{position:static}.stat-grid{grid-template-columns:1fr 1fr}.art-cta{flex-direction:column}.nav-links{display:none}.hamburger{display:flex}}
-    @media(max-width:600px){.stat-grid{grid-template-columns:1fr}.art-hero-title{font-size:1.7rem}}
+    @media(max-width:900px){
+    .art-layout{grid-template-columns:1fr;gap:3rem}
+    .sidebar{position:static}
+    .stat-grid{grid-template-columns:1fr 1fr}
+    .art-cta{flex-direction:column}
+    .nav-links{display:none}
+    .hamburger{display:flex}}
+    @media (max-width: 600px) {
+    .stat-grid {grid-template-columns: 1fr;}
+    .art-hero-title {font-size: 1.7rem;}
+    .art-cta {flex-direction: column;align-items: stretch;}
+    .btn-cta {text-align: center;white-space: normal;}
+    .share-bar {gap: .5rem;}
+    .share-btn {font-size: .75rem;padding: .35rem .7rem;}
+   .art-meta-bar {gap: .75rem;}
+   .meta-dot {display: none;}
+   .sobre-autor .autor-container {flex-direction: column;align-items: center;text-align: center;}
+   .autor-foto {width: 160px;}
+   .art-layout {padding: 2rem 4% 4rem;}
+}
 
     /*    SOBRE O AUTOR */
 
@@ -214,7 +223,7 @@ window.onload = () => {
   .autor-foto {width: 180px;}
   .autor-info p {text-align: left;}
 }
- * {outline: 1px solid red;}
+
   </style>
 </head>
 <body>
@@ -370,18 +379,18 @@ window.onload = () => {
   A SmartGrain auxilia produtores rurais a <strong style="color:var(--doul);">identificar gargalos operacionais, reduzir tempos de parada e aumentar a disponibilidade mecânica da frota</strong>. Utilizamos indicadores de desempenho, análise operacional e diagnóstico técnico para transformar dados em decisões que geram resultado no campo.
 </p>
 
+
 <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-top:1.8rem;">
   
-  <a href="../index.html#contato" style="background:var(--dou);color:var(--vd);font-weight:700;font-size:1rem;padding:1rem 2.2rem;border-radius:10px;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;">
+  <a href="../index.html#contato" style="background:var(--dou);color:var(--vd);font-weight:700;font-size:1rem;padding:1rem 2.2rem;border-radius:10px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;flex:1 1 auto;text-align:center;">
     Solicitar diagnóstico operacional →
   </a>
 
-  <a href="https://wa.me/5566992225475?text=Olá!%20Li%20o%20artigo%20sobre%20o%20custo%20de%20máquinas%20paradas%20e%20gostaria%20de%20conhecer%20os%20serviços%20de%20diagnóstico%20operacional%20da%20SmartGrain." target="_blank" style="background:rgba(37,211,102,.15);color:#25D366;font-weight:600;font-size:.95rem;padding:1rem 1.8rem;border-radius:10px;text-decoration:none;border:1px solid rgba(37,211,102,.3);display:inline-flex;align-items:center;gap:.5rem;">
+  <a href="https://wa.me/..." target="_blank" style="background:rgba(37,211,102,.15);color:#25D366;font-weight:600;font-size:.95rem;padding:1rem 1.8rem;border-radius:10px;text-decoration:none;border:1px solid rgba(37,211,102,.3);display:inline-flex;align-items:center;justify-content:center;gap:.5rem;flex:1 1 auto;text-align:center;">
     💬 WhatsApp
   </a>
 
 </div>
-
   </div>
 </div>
 
@@ -482,7 +491,7 @@ window.onload = () => {
   </div>
 </div>
 
-<!-- SOBRE O AUTOR 
+<!-- SOBRE O AUTOR -->
 <div class="sobre-autor">
   <div class="autor-container">
 
@@ -510,7 +519,7 @@ window.onload = () => {
     </div>
 
   </div>
-</div>-->
+</div>
 
   </article>
 
