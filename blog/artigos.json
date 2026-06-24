@@ -8,7 +8,15 @@
     "imagem": "imagens/telemetria.png",
     "url": "telemetria-agricola-potencial-nao-utilizado.html"
   },
-
+  {
+    "titulo": "Telemetria não é rastreamento: o erro que faz muitos produtores perderem dinheiro",
+    "descricao": "Entenda por que usar telemetria apenas para localização é um erro e como a telemetria completa reduz custos, melhora eficiência e evita perdas na lavoura.",
+    "categoria": "Telemetria",
+    "data": "2026-06-23",
+    "tempoLeitura": "9 min",
+    "imagem": "imagens/telemetria2.png",
+    "url": "telemetria-nao-e-rastreamento.html"
+  },
   {
     "titulo": "NDVI na Soja: Como Utilizar Índices de Vegetação para Delimitação de Zonas de Manejo",
     "descricao": "Entenda como o NDVI pode auxiliar na identificação da variabilidade espacial e na definição de zonas de manejo mais eficientes.",
@@ -18,7 +26,6 @@
     "imagem": "imagens/ndvi-soja.png",
     "url": "ndvi-na-soja-zonas-de-manejo.html"
   },
-  
   {
     "titulo": "Geoprocessamento Agrícola:Como delimitar talhões com precisão usando SIG",
     "descricao": "Metodologia completa para delimitar talhões com SIG, QGIS e GPS para produtores de Juína e norte do Mato Grosso — com ferramentas gratuitas.",
@@ -27,8 +34,7 @@
     "tempoLeitura": "9 min",
     "imagem": "imagens/geoprocessamento.png",
     "url": "geoprocessamento-agricola-delimitar-talhaes-sig.html"
- },
-
+  },
   {
     "titulo": "IoT no agro: Conectando sensores, máquinas e dados em uma única plataforma.",
     "descricao": "Tratores, pulverizadores, colheitadeiras, sensores de solo, drones e estações meteorológicas comunicando-se entre si e enviando dados para um centro de controle unificado.",
@@ -37,9 +43,8 @@
     "tempoLeitura": "6 min",
     "imagem": "imagens/IoT.png",
     "url": "IoT-agricola-conectando-sensores-maquinas-dados.html"
- },
-
- {
+  },
+  {
     "titulo": "Piloto automático RTK vs. GNSS: Quando vale o investimento",
     "descricao": "Tratores, pulverizadores, colheitadeiras, sensores de solo, drones e estações meteorológicas comunicando-se entre si e enviando dados para um centro de controle unificado.",
     "categoria": "Agricultura de Precisão",
@@ -47,8 +52,7 @@
     "tempoLeitura": "6 min",
     "imagem": "imagens/RTK-vs-GNSS.png",
     "url": "RTK-vs-GNSS-quando-vale-investimento.html"
- },
-
+  },
   {
     "titulo": "KPIs essesnciais para a gestão agrícola: quais indicadores toda fazenda deveria monitorar",
     "descricao": "A gestão agrícola moderna depende menos de percepção e mais de indicadores. Quando a fazenda acompanha os KPIs certos, fica muito mais fácil identificar desperdícios, avaliar máquinas e tomar decisões com base em dados.",
@@ -57,8 +61,7 @@
     "tempoLeitura": "8 min",
     "imagem": "imagens/KPIs-gestao-agricola.png",
     "url": "kpis-agricola.html"
- },
-
+  },
   {
     "titulo": "Quanto custa uma máquina parada durante a safra?",
     "descricao": "A indisponibilidade pesa no resultado da fazenda e por que manutenção preventiva e preditiva fazem diferença.",
@@ -67,5 +70,5 @@
     "tempoLeitura": "8 min",
     "imagem": "imagens/maquina-parada2.png",
     "url": "custo-maquina-parada.html"
- }
+  }
 ]
