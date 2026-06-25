@@ -70,5 +70,15 @@
     "tempoLeitura": "8 min",
     "imagem": "imagens/maquina-parada2.png",
     "url": "custo-maquina-parada.html"
+  },
+
+    {
+    "titulo": "A Agricultura de Precisão Morreu? Por Que o Futuro Está na Agricultura de Decisão",
+    "descricao": "Com a evolução dos sistemas embarcados e da telemetria, a manutenção agrícola está migrando do modelo corretivo para abordagens preditivas. O artigo mostrará como dados operacionais podem antecipar falhas e reduzir significativamente o tempo de indisponibilidade das máquinas.",
+    "categoria": "Agricultura de Precisão",
+    "data": "2026-06-24",
+    "tempoLeitura": "12 min",
+    "imagem": "imagens/agricultura-de-decisao.png",
+    "url": "agricultura-de-precisao-morreu.html"
   }
 ]
