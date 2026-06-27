@@ -5,7 +5,7 @@
     <link>https://smartgrain.com.br/blog/</link>
     <description>Artigos e insights sobre agricultura digital, telemetria e agricultura de precisão.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 24 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>Telemetria Agrícola: O Potencial Não Utilizado dos Dados Operacionais</title>
       <link>https://smartgrain.com.br/blog/telemetria-agricola-potencial-nao-utilizado.html</link>
@@ -86,6 +86,15 @@
       <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
       <category>Agricultura de Precisão</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/agricultura-de-decisao.png" type="image/png"/>
+    </item>
+    <item>
+      <title>O Data Lake da Fazenda:? Como Unificar Informações de Máquinas, Clima e Produção</title>
+      <link>https://smartgrain.com.br/blog/data-lake.html</link>
+      <guid isPermaLink="true">https://smartgrain.com.br/blog/data-lake.html</guid>
+      <description>O conceito de Data Lake vem ganhando espaço em grandes operações agrícolas. O artigo explica como estruturar um ambiente centralizado para armazenamento e análise de dados provenientes de diferentes fontes, permitindo análises mais completas e estratégicas.</description>
+      <pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate>
+      <category>Gestão de Dados</category>
+      <enclosure url="https://smartgrain.com.br/blog/imagens/data-lake.png" type="image/png"/>
     </item>
   </channel>
 </rss>
