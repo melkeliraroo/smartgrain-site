@@ -80,5 +80,15 @@
     "tempoLeitura": "12 min",
     "imagem": "imagens/agricultura-de-decisao.png",
     "url": "agricultura-de-precisao-morreu.html"
+  },
+
+   {
+    "titulo": "O Data Lake da Fazenda:? Como Unificar Informações de Máquinas, Clima e Produção",
+    "descricao": "O conceito de Data Lake vem ganhando espaço em grandes operações agrícolas. O artigo explica como estruturar um ambiente centralizado para armazenamento e análise de dados provenientes de diferentes fontes, permitindo análises mais completas e estratégicas.",
+    "categoria": "Gestão de Dados",
+    "data": "2026-06-27",
+    "tempoLeitura": "12 min",
+    "imagem": "imagens/data-lake.png",
+    "url": "data-lake.html"
   }
 ]
