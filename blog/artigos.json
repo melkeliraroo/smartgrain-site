@@ -90,5 +90,14 @@
     "tempoLeitura": "12 min",
     "imagem": "imagens/data-lake.png",
     "url": "data-lake.html"
+  },
+    {
+    "titulo": "Da Estação Meteorológica ao Sensor de Implemento: Como Construir um Ecossistema IoT Escalável",
+    "descricao": "Muitas propriedades iniciam projetos de IoT de forma fragmentada. O artigo mostra uma arquitetura escalável para integração de sensores, gateways, plataformas de análise e sistemas de gestão agrícola, reduzindo retrabalho e aumentando o aproveitamento dos dados coletados.",
+    "categoria": "IoT Agrícola",
+    "data": "2026-06-28",
+    "tempoLeitura": "12 min",
+    "imagem": "imagens/ecossistema-iot.png",
+    "url": "ecossistema-iot.html"
   }
 ]
