@@ -5,7 +5,7 @@
     <link>https://smartgrain.com.br/blog/</link>
     <description>Artigos e insights sobre agricultura digital, telemetria e agricultura de precisão.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Sat, 27 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>Telemetria Agrícola: O Potencial Não Utilizado dos Dados Operacionais</title>
       <link>https://smartgrain.com.br/blog/telemetria-agricola-potencial-nao-utilizado.html</link>
@@ -95,6 +95,15 @@
       <pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate>
       <category>Gestão de Dados</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/data-lake.png" type="image/png"/>
+    </item>
+    <item>
+      <title>Da Estação Meteorológica ao Sensor de Implemento: Como Construir um Ecossistema IoT Escalável</title>
+      <link>https://smartgrain.com.br/blog/ecossistema-iot.html</link>
+      <guid isPermaLink="true">https://smartgrain.com.br/blog/ecossistema-iot.html</guid>
+      <description>Muitas propriedades iniciam projetos de IoT de forma fragmentada. O artigo mostra uma arquitetura escalável para integração de sensores, gateways, plataformas de análise e sistemas de gestão agrícola, reduzindo retrabalho e aumentando o aproveitamento dos dados coletados.</description>
+      <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
+      <category>IoT Agrícola</category>
+      <enclosure url="https://smartgrain.com.br/blog/imagens/ecossistema-iot.png" type="image/png"/>
     </item>
   </channel>
 </rss>
