@@ -162,7 +162,7 @@
     .step-c p{font-size:.9rem;color:var(--tm);line-height:1.6}
     .entrega{background:var(--vd);border-radius:20px;overflow:hidden}
     .entrega-head{height:200px;position:relative;overflow:hidden}
-    .entrega-head svg{width:100%;height:100%;display:block}
+    .entrega-head img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
     .entrega-head-txt{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:1.8rem;background:linear-gradient(to top,rgba(10,28,16,.9) 0%,transparent 60%)}
     .entrega-head-txt h3{font-family:"Fraunces",serif;font-weight:700;color:#fff;font-size:1.5rem}
     .entrega-head-txt p{color:var(--dous);font-size:.82rem;margin-top:.3rem}
@@ -180,8 +180,8 @@
     .show-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:260px 260px;gap:1rem}
     .show-item{border-radius:16px;overflow:hidden;position:relative;cursor:pointer}
     .show-item:nth-child(1){grid-row:1/3}
-    .show-item svg{width:100%;height:100%;display:block;transition:transform .6s}
-    .show-item:hover svg{transform:scale(1.05)}
+    .show-item img{width:100%;height:100%;display:block;object-fit:cover;object-position:center;transition:transform .6s}
+    .show-item:hover img{transform:scale(1.05)}
     .show-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,28,16,.85) 0%,transparent 55%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.5rem;transition:background .3s}
     .show-item:hover .show-overlay{background:linear-gradient(to top,rgba(10,28,16,.92) 0%,rgba(26,58,42,.1) 100%)}
     .show-cat{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--doul);margin-bottom:.4rem}
@@ -617,70 +617,8 @@
         </div>
       </div>
       <div class="entrega reveal d2">
-        <div class="entrega-head"><svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="s5bg" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#0d2218"/><stop offset="100%" stop-color="#162e20"/>
-      </linearGradient>
-    </defs>
-    <rect width="420" height="320" fill="url(#s5bg)"/>
-    <!-- Dashboard cards -->
-    <!-- Card 1: Health Score gauge -->
-    <rect x="16" y="16" width="120" height="100" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.5"/>
-    <text x="28" y="34" fill="rgba(255,255,255,0.6)" font-size="8" font-family="sans-serif">HEALTH SCORE</text>
-    <!-- Gauge arc -->
-    <circle cx="76" cy="75" r="32" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8"/>
-    <path d="M76 43 A32 32 0 1 1 44 75" fill="none" stroke="#e8b422" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
-    <text x="67" y="80" fill="#e8b422" font-size="16" font-family="sans-serif" font-weight="bold">85</text>
-    <text x="63" y="92" fill="rgba(255,255,255,0.5)" font-size="8" font-family="sans-serif">/100</text>
-    <!-- Card 2: Fleet utilization bar chart -->
-    <rect x="148" y="16" width="126" height="100" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.5"/>
-    <text x="160" y="34" fill="rgba(255,255,255,0.6)" font-size="8" font-family="sans-serif">UTILIZAÇÃO FROTA</text>
-    <g fill="#e8b422" opacity="0.85">
-      <rect x="163" y="78" width="14" height="28" rx="2"/>
-      <rect x="183" y="58" width="14" height="48" rx="2"/>
-      <rect x="203" y="68" width="14" height="38" rx="2"/>
-      <rect x="223" y="50" width="14" height="56" rx="2"/>
-      <rect x="243" y="62" width="14" height="44" rx="2"/>
-    </g>
-    <line x1="158" y1="108" x2="262" y2="108" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-    <!-- Card 3: Fuel efficiency line chart -->
-    <rect x="286" y="16" width="120" height="100" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.5"/>
-    <text x="298" y="34" fill="rgba(255,255,255,0.6)" font-size="8" font-family="sans-serif">EF. COMBUSTÍVEL</text>
-    <polyline points="296,95 316,80 336,85 356,65 376,72 396,55" fill="none" stroke="#32CD32" stroke-width="2.5" stroke-linejoin="round"/>
-    <circle cx="396" cy="55" r="4" fill="#32CD32"/>
-    <text x="355" y="50" fill="#32CD32" font-size="10" font-family="sans-serif" font-weight="bold">▲4.2%</text>
-    <!-- Card 4: Machine idle time -->
-    <rect x="16" y="128" width="120" height="90" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.5"/>
-    <text x="28" y="146" fill="rgba(255,255,255,0.6)" font-size="8" font-family="sans-serif">TEMPO OCIOSO</text>
-    <!-- Horizontal bar -->
-    <rect x="28" y="158" width="96" height="10" rx="5" fill="rgba(255,255,255,0.1)"/>
-    <rect x="28" y="158" width="34" height="10" rx="5" fill="#e8b422"/>
-    <text x="28" y="182" fill="rgba(255,255,255,0.85)" font-size="14" font-family="sans-serif" font-weight="bold">35%</text>
-    <text x="28" y="196" fill="rgba(200,150,12,0.7)" font-size="8" font-family="sans-serif">↓8% vs mês ant.</text>
-    <!-- Card 5: Notifications -->
-    <rect x="148" y="128" width="126" height="90" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.5"/>
-    <text x="160" y="146" fill="rgba(255,255,255,0.6)" font-size="8" font-family="sans-serif">ALERTAS ATIVOS</text>
-    <rect x="160" y="152" width="106" height="18" rx="4" fill="rgba(200,150,12,0.15)" stroke="rgba(200,150,12,0.3)" stroke-width="1"/>
-    <text x="168" y="164" fill="rgba(255,255,255,0.8)" font-size="8" font-family="sans-serif">⚡ Manutenção T-03</text>
-    <rect x="160" y="176" width="106" height="18" rx="4" fill="rgba(45,90,45,0.2)" stroke="rgba(50,200,50,0.2)" stroke-width="1"/>
-    <text x="168" y="188" fill="rgba(255,255,255,0.8)" font-size="8" font-family="sans-serif">✓ Plantio T-01 ok</text>
-    <rect x="160" y="200" width="106" height="14" rx="4" fill="rgba(45,90,45,0.2)" stroke="rgba(50,200,50,0.2)" stroke-width="1"/>
-    <text x="168" y="210" fill="rgba(255,255,255,0.8)" font-size="8" font-family="sans-serif">✓ NDVI atualizado</text>
-    <!-- Card 6: Input efficiency map mini -->
-    <rect x="286" y="128" width="120" height="90" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.5"/>
-    <text x="298" y="146" fill="rgba(255,255,255,0.6)" font-size="8" font-family="sans-serif">MAPA INSUMOS</text>
-    <rect x="296" y="152" width="30" height="22" rx="2" fill="#8B0000" opacity="0.7"/>
-    <rect x="330" y="152" width="30" height="22" rx="2" fill="#32CD32" opacity="0.8"/>
-    <rect x="364" y="152" width="34" height="22" rx="2" fill="#006400" opacity="0.85"/>
-    <rect x="296" y="178" width="45" height="22" rx="2" fill="#3CB371" opacity="0.75"/>
-    <rect x="345" y="178" width="53" height="22" rx="2" fill="#ADFF2F" opacity="0.65"/>
-    <!-- Bottom section -->
-    <rect x="16" y="228" width="390" height="78" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.5"/>
-    <text x="28" y="246" fill="rgba(255,255,255,0.6)" font-size="8" font-family="sans-serif">EFICIÊNCIA OPERACIONAL — ÚLTIMO MÊS</text>
-    <polyline points="28,290 68,278 108,282 148,262 188,270 228,250 268,256 308,242 348,248 388,235" fill="none" stroke="#e8b422" stroke-width="2" stroke-linejoin="round"/>
-    <circle cx="388" cy="235" r="4" fill="#e8b422"/>
-  </svg>
+        <div class="entrega-head">
+          <img src="imagens/home/agrocheck-dashboard.webp" alt="Equipe agrícola analisando indicadores operacionais em uma fazenda" loading="lazy" decoding="async">
           <div class="entrega-head-txt">
             <h3>O que você recebe</h3>
             <p>Cinco entregáveis de alto valor para sua operação</p>
@@ -705,294 +643,36 @@
     <h2 class="stit" style="color:#fff">Do campo ao <em style="color:var(--doul)">satélite</em></h2>
   </div>
   <div class="show-grid reveal">
-    <div class="show-item">
-      <svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="s1sky" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#0d2618"/><stop offset="100%" stop-color="#2a5a30"/>
-      </linearGradient>
-      <radialGradient id="s1sun" cx="80%" cy="35%" r="40%">
-        <stop offset="0%" stop-color="rgba(232,180,34,0.4)"/><stop offset="100%" stop-color="transparent"/>
-      </radialGradient>
-    </defs>
-    <rect width="420" height="320" fill="url(#s1sky)"/>
-    <rect width="420" height="320" fill="url(#s1sun)"/>
-    <!-- Field rows -->
-    <path d="M0 200 Q210 185 420 195 L420 320 L0 320Z" fill="#1e4228"/>
-    <g stroke="#2d6035" stroke-width="3">
-      <line x1="0" y1="220" x2="420" y2="210"/>
-      <line x1="0" y1="240" x2="420" y2="228"/>
-      <line x1="0" y1="260" x2="420" y2="246"/>
-      <line x1="0" y1="280" x2="420" y2="264"/>
-      <line x1="0" y1="300" x2="420" y2="282"/>
-    </g>
-    <!-- Combine -->
-    <g transform="translate(80 155)">
-      <rect x="0" y="20" width="200" height="80" rx="10" fill="#2a5c1e"/>
-      <rect x="10" y="8" width="120" height="58" rx="8" fill="#336624"/>
-      <rect x="18" y="14" width="48" height="32" rx="4" fill="#90cce0" opacity="0.85"/>
-      <rect x="70" y="14" width="32" height="32" rx="4" fill="#90cce0" opacity="0.65"/>
-      <rect x="-100" y="60" width="105" height="22" rx="5" fill="#1e4a14"/>
-      <rect x="-105" y="64" width="12" height="14" rx="2" fill="#c8960c"/>
-      <rect x="-88" y="64" width="12" height="14" rx="2" fill="#c8960c"/>
-      <rect x="-71" y="64" width="12" height="14" rx="2" fill="#c8960c"/>
-      <rect x="-54" y="64" width="12" height="14" rx="2" fill="#c8960c"/>
-      <rect x="-37" y="64" width="12" height="14" rx="2" fill="#c8960c"/>
-      <circle cx="35" cy="106" r="24" fill="#1a3010" stroke="#2d5020" stroke-width="3"/>
-      <circle cx="35" cy="106" r="9" fill="#2a4a1a"/>
-      <circle cx="165" cy="106" r="17" fill="#1a3010" stroke="#2d5020" stroke-width="3"/>
-      <rect x="130" y="18" width="55" height="44" rx="5" fill="#2a5218"/>
-      <line x1="175" y1="8" x2="175" y2="-15" stroke="#e8b422" stroke-width="2.5"/>
-      <circle cx="175" cy="-18" r="4" fill="#e8b422"/>
-    </g>
-    <!-- Dust cloud -->
-    <ellipse cx="70" cy="215" rx="40" ry="12" fill="rgba(180,150,80,0.3)"/>
-    <ellipse cx="50" cy="208" rx="25" ry="8" fill="rgba(180,150,80,0.2)"/>
-  </svg>
+      <div class="show-item">
+        <img src="imagens/home/mecanizacao-colheita.webp" alt="Colheitadeira operando em lavoura de soja no Mato Grosso" loading="lazy" decoding="async">
       <div class="show-overlay">
         <div class="show-cat">Mecanização & Eficiência</div>
         <div class="show-title">Máquinas com máxima eficiência operacional e mínimo desperdício de combustível</div>
       </div>
     </div>
-    <div class="show-item">
-      <svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="s2sky" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#0a1e28"/><stop offset="100%" stop-color="#1a3a4a"/>
-      </linearGradient>
-    </defs>
-    <rect width="420" height="320" fill="url(#s2sky)"/>
-    <!-- NDVI field map from above -->
-    <rect x="0" y="120" width="420" height="200" fill="#1a3a20"/>
-    <!-- NDVI colored zones -->
-    <rect x="20" y="130" width="80" height="60" rx="4" fill="#8B0000" opacity="0.8"/>
-    <rect x="110" y="125" width="90" height="70" rx="4" fill="#228B22" opacity="0.9"/>
-    <rect x="210" y="130" width="70" height="65" rx="4" fill="#32CD32" opacity="0.85"/>
-    <rect x="290" y="128" width="110" height="70" rx="4" fill="#006400" opacity="0.9"/>
-    <rect x="30" y="200" width="100" height="55" rx="4" fill="#3CB371" opacity="0.85"/>
-    <rect x="140" y="198" width="80" height="58" rx="4" fill="#ADFF2F" opacity="0.75"/>
-    <rect x="230" y="200" width="90" height="55" rx="4" fill="#228B22" opacity="0.9"/>
-    <rect x="330" y="202" width="75" height="52" rx="4" fill="#8B0000" opacity="0.7"/>
-    <rect x="20" y="263" width="120" height="45" rx="4" fill="#006400" opacity="0.9"/>
-    <rect x="150" y="260" width="90" height="48" rx="4" fill="#32CD32" opacity="0.8"/>
-    <rect x="250" y="262" width="80" height="46" rx="4" fill="#ADFF2F" opacity="0.7"/>
-    <rect x="340" y="264" width="65" height="44" rx="4" fill="#3CB371" opacity="0.85"/>
-    <!-- Grid overlay -->
-    <g stroke="rgba(255,255,255,0.15)" stroke-width="0.8">
-      <line x1="0" y1="190" x2="420" y2="190"/>
-      <line x1="0" y1="258" x2="420" y2="258"/>
-      <line x1="105" y1="120" x2="105" y2="320"/>
-      <line x1="210" y1="120" x2="210" y2="320"/>
-      <line x1="315" y1="120" x2="315" y2="320"/>
-    </g>
-    <!-- NDVI legend -->
-    <rect x="18" y="122" width="8" height="6" rx="1" fill="#8B0000"/>
-    <text x="30" y="129" fill="rgba(255,255,255,0.7)" font-size="7" font-family="sans-serif">Baixo</text>
-    <rect x="70" y="122" width="8" height="6" rx="1" fill="#32CD32"/>
-    <text x="82" y="129" fill="rgba(255,255,255,0.7)" font-size="7" font-family="sans-serif">Médio</text>
-    <rect x="122" y="122" width="8" height="6" rx="1" fill="#006400"/>
-    <text x="134" y="129" fill="rgba(255,255,255,0.7)" font-size="7" font-family="sans-serif">Alto</text>
-    <!-- Drone -->
-    <g transform="translate(210 55)">
-      <line x1="-30" y1="0" x2="30" y2="0" stroke="#e8b422" stroke-width="2.5"/>
-      <line x1="0" y1="-30" x2="0" y2="30" stroke="#e8b422" stroke-width="2.5"/>
-      <circle cx="-30" cy="0" r="10" fill="none" stroke="#e8b422" stroke-width="2"/>
-      <circle cx="30" cy="0" r="10" fill="none" stroke="#e8b422" stroke-width="2"/>
-      <circle cx="0" cy="-30" r="10" fill="none" stroke="#e8b422" stroke-width="2"/>
-      <circle cx="0" cy="30" r="10" fill="none" stroke="#e8b422" stroke-width="2"/>
-      <rect x="-9" y="-9" width="18" height="18" rx="4" fill="#1a3a4a" stroke="#e8b422" stroke-width="1.5"/>
-      <circle cx="0" cy="0" r="4" fill="#e8b422"/>
-      <line x1="0" y1="30" x2="0" y2="65" stroke="#e8b422" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.7"/>
-      <ellipse cx="0" cy="70" rx="28" ry="8" fill="rgba(232,180,34,0.2)"/>
-    </g>
-    <!-- Signal lines -->
-    <line x1="210" y1="25" x2="50" y2="0" stroke="#e8b422" stroke-width="1" stroke-dasharray="6,5" opacity="0.4"/>
-    <line x1="210" y1="25" x2="380" y2="10" stroke="#e8b422" stroke-width="1" stroke-dasharray="6,5" opacity="0.4"/>
-    <text x="295" y="80" fill="#e8b422" font-size="11" font-family="sans-serif" font-weight="bold" opacity="0.9">NDVI +0.82</text>
-  </svg>
+      <div class="show-item">
+        <img src="imagens/home/drone-ndvi.webp" alt="Drone monitorando lavoura de soja com acompanhamento técnico" loading="lazy" decoding="async">
       <div class="show-overlay">
         <div class="show-cat">Drone & NDVI</div>
         <div class="show-title">Monitoramento aéreo e análise de variabilidade</div>
       </div>
     </div>
-    <div class="show-item">
-      <svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="s4bg" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#0a1e14"/><stop offset="100%" stop-color="#142a1c"/>
-      </linearGradient>
-    </defs>
-    <rect width="420" height="320" fill="url(#s4bg)"/>
-    <!-- Satellite map talhões (field parcels) -->
-    <polygon points="30,40 160,30 180,120 50,135" fill="#2d6030" stroke="#e8b422" stroke-width="1.5" opacity="0.85"/>
-    <polygon points="170,28 310,22 330,110 185,118" fill="#3a7540" stroke="#e8b422" stroke-width="1.5" opacity="0.8"/>
-    <polygon points="320,20 410,18 410,100 338,108" fill="#245028" stroke="#e8b422" stroke-width="1.5" opacity="0.85"/>
-    <polygon points="40,145 175,132 195,220 55,230" fill="#4a8a48" stroke="#e8b422" stroke-width="1.5" opacity="0.75"/>
-    <polygon points="185,120 320,112 340,200 202,215" fill="#2a5c2a" stroke="#e8b422" stroke-width="1.5" opacity="0.85"/>
-    <polygon points="330,110 410,105 410,195 345,205" fill="#386838" stroke="#e8b422" stroke-width="1.5" opacity="0.8"/>
-    <polygon points="50,240 200,225 215,305 60,315" fill="#3d7840" stroke="#e8b422" stroke-width="1.5" opacity="0.8"/>
-    <polygon points="205,218 340,205 355,300 218,308" fill="#285228" stroke="#e8b422" stroke-width="1.5" opacity="0.85"/>
-    <polygon points="345,208 410,200 410,300 358,305" fill="#4a8a48" stroke="#e8b422" stroke-width="1.5" opacity="0.75"/>
-    <!-- Talhão labels -->
-    <text x="80" y="90" fill="rgba(232,180,34,0.9)" font-size="10" font-family="sans-serif" font-weight="bold">T-01</text>
-    <text x="225" y="75" fill="rgba(232,180,34,0.9)" font-size="10" font-family="sans-serif" font-weight="bold">T-02</text>
-    <text x="355" y="62" fill="rgba(232,180,34,0.9)" font-size="10" font-family="sans-serif" font-weight="bold">T-03</text>
-    <text x="90" y="185" fill="rgba(232,180,34,0.9)" font-size="10" font-family="sans-serif" font-weight="bold">T-04</text>
-    <text x="240" y="165" fill="rgba(232,180,34,0.9)" font-size="10" font-family="sans-serif" font-weight="bold">T-05</text>
-    <text x="355" y="155" fill="rgba(232,180,34,0.9)" font-size="10" font-family="sans-serif" font-weight="bold">T-06</text>
-    <!-- Contour lines -->
-    <g stroke="rgba(255,255,255,0.07)" stroke-width="1" fill="none">
-      <path d="M0 80 Q100 70 200 78 Q300 86 420 75"/>
-      <path d="M0 160 Q100 150 200 158 Q300 166 420 155"/>
-      <path d="M0 240 Q100 228 200 236 Q300 244 420 235"/>
-    </g>
-    <!-- Satellite icon top right -->
-    <g transform="translate(380 25)" opacity="0.9">
-      <rect x="-8" y="-5" width="16" height="10" rx="2" fill="#1a3a50" stroke="#e8b422" stroke-width="1.5"/>
-      <line x1="-18" y1="0" x2="-8" y2="0" stroke="#e8b422" stroke-width="2"/>
-      <line x1="8" y1="0" x2="18" y2="0" stroke="#e8b422" stroke-width="2"/>
-      <rect x="-18" y="-4" width="10" height="8" rx="1" fill="#e8b422" opacity="0.8"/>
-      <rect x="8" y="-4" width="10" height="8" rx="1" fill="#e8b422" opacity="0.8"/>
-    </g>
-    <!-- Area label -->
-    <rect x="8" y="8" width="115" height="24" rx="4" fill="rgba(0,0,0,0.55)" stroke="rgba(200,150,12,0.3)" stroke-width="1"/>
-    <text x="16" y="23" fill="#e8b422" font-size="10" font-family="sans-serif" font-weight="bold">GEOPROCESSAMENTO</text>
-  </svg>
+      <div class="show-item">
+        <img src="imagens/home/geoprocessamento-talhoes.webp" alt="Especialista analisando talhões agrícolas em tablet" loading="lazy" decoding="async">
       <div class="show-overlay">
         <div class="show-cat">Geoprocessamento</div>
         <div class="show-title">Imagens de satélite e delimitação de talhões</div>
       </div>
     </div>
-    <div class="show-item">
-      <svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="s3sky" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#1a2a0a"/><stop offset="70%" stop-color="#2d4a18"/><stop offset="100%" stop-color="#3a6025"/>
-      </linearGradient>
-      <radialGradient id="s3sun" cx="85%" cy="40%" r="25%">
-        <stop offset="0%" stop-color="rgba(255,200,50,0.5)"/><stop offset="100%" stop-color="transparent"/>
-      </radialGradient>
-    </defs>
-    <rect width="420" height="320" fill="url(#s3sky)"/>
-    <rect width="420" height="320" fill="url(#s3sun)"/>
-    <!-- Horizon and field -->
-    <path d="M0 210 Q105 198 210 205 Q315 212 420 200 L420 320 L0 320Z" fill="#1e4228"/>
-    <!-- Soy rows -->
-    <g stroke="#2a5a2e" stroke-width="2.5" opacity="0.8">
-      <line x1="0" y1="230" x2="420" y2="218"/><line x1="0" y1="250" x2="420" y2="236"/>
-      <line x1="0" y1="270" x2="420" y2="254"/><line x1="0" y1="290" x2="420" y2="272"/>
-      <line x1="0" y1="310" x2="420" y2="290"/>
-    </g>
-    <!-- Plants along rows (small bumps) -->
-    <g fill="#3d7a3a" opacity="0.7">
-      <ellipse cx="30" cy="228" rx="8" ry="5"/><ellipse cx="60" cy="226" rx="8" ry="5"/>
-      <ellipse cx="90" cy="227" rx="8" ry="5"/><ellipse cx="120" cy="225" rx="8" ry="5"/>
-      <ellipse cx="150" cy="226" rx="8" ry="5"/><ellipse cx="180" cy="224" rx="8" ry="5"/>
-      <ellipse cx="210" cy="223" rx="8" ry="5"/>
-    </g>
-    <!-- Tractor -->
-    <g transform="translate(220 178)">
-      <!-- Large rear wheel -->
-      <circle cx="20" cy="68" r="34" fill="#1a2a0a" stroke="#2a3c14" stroke-width="4"/>
-      <circle cx="20" cy="68" r="14" fill="#2a3c14"/>
-      <g stroke="#3a5020" stroke-width="2" opacity="0.8">
-        <line x1="20" y1="34" x2="20" y2="102"/><line x1="-14" y1="68" x2="54" y2="68"/>
-        <line x1="-4" y1="44" x2="44" y2="92"/><line x1="44" y1="44" x2="-4" y2="92"/>
-      </g>
-      <!-- Body -->
-      <rect x="20" y="20" width="120" height="62" rx="8" fill="#2e6b1a"/>
-      <!-- Hood -->
-      <rect x="120" y="30" width="55" height="38" rx="6" fill="#245514"/>
-      <!-- Cab -->
-      <rect x="30" y="8" width="75" height="42" rx="6" fill="#336b1e"/>
-      <rect x="36" y="13" width="35" height="25" rx="3" fill="#7ec8d8" opacity="0.85"/>
-      <rect x="74" y="13" width="22" height="25" rx="3" fill="#7ec8d8" opacity="0.65"/>
-      <!-- Small front wheel -->
-      <circle cx="150" cy="78" r="20" fill="#1a2a0a" stroke="#2a3c14" stroke-width="3"/>
-      <circle cx="150" cy="78" r="8" fill="#2a3c14"/>
-      <!-- Exhaust -->
-      <rect x="100" y="0" width="8" height="22" rx="3" fill="#1e3c10"/>
-      <ellipse cx="104" cy="-2" rx="7" ry="5" fill="#333" opacity="0.6"/>
-      <!-- Antenna/GPS -->
-      <line x1="75" y1="8" x2="75" y2="-12" stroke="#e8b422" stroke-width="2"/>
-      <circle cx="75" cy="-15" r="4" fill="#e8b422"/>
-    </g>
-    <!-- Data HUD elements -->
-    <rect x="10" y="20" width="95" height="55" rx="6" fill="rgba(10,30,16,0.75)" stroke="rgba(200,150,12,0.4)" stroke-width="1"/>
-    <text x="20" y="36" fill="#e8b422" font-size="8" font-family="sans-serif" font-weight="bold">TELEMETRIA</text>
-    <text x="20" y="50" fill="rgba(255,255,255,0.8)" font-size="8" font-family="sans-serif">Vel: 8.2 km/h</text>
-    <text x="20" y="63" fill="rgba(255,255,255,0.8)" font-size="8" font-family="sans-serif">Ef: 94%  ⛽ 12L/h</text>
-  </svg>
+      <div class="show-item">
+        <img src="imagens/home/taxa-variavel.webp" alt="Trator realizando aplicação em taxa variável na lavoura" loading="lazy" decoding="async">
       <div class="show-overlay">
         <div class="show-cat">Agricultura de Precisão</div>
         <div class="show-title">Mapas de produtividade e taxa variável</div>
       </div>
     </div>
-    <div class="show-item">
-      <svg viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="s5bg" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#0d2218"/><stop offset="100%" stop-color="#162e20"/>
-      </linearGradient>
-    </defs>
-    <rect width="420" height="320" fill="url(#s5bg)"/>
-    <!-- Dashboard cards -->
-    <!-- Card 1: Health Score gauge -->
-    <rect x="16" y="16" width="120" height="100" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.5"/>
-    <text x="28" y="34" fill="rgba(255,255,255,0.6)" font-size="8" font-family="sans-serif">HEALTH SCORE</text>
-    <!-- Gauge arc -->
-    <circle cx="76" cy="75" r="32" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8"/>
-    <path d="M76 43 A32 32 0 1 1 44 75" fill="none" stroke="#e8b422" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
-    <text x="67" y="80" fill="#e8b422" font-size="16" font-family="sans-serif" font-weight="bold">85</text>
-    <text x="63" y="92" fill="rgba(255,255,255,0.5)" font-size="8" font-family="sans-serif">/100</text>
-    <!-- Card 2: Fleet utilization bar chart -->
-    <rect x="148" y="16" width="126" height="100" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.5"/>
-    <text x="160" y="34" fill="rgba(255,255,255,0.6)" font-size="8" font-family="sans-serif">UTILIZAÇÃO FROTA</text>
-    <g fill="#e8b422" opacity="0.85">
-      <rect x="163" y="78" width="14" height="28" rx="2"/>
-      <rect x="183" y="58" width="14" height="48" rx="2"/>
-      <rect x="203" y="68" width="14" height="38" rx="2"/>
-      <rect x="223" y="50" width="14" height="56" rx="2"/>
-      <rect x="243" y="62" width="14" height="44" rx="2"/>
-    </g>
-    <line x1="158" y1="108" x2="262" y2="108" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-    <!-- Card 3: Fuel efficiency line chart -->
-    <rect x="286" y="16" width="120" height="100" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.5"/>
-    <text x="298" y="34" fill="rgba(255,255,255,0.6)" font-size="8" font-family="sans-serif">EF. COMBUSTÍVEL</text>
-    <polyline points="296,95 316,80 336,85 356,65 376,72 396,55" fill="none" stroke="#32CD32" stroke-width="2.5" stroke-linejoin="round"/>
-    <circle cx="396" cy="55" r="4" fill="#32CD32"/>
-    <text x="355" y="50" fill="#32CD32" font-size="10" font-family="sans-serif" font-weight="bold">▲4.2%</text>
-    <!-- Card 4: Machine idle time -->
-    <rect x="16" y="128" width="120" height="90" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.5"/>
-    <text x="28" y="146" fill="rgba(255,255,255,0.6)" font-size="8" font-family="sans-serif">TEMPO OCIOSO</text>
-    <!-- Horizontal bar -->
-    <rect x="28" y="158" width="96" height="10" rx="5" fill="rgba(255,255,255,0.1)"/>
-    <rect x="28" y="158" width="34" height="10" rx="5" fill="#e8b422"/>
-    <text x="28" y="182" fill="rgba(255,255,255,0.85)" font-size="14" font-family="sans-serif" font-weight="bold">35%</text>
-    <text x="28" y="196" fill="rgba(200,150,12,0.7)" font-size="8" font-family="sans-serif">↓8% vs mês ant.</text>
-    <!-- Card 5: Notifications -->
-    <rect x="148" y="128" width="126" height="90" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.5"/>
-    <text x="160" y="146" fill="rgba(255,255,255,0.6)" font-size="8" font-family="sans-serif">ALERTAS ATIVOS</text>
-    <rect x="160" y="152" width="106" height="18" rx="4" fill="rgba(200,150,12,0.15)" stroke="rgba(200,150,12,0.3)" stroke-width="1"/>
-    <text x="168" y="164" fill="rgba(255,255,255,0.8)" font-size="8" font-family="sans-serif">⚡ Manutenção T-03</text>
-    <rect x="160" y="176" width="106" height="18" rx="4" fill="rgba(45,90,45,0.2)" stroke="rgba(50,200,50,0.2)" stroke-width="1"/>
-    <text x="168" y="188" fill="rgba(255,255,255,0.8)" font-size="8" font-family="sans-serif">✓ Plantio T-01 ok</text>
-    <rect x="160" y="200" width="106" height="14" rx="4" fill="rgba(45,90,45,0.2)" stroke="rgba(50,200,50,0.2)" stroke-width="1"/>
-    <text x="168" y="210" fill="rgba(255,255,255,0.8)" font-size="8" font-family="sans-serif">✓ NDVI atualizado</text>
-    <!-- Card 6: Input efficiency map mini -->
-    <rect x="286" y="128" width="120" height="90" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.5"/>
-    <text x="298" y="146" fill="rgba(255,255,255,0.6)" font-size="8" font-family="sans-serif">MAPA INSUMOS</text>
-    <rect x="296" y="152" width="30" height="22" rx="2" fill="#8B0000" opacity="0.7"/>
-    <rect x="330" y="152" width="30" height="22" rx="2" fill="#32CD32" opacity="0.8"/>
-    <rect x="364" y="152" width="34" height="22" rx="2" fill="#006400" opacity="0.85"/>
-    <rect x="296" y="178" width="45" height="22" rx="2" fill="#3CB371" opacity="0.75"/>
-    <rect x="345" y="178" width="53" height="22" rx="2" fill="#ADFF2F" opacity="0.65"/>
-    <!-- Bottom section -->
-    <rect x="16" y="228" width="390" height="78" rx="8" fill="rgba(26,58,42,0.9)" stroke="rgba(200,150,12,0.35)" stroke-width="1.5"/>
-    <text x="28" y="246" fill="rgba(255,255,255,0.6)" font-size="8" font-family="sans-serif">EFICIÊNCIA OPERACIONAL — ÚLTIMO MÊS</text>
-    <polyline points="28,290 68,278 108,282 148,262 188,270 228,250 268,256 308,242 348,248 388,235" fill="none" stroke="#e8b422" stroke-width="2" stroke-linejoin="round"/>
-    <circle cx="388" cy="235" r="4" fill="#e8b422"/>
-  </svg>
+      <div class="show-item">
+        <img src="imagens/home/agrocheck-dashboard.webp" alt="Equipe revisando dashboards de desempenho agrícola" loading="lazy" decoding="async">
       <div class="show-overlay">
         <div class="show-cat">AgroCheck 360</div>
         <div class="show-title">Dashboards ao vivo e decisões por dados</div>
