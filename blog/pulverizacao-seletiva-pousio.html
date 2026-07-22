@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pulverização seletiva no pousio: quando vale testar antes da safra 2026/27 — SmartGrain</title>
+  <meta name="description" content="Pulverização seletiva por visão computacional pode cortar herbicida e gerar mapas úteis, mas não em qualquer área. Veja quando testar, contratar ou adiar na fazenda."/>
+  <meta name="keywords" content="pulverização seletiva, visão computacional no agro, herbicida em taxa variável, pousio, dessecação, agricultura de precisão, Smart Grain"/>
+  <meta name="author" content="Melkezedeque Alves Lira — SmartGrain Consultoria Agrícola"/>
+  <meta property="og:title" content="Pulverização seletiva no pousio: quando vale testar antes da safra 2026/27"/>
+  <meta property="og:description" content="Um guia prático para decidir se a pulverização seletiva já faz sentido na sua operação, com foco em pousio, dessecação e validação econômica."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:locale" content="pt_BR"/>
+  <meta property="article:published_time" content="2026-07-22"/>
+  <meta property="article:section" content="Agricultura de Precisão"/>
+  <meta property="og:image" content="https://smartgrain.com.br/blog/imagens/pulverizacao-seletiva-pousio.webp"/>
+  <link rel="canonical" href="pulverizacao-seletiva-pousio.html"/>
+  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Pulverização seletiva no pousio: quando vale testar antes da safra 2026/27",
+    "description": "Guia prático para decidir quando testar pulverização seletiva por visão computacional em áreas de pousio, dessecação e pré-plantio.",
+    "author": {
+      "@type": "Person",
+      "name": "Melkezedeque Alves Lira",
+      "jobTitle": "Co-Fundador e Diretor Técnico"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SmartGrain Consultoria Agrícola"
+    },
+    "datePublished": "2026-07-22",
+    "articleSection": "Agricultura de Precisão",
+    "keywords": "pulverização seletiva, visão computacional, herbicida, pousio, dessecação, agricultura de precisão",
+    "inLanguage": "pt-BR"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--vd:#1a3a2a;--vm:#2d5a3d;--vc:#3d7a50;--dou:#c8960c;--doul:#e8b422;--dous:#f5d87a;--creme:#faf7f0;--branco:#fff;--te:#111a14;--tm:#3a4a3e}
+    html{scroll-behavior:smooth}
+    body{font-family:"DM Sans",sans-serif;background:var(--creme);color:var(--te);overflow-x:hidden}
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:72px;background:rgba(26,58,42,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(200,150,12,.2);transition:box-shadow .3s}
+    nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,.3)}
+    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .nav-logo img{width:40px;height:40px;object-fit:contain;border-radius:8px}
+    .nav-logo-text{font-family:"Fraunces",serif;font-weight:700;font-size:1.2rem;color:#fff;letter-spacing:-.02em}
+    .nav-logo-text span{color:var(--doul)}
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
+    .nav-links a:hover,.nav-links a.active{color:var(--doul)}
+    .nav-cta{background:var(--dou);color:var(--vd)!important;font-weight:600!important;padding:.45rem 1.2rem;border-radius:6px}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+    .hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px}
+    .reading-progress{position:fixed;top:72px;left:0;right:0;height:3px;background:rgba(255,255,255,.1);z-index:199}
+    .reading-progress-bar{height:100%;width:0%;background:linear-gradient(to right,var(--dou),var(--doul));transition:width .1s linear}
+    .art-hero{min-height:560px;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:var(--vd)}
+    .art-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+    .art-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,22,12,.98) 0%,rgba(8,22,12,.7) 40%,rgba(8,22,12,.25) 100%)}
+    .art-hero-content{position:relative;z-index:2;max-width:860px;margin:0 auto;padding:120px 5% 3.5rem;width:100%}
+    .breadcrumb{display:flex;align-items:center;gap:.5rem;margin-bottom:1.5rem;font-size:.82rem;color:rgba(255,255,255,.45);flex-wrap:wrap}
+    .breadcrumb a{color:rgba(255,255,255,.45);text-decoration:none;transition:color .2s}
+    .breadcrumb a:hover{color:var(--doul)}
+    .breadcrumb span{color:var(--doul)}
+    .art-cat-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(200,150,12,.18);border:1px solid rgba(200,150,12,.4);color:var(--dous);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.35rem .9rem;border-radius:50px;margin-bottom:1.2rem}
+    .art-hero-title{font-family:"Fraunces",serif;font-weight:900;font-size:clamp(1.9rem,4vw,3.2rem);line-height:1.1;letter-spacing:-.03em;color:#fff;margin-bottom:.9rem}
+    .art-hero-title em{font-style:italic;color:var(--doul)}
+    .art-hero-impact{font-size:1.08rem;color:rgba(255,255,255,.72);line-height:1.75;max-width:700px;margin-bottom:1.8rem;font-weight:300}
+    .art-meta-bar{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.12)}
+    .meta-author{display:flex;align-items:center;gap:.75rem}
+    .meta-author img{width:40px;height:40px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid rgba(200,150,12,.5)}
+    .meta-author-info strong{display:block;font-size:.88rem;color:#fff;font-weight:600}
+    .meta-author-info span{font-size:.78rem;color:rgba(255,255,255,.45)}
+    .meta-dot{width:3px;height:3px;background:rgba(255,255,255,.25);border-radius:50%}
+    .meta-item{font-size:.82rem;color:rgba(255,255,255,.45);display:flex;align-items:center;gap:.35rem}
+    .art-layout{max-width:1100px;margin:0 auto;padding:4rem 5% 6rem;display:grid;grid-template-columns:1fr 300px;gap:5rem;align-items:start}
+    .art-body h2{font-family:"Fraunces",serif;font-weight:800;font-size:1.6rem;line-height:1.25;letter-spacing:-.02em;color:var(--te);margin:2.8rem 0 1rem}
+    .art-body h3{font-family:"Fraunces",serif;font-weight:700;font-size:1.22rem;line-height:1.3;color:var(--vd);margin:2rem 0 .8rem}
+    .art-body p{font-size:1.05rem;line-height:1.87;color:var(--tm);margin-bottom:1.4rem;text-align:justify}
+    .art-body p strong{color:var(--te)}
+    .art-body ul{margin:1rem 0 1.5rem 1.2rem;display:flex;flex-direction:column;gap:.65rem}
+    .art-body ul li{font-size:1.05rem;line-height:1.75;color:var(--tm);padding-left:.4rem}
+    .art-body ul li::marker{color:var(--dou)}
+    .pullquote{border-left:4px solid var(--dou);background:rgba(200,150,12,.06);border-radius:0 12px 12px 0;padding:1.5rem 1.8rem;margin:2.5rem 0}
+    .pullquote p{font-family:"Fraunces",serif;font-style:italic;font-size:1.2rem;line-height:1.65;color:var(--te);margin-bottom:0!important}
+    .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2.5rem 0}
+    .stat-card{background:var(--branco);border-radius:12px;padding:1.4rem;border:1px solid rgba(26,58,42,.08);text-align:center;border-top:3px solid var(--dou)}
+    .stat-num{font-family:"Fraunces",serif;font-weight:900;font-size:2rem;color:var(--dou);letter-spacing:-.04em;line-height:1;margin-bottom:.4rem}
+    .stat-label{font-size:.82rem;color:var(--tm);line-height:1.4}
+    .art-img-block{margin:2.5rem 0;border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(26,58,42,.12)}
+    .art-img-block img{width:100%;height:auto;display:block}
+    .art-img-caption{font-size:.82rem;color:var(--tm);text-align:center;padding:.8rem 1rem;background:var(--branco);border:1px solid rgba(26,58,42,.08);border-top:none;border-radius:0 0 16px 16px;font-style:italic}
+    .questions-box{background:var(--vd);border-radius:16px;padding:2rem;margin:2.5rem 0}
+    .questions-box h3{font-family:"Fraunces",serif;color:#fff;font-size:1.15rem;margin-bottom:1.2rem;margin-top:0!important}
+    .questions-box ul{margin-left:0!important}
+    .questions-box ul li{color:rgba(255,255,255,.8);padding-left:0!important;display:flex;align-items:flex-start;gap:.7rem}
+    .questions-box ul li::marker{content:none}
+    .questions-box ul li::before{content:"→";color:var(--doul);font-weight:700;flex-shrink:0}
+    .art-cta{background:linear-gradient(135deg,var(--vd) 0%,var(--vm) 100%);border-radius:16px;padding:2.5rem;margin:3rem 0;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;border:1px solid rgba(200,150,12,.2)}
+    .art-cta-text strong{display:block;font-family:"Fraunces",serif;font-weight:800;font-size:1.35rem;color:#fff;margin-bottom:.5rem}
+    .art-cta-text p{color:rgba(255,255,255,.65);font-size:.95rem;margin-bottom:0!important}
+    .btn-cta{background:var(--dou);color:var(--vd);font-weight:700;font-size:.95rem;padding:.9rem 1.8rem;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0;transition:background .2s,transform .2s}
+    .btn-cta:hover{background:var(--doul);transform:translateY(-2px)}
+    .art-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:2rem 0}
+    .art-tag{font-size:.78rem;font-weight:600;padding:.3rem .8rem;border-radius:20px;background:var(--creme);border:1px solid rgba(26,58,42,.12);color:var(--tm)}
+    .referencias{background:var(--branco);border-radius:16px;padding:2rem;margin-top:3rem;border:1px solid rgba(26,58,42,.08)}
+    .referencias h2{font-family:"Fraunces",serif;font-weight:700;font-size:1.2rem;color:var(--te);margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:2px solid var(--dou);margin-top:0!important}
+    .ref-list{display:flex;flex-direction:column;gap:.6rem}
+    .ref-item{display:flex;align-items:flex-start;gap:.8rem;font-size:.85rem;color:var(--tm);line-height:1.55}
+    .ref-num{flex-shrink:0;width:22px;height:22px;background:var(--vd);color:var(--doul);font-weight:700;font-size:.72rem;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:.1rem}
+    .ref-item a{color:var(--vc)}
+    .sidebar{display:flex;flex-direction:column;gap:1.8rem;position:sticky;top:92px}
+    .sb-card{background:var(--branco);border-radius:16px;padding:1.6rem;border:1px solid rgba(26,58,42,.08)}
+    .sb-title{font-family:"Fraunces",serif;font-weight:700;font-size:1rem;color:var(--te);margin-bottom:1rem;padding-bottom:.7rem;border-bottom:2px solid var(--dou)}
+    .author-card{background:var(--vd);border-radius:16px;padding:1.6rem;text-align:center}
+    .author-card img{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;border:3px solid var(--dou);margin-bottom:.9rem}
+    .author-name{font-family:"Fraunces",serif;font-weight:700;color:#fff;font-size:1rem;margin-bottom:.2rem}
+    .author-role{font-size:.78rem;color:var(--doul);margin-bottom:.8rem}
+    .author-bio{font-size:.83rem;color:rgba(255,255,255,.6);line-height:1.65;margin-bottom:1.2rem}
+    .btn-wa-small{display:block;background:#25D366;color:#fff;font-weight:600;font-size:.85rem;padding:.65rem 1rem;border-radius:8px;text-decoration:none;text-align:center;transition:background .2s}
+    .btn-wa-small:hover{background:#20bc59}
+    .related-item{display:flex;gap:.8rem;padding:.8rem 0;border-bottom:1px solid rgba(26,58,42,.07);text-decoration:none}
+    .related-item:last-child{border-bottom:none;padding-bottom:0}
+    .rel-thumb{width:64px;height:52px;border-radius:8px;overflow:hidden;flex-shrink:0}
+    .rel-thumb svg{width:100%;height:100%;display:block}
+    .rel-title{font-size:.84rem;font-weight:600;color:var(--te);line-height:1.35;transition:color .2s}
+    .related-item:hover .rel-title{color:var(--dou)}
+    .rel-date{font-size:.74rem;color:var(--tm);margin-top:.3rem}
+    .nl-sb input{width:100%;background:var(--creme);border:1px solid rgba(26,58,42,.15);border-radius:8px;padding:.65rem .9rem;font-family:"DM Sans",sans-serif;font-size:.88rem;color:var(--te);outline:none;margin-bottom:.6rem}
+    .nl-sb input:focus{border-color:var(--dou)}
+    .btn-nl{width:100%;background:var(--dou);color:var(--vd);font-family:"DM Sans",sans-serif;font-weight:700;font-size:.88rem;padding:.7rem;border:none;border-radius:8px;cursor:pointer;transition:background .2s}
+    .btn-nl:hover{background:var(--doul)}
+    .wa-btn{position:fixed;bottom:28px;right:28px;z-index:999;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;font-family:"DM Sans",sans-serif;font-weight:600;padding:.75rem 1.2rem .75rem .85rem;border-radius:50px;text-decoration:none;box-shadow:0 6px 24px rgba(37,211,102,.45);transition:transform .25s,max-width .3s,padding .3s;overflow:hidden;max-width:56px}
+    .wa-btn:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(37,211,102,.55);max-width:260px;padding:.75rem 1.4rem .75rem .85rem}
+    .wa-icon{flex-shrink:0;width:32px;height:32px}
+    .wa-text{white-space:nowrap;opacity:0;transition:opacity .2s ease .1s}
+    .wa-btn:hover .wa-text{opacity:1}
+    .wa-ring{position:fixed;bottom:28px;right:28px;z-index:998;width:56px;height:56px;border-radius:50%;border:3px solid rgba(37,211,102,.5);animation:waPulse 2.5s ease-out infinite;pointer-events:none}
+    @keyframes waPulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(2.2);opacity:0}}
+    footer{background:#0a1a10;padding:3rem 5%;border-top:1px solid rgba(200,150,12,.12)}
+    .foot-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
+    .foot-logo{display:flex;align-items:center;gap:8px}
+    .foot-logo img{width:30px;height:30px;object-fit:contain;border-radius:6px;opacity:.75}
+    .foot-copy{font-size:.85rem;color:rgba(255,255,255,.35)}
+    .foot-links{display:flex;gap:2rem;list-style:none}
+    .foot-links a{color:rgba(255,255,255,.35);text-decoration:none;font-size:.85rem;transition:color .2s}
+    .foot-links a:hover{color:var(--doul)}
+    @media(max-width:900px){.art-layout{grid-template-columns:1fr;gap:3rem}.sidebar{position:static}.stat-grid{grid-template-columns:1fr 1fr}.art-cta{flex-direction:column}.nav-links{display:none}.hamburger{display:flex}}
+    @media(max-width:600px){.stat-grid{grid-template-columns:1fr}.art-hero-title{font-size:1.7rem}}
+  </style>
+</head>
+<body>
+
+<div class="reading-progress"><div class="reading-progress-bar" id="progressBar"></div></div>
+
+<nav id="navbar">
+  <a href="../index.html" class="nav-logo">
+    <img src="https://smartgrain.com.br/favicon.png" alt="Logo SmartGrain"/>
+    <span class="nav-logo-text">Smart<span>Grain</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html#sobre">Sobre</a></li>
+    <li><a href="../index.html#servicos">Serviços</a></li>
+    <li><a href="../index.html#agrocheck">AgroCheck 360</a></li>
+    <li><a href="index.html" class="active">Blog</a></li>
+    <li><a href="../index.html#contato" class="nav-cta">Fale Conosco</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="art-hero">
+  <img class="art-hero-img" src="imagens/pulverizacao-seletiva-pousio.webp" alt="Pulverizador autopropelido aplicando herbicida apenas em manchas de plantas daninhas em área de pousio ao entardecer"/>
+  <div class="art-hero-overlay"></div>
+  <div class="art-hero-content">
+    <div class="breadcrumb">
+      <a href="../index.html">Início</a><span>›</span>
+      <a href="index.html">Blog</a><span>›</span>
+      <span>Agricultura de Precisão</span>
+    </div>
+    <div class="art-cat-badge">🛰️ Agricultura de Precisão</div>
+    <h1 class="art-hero-title">Pulverização seletiva no pousio:<br/><em>quando vale testar antes da safra 2026/27</em></h1>
+    <p class="art-hero-impact">A promessa é forte: menos herbicida, menos água, menos abastecimento e um mapa mais rico do problema no campo. O ponto crítico é outro: <strong style="color:var(--dous);">nem toda fazenda captura valor real</strong> com pulverização seletiva logo no primeiro ciclo.</p>
+    <div class="art-meta-bar">
+      <div class="meta-author">
+        <img src="https://smartgrain.com.br/blog/imagens/melke.png" alt="Melkezedeque Alves Lira"/>
+        <div class="meta-author-info">
+          <strong>Melkezedeque Alves Lira</strong>
+          <span>Co-Fundador & Diretor Técnico</span>
+        </div>
+      </div>
+      <div class="meta-dot"></div>
+      <div class="meta-item">📅 22 de julho de 2026</div>
+      <div class="meta-dot"></div>
+      <div class="meta-item">⏱️ 10 min de leitura</div>
+      <div class="meta-dot"></div>
+      <div class="meta-item">🌱 Pousio e dessecação</div>
+    </div>
+  </div>
+</div>
+
+<div class="art-layout">
+  <article class="art-body">
+    <p><strong>Resumo executivo.</strong> A pulverização seletiva por visão computacional saiu do campo de demonstração e entrou de vez no radar operacional. A Montana State University Extension aponta que a tecnologia mostra promessa especial em áreas de pousio, pastagens e, cada vez mais, em lavouras em linha, com potencial de reduzir o uso de herbicida em até 90%, dependendo da pressão de plantas daninhas e das condições de campo (<a href="https://agresearch.montana.edu/narc/Programs_and_projects/narc-precisionag/precision-spot-spraying-technology.html" target="_blank" rel="noopener">MSU Extension</a>). Ao mesmo tempo, a John Deere informa média de 77% de economia de herbicida em pousio no pacote See & Spray Select (<a href="https://www.deere.com/en-us/products-solutions/sprayers-and-applicators/see-spray-select" target="_blank" rel="noopener">John Deere</a>). O problema é que essa conta depende de contexto, calibração e disciplina de teste.</p>
+
+    <div class="stat-grid">
+      <div class="stat-card"><div class="stat-num">até 90%</div><div class="stat-label">de redução de herbicida em cenários favoráveis, segundo a MSU Extension</div></div>
+      <div class="stat-card"><div class="stat-num">77%</div><div class="stat-label">de economia média em pousio divulgada pela John Deere para o See & Spray Select</div></div>
+      <div class="stat-card"><div class="stat-num">2026</div><div class="stat-label">marcou demonstrações recentes da tecnologia em campo pela Nebraska Extension</div></div>
+    </div>
+
+    <h2>Qual decisão este artigo ajuda a tomar</h2>
+    <p>Não é um texto para decidir “se a tecnologia é bonita”. É um texto para decidir <strong>se vale testar, contratar um serviço, retrofitar um pulverizador ou adiar</strong>. O foco é propositalmente mais estreito: <strong>pousio, pré-plantio e dessecação</strong>. Hoje, esse recorte tem sinal comercial e técnico mais claro do que a pulverização seletiva plena em pós-emergência dentro da cultura.</p>
+
+    <p>Esse enquadramento importa porque a tecnologia já evoluiu para aplicações mais complexas. A página oficial do See & Spray Gen 2 destaca pulverização direcionada em culturas e uso de biomassa para desfechos de “nível de prescrição”, além de novos mapas de pressão de plantas daninhas e população previstos para <strong>2027</strong> (<a href="https://www.deere.com/en-us/products-solutions/sprayers-and-applicators/see-spray" target="_blank" rel="noopener">John Deere</a>). Para a maior parte das fazendas brasileiras em decisão de curto prazo, a pergunta prática continua sendo: <strong>onde o ROI é menos especulativo?</strong></p>
+
+    <div class="pullquote">
+      <p>Em 2026, o caso mais robusto não é “pulverizar tudo de forma inteligente”; é “escolher onde a inteligência realmente reduz custo sem piorar o controle”.</p>
+    </div>
+
+    <h2>Por que a pauta ganhou força agora</h2>
+    <p>Há três sinais recentes convergindo. Primeiro, universidades estão levando o assunto para demonstrações operacionais. A Nebraska Extension incluiu em sua programação de 24 de junho de 2026 a avaliação do pulverizador de precisão Ecorobotix ARA em soja, comparando controle-alvo e economia de herbicida contra aplicação em área total, e voltou ao tema em um resumo publicado em 15 de julho de 2026 (<a href="https://agronomy.unl.edu/fieldday/" target="_blank" rel="noopener">UNL Field Day</a>; <a href="https://cropwatch.unl.edu/news/nebraska-extension-field-day-features-innovative-weed-management-research/" target="_blank" rel="noopener">CropWatch</a>).</p>
+
+    <p>Segundo, as fabricantes deixaram de vender apenas conceito e passaram a vender <strong>pacotes operacionais com dados</strong>: mapas de aplicação, economia documentada, operação noturna e integração com plataforma de gestão. Terceiro, a pressão sobre o manejo de plantas daninhas continua empurrando o produtor para decisões mais cirúrgicas. A Penn State Extension lembra que, quando a operação de burndown é empurrada para perto do plantio, o desempenho pode cair porque as plantas daninhas aceleram crescimento e competem mais cedo por água e nutrientes (<a href="https://extension.psu.edu/spring-burndown-considerations-when-spraying-early" target="_blank" rel="noopener">Penn State Extension</a>).</p>
+
+    <h2>Como a pulverização seletiva funciona de verdade</h2>
+    <p>Na prática, o sistema combina câmeras, processamento embarcado, lógica de decisão e controle individual ou em grupos de bicos. Em vez de pulverizar toda a faixa, o conjunto detecta biomassa ou plantas daninhas e abre somente os bicos necessários. A diferença econômica nasce daí: <strong>menos produto, menos água, menos reabastecimento e, em alguns cenários, mais área útil por turno</strong>.</p>
+
+    <p>O ganho agronômico, porém, não vem automaticamente. O sistema precisa “enxergar” bem, decidir rápido e aplicar com sobreposição coerente. Poeira, velocidade excessiva, palhada, tamanho da planta daninha, luz, arquitetura do bico, atraso hidráulico e regulagem interferem.</p>
+
+    <div class="art-img-block">
+      <img src="imagens/pulverizacao-seletiva-pousio.webp" alt="Pulverizador com barras iluminadas identificando reboleiras de plantas daninhas em pousio"/>
+      <div class="art-img-caption">Na fase de pousio, a tecnologia tende a capturar mais valor quando a infestação é heterogênea e a fazenda mede economia por hectare e por turno.</div>
+    </div>
+
+    <h2>Quando a tecnologia tende a fazer sentido</h2>
+    <h3>1. Áreas com infestação em reboleiras, não uniforme</h3>
+    <p>Se praticamente todo o talhão está “verde” de forma homogênea, a lógica da seletividade perde força. A melhor combinação aparece quando a fazenda tem <strong>manchas, bordaduras, escapes localizados e variação real de pressão</strong> dentro do mesmo campo.</p>
+
+    <h3>2. Operações de pousio e dessecação onde o custo químico pesa</h3>
+    <p>É justamente o recorte em que as referências atuais mais convergem. A MSU Extension destaca o uso em pousio, e a John Deere posiciona o See & Spray Select como solução focada nesse cenário, com registro de economia e documentação de aplicação (<a href="https://www.deere.com/en-us/products-solutions/sprayers-and-applicators/see-spray-select" target="_blank" rel="noopener">John Deere</a>).</p>
+
+    <h3>3. Fazendas que já medem desempenho operacional</h3>
+    <p>Quem não mede litros por hectare, horas por abastecimento, hectares por turno, custo químico por operação e taxa de escape depois da aplicação terá dificuldade para provar resultado. A tecnologia pede linha de base. Sem isso, qualquer conversa sobre ROI vira opinião.</p>
+
+    <h3>4. Operações com suporte técnico e disciplina de calibração</h3>
+    <p>A Embrapa lembra que um sistema de aplicação em taxa variável depende de etapas como geração ou leitura adequada da variabilidade, implemento compatível, calibração, integração com navegação e validação de resultado; também aponta custo, conectividade, qualificação e compatibilidade tecnológica como barreiras reais no Brasil (<a href="https://www.embrapa.br/en/tema-automacao-e-agricultura-de-precisao/perguntas-e-respostas" target="_blank" rel="noopener">Embrapa</a>). Em pulverização seletiva, esse alerta é ainda mais importante.</p>
+
+    <h2>Quando o melhor negócio pode ser adiar</h2>
+    <p>Há situações em que o melhor retorno vem de organizar o básico antes. Se o pulverizador atual ainda tem problema de uniformidade, se a fazenda não controla deriva, se a mistura costuma sair inconsistente ou se a equipe não fecha o pós-aplicação com conferência de escape, a seletividade pode apenas <strong>sofisticar uma execução fraca</strong>.</p>
+
+    <p>Também vale segurar quando o suporte local é raso, quando a operação depende de terceiros sem compromisso com coleta de dados, ou quando a área-piloto é pequena demais para separar economia real de ruído operacional. Nesse caso, é melhor começar com um piloto bem desenhado do que comprar um argumento comercial pronto.</p>
+
+    <h2>Dados e recursos que precisam entrar na conta</h2>
+    <ul>
+      <li><strong>Percentual de área efetivamente tratada</strong> em comparação com a faixa percorrida.</li>
+      <li><strong>Litros de calda e ingrediente por hectare</strong> antes e depois do teste.</li>
+      <li><strong>Tempo entre abastecimentos</strong> e impacto em hectares por turno.</li>
+      <li><strong>Registro georreferenciado da aplicação</strong> para auditar onde houve acionamento.</li>
+      <li><strong>Avaliação de escape</strong> entre 7 e 14 dias e, se necessário, nova vistoria posterior.</li>
+      <li><strong>Custo total do modelo adotado</strong>: compra, retrofit, licença, treinamento, suporte e manutenção.</li>
+    </ul>
+
+    <p>Se a fazenda optar por piloto, o ideal é comparar áreas semelhantes com duas abordagens: uma seletiva e uma convencional. O objetivo não é provar que a tecnologia “funciona”; isso já está dado em vários cenários. O objetivo é provar <strong>se ela funciona financeiramente e agronomicamente no seu contexto</strong>.</p>
+
+    <h2>Modelos de adoção: comprar, retrofitar ou contratar</h2>
+    <p><strong>Compra de máquina nova</strong> faz mais sentido quando a fazenda já está em ciclo de renovação e consegue diluir a tecnologia em uma estratégia maior de dados e automação. <strong>Retrofit</strong> pode ser interessante quando a base mecânica do pulverizador ainda é boa e o fornecedor sustenta integração e pós-venda. <strong>Serviço terceirizado</strong> é, muitas vezes, a forma mais inteligente de aprender rápido sem carregar CAPEX alto logo na largada.</p>
+
+    <p>Para produtor e gerente agrícola, a pergunta central não é “qual marca é melhor?”, e sim: <strong>qual modelo reduz o custo do aprendizado sem comprometer a safra?</strong> Em muitas operações, a resposta inicial será contratar um piloto em áreas escolhidas e transformar esse piloto em protocolo de decisão para 2027.</p>
+
+    <div class="questions-box">
+      <h3>Checklist de decisão para a próxima semana</h3>
+      <ul>
+        <li>A infestação no pousio está heterogênea o suficiente para justificar seletividade?</li>
+        <li>Existe linha de base confiável de custo químico, água, tempo e escape?</li>
+        <li>O fornecedor entrega mapa aplicado, suporte de calibração e treinamento de operador?</li>
+        <li>Há área-piloto com comparação justa contra aplicação convencional?</li>
+        <li>O ganho esperado depende de cultura, clima, palhada, velocidade ou janela operacional específicas?</li>
+      </ul>
+    </div>
+
+    <h2>Riscos e limitações que não podem ser varridos para baixo do tapete</h2>
+    <p>O primeiro risco é confundir <strong>economia de produto</strong> com <strong>resultado operacional líquido</strong>. Se a economia de herbicida vier acompanhada de aumento de escape, necessidade de repasse ou atraso de dessecação, a conta muda. O segundo risco é superestimar a tecnologia em cenários tropicais muito variados sem validação local suficiente. O terceiro é esquecer que a decisão depende de cultura, clima, solo, maquinário, conectividade, pressão de infestação e capacitação da equipe.</p>
+
+    <p>Há ainda o tema legal e de stewardship: bico, pressão, velocidade, tamanho de gota, rótulo e clima continuam valendo. Pulverização seletiva não suspende boas práticas; apenas torna a decisão de acionamento mais precisa.</p>
+
+    <h2>Indicadores para acompanhar em um piloto sério</h2>
+    <ul>
+      <li><strong>R$/ha de herbicida</strong> e <strong>L/ha de calda</strong>.</li>
+      <li><strong>% da área acionada</strong> pelo sistema.</li>
+      <li><strong>ha/turno</strong> e tempo parado para reabastecimento.</li>
+      <li><strong>Escapes por classe de infestação</strong> após 7-14 dias.</li>
+      <li><strong>Necessidade de reaplicação</strong> e custo adicional.</li>
+      <li><strong>Confiabilidade do operador</strong> e incidência de ajustes de calibração.</li>
+    </ul>
+
+    <h2>Conclusão prática</h2>
+    <p>A pulverização seletiva já deixou de ser apenas vitrine. Em julho de 2026, o sinal de mercado e de pesquisa é suficientemente forte para justificar testes orientados a resultado, especialmente em <strong>pousio, dessecação e áreas com infestação em reboleiras</strong>. Mas o caminho correto não é pular direto para a promessa máxima. É escolher uma pergunta simples: <strong>em quais talhões a fazenda consegue reduzir custo químico sem perder controle?</strong></p>
+
+    <p>Se a resposta ainda não pode ser demonstrada com dados, o próximo passo não é comprar a narrativa. É desenhar um piloto enxuto, com área comparável, indicadores definidos e auditoria de escape. Quem fizer isso agora entra em 2027 com decisão melhor e menos improviso.</p>
+
+    <div class="art-cta">
+      <div class="art-cta-text">
+        <strong>Quer estruturar um piloto antes da próxima dessecação?</strong>
+        <p>A SmartGrain pode apoiar a fazenda na definição de área-teste, indicadores, protocolo de comparação e leitura econômica do resultado.</p>
+      </div>
+      <a href="../index.html#contato" class="btn-cta">Solicitar diagnóstico →</a>
+    </div>
+
+    <div class="art-tags">
+      <span class="art-tag">Pulverização seletiva</span>
+      <span class="art-tag">Pousio</span>
+      <span class="art-tag">Dessecação</span>
+      <span class="art-tag">Herbicida</span>
+      <span class="art-tag">Visão computacional</span>
+      <span class="art-tag">Agricultura de precisão</span>
+      <span class="art-tag">Teste de tecnologia</span>
+      <span class="art-tag">ROI agrícola</span>
+    </div>
+
+    <div class="referencias">
+      <h2>📚 Fontes</h2>
+      <div class="ref-list">
+        <div class="ref-item"><div class="ref-num">1</div><span><strong>Montana State University Extension.</strong> “Precision Spot Spraying Technology”. Base técnica sobre funcionamento, cenários de uso e potencial de economia. <a href="https://agresearch.montana.edu/narc/Programs_and_projects/narc-precisionag/precision-spot-spraying-technology.html" target="_blank" rel="noopener">Link</a>.</span></div>
+        <div class="ref-item"><div class="ref-num">2</div><span><strong>John Deere.</strong> “See & Spray Select”. Página oficial com posicionamento para pousio, economia média informada e documentação de mapas aplicados. <a href="https://www.deere.com/en-us/products-solutions/sprayers-and-applicators/see-spray-select" target="_blank" rel="noopener">Link</a>.</span></div>
+        <div class="ref-item"><div class="ref-num">3</div><span><strong>John Deere.</strong> “See & Spray Gen 2”. Evolução para aplicações em cultura e novos insights previstos para 2027. <a href="https://www.deere.com/en-us/products-solutions/sprayers-and-applicators/see-spray" target="_blank" rel="noopener">Link</a>.</span></div>
+        <div class="ref-item"><div class="ref-num">4</div><span><strong>Nebraska Extension / UNL.</strong> Weed Management Field Day 2026 e resumo técnico de julho de 2026 com demonstrações de pulverização de precisão e economia química. <a href="https://agronomy.unl.edu/fieldday/" target="_blank" rel="noopener">Agenda</a> · <a href="https://cropwatch.unl.edu/news/nebraska-extension-field-day-features-innovative-weed-management-research/" target="_blank" rel="noopener">Resumo</a>.</span></div>
+        <div class="ref-item"><div class="ref-num">5</div><span><strong>Penn State Extension.</strong> “Spring Burndown: Considerations when Spraying Early”. Contexto para timing de dessecação e crescimento rápido de plantas daninhas. <a href="https://extension.psu.edu/spring-burndown-considerations-when-spraying-early" target="_blank" rel="noopener">Link</a>.</span></div>
+        <div class="ref-item"><div class="ref-num">6</div><span><strong>Embrapa.</strong> Perguntas e respostas sobre automação e agricultura de precisão, com etapas de VRT e barreiras de adoção no Brasil. <a href="https://www.embrapa.br/en/tema-automacao-e-agricultura-de-precisao/perguntas-e-respostas" target="_blank" rel="noopener">Link</a>.</span></div>
+      </div>
+    </div>
+  </article>
+
+  <aside class="sidebar">
+    <div class="author-card">
+      <img src="https://smartgrain.com.br/blog/imagens/melke.png" alt="Melkezedeque Alves Lira">
+      <div class="author-name">Melkezedeque Alves Lira</div>
+      <div class="author-role">Co-Fundador & Diretor Técnico</div>
+      <p class="author-bio">Engenheiro agrícola, mestre em engenharia agrícola e especialista em mecanização, geoprocessamento e inteligência operacional no agro.</p>
+      <a href="https://wa.me/5566992291794?text=Olá!%20Li%20o%20artigo%20sobre%20pulverização%20seletiva%20e%20quero%20falar%20sobre%20um%20piloto." target="_blank" class="btn-wa-small">💬 Falar com o autor</a>
+    </div>
+
+    <div class="sb-card">
+      <div class="sb-title">📩 Receba mais artigos</div>
+      <p style="font-size:.85rem;color:var(--tm);line-height:1.6;margin-bottom:1rem;">Tecnologia, mecanização e decisões práticas para a safra.</p>
+      <div class="nl-sb">
+        <input type="text" placeholder="Seu nome"/>
+        <input type="email" placeholder="seu@email.com"/>
+        <button class="btn-nl">Quero receber →</button>
+      </div>
+    </div>
+
+    <div class="sb-card">
+      <div class="sb-title">📖 Leia também</div>
+      <a href="RTK-vs-GNSS-quando-vale-investimento.html" class="related-item">
+        <div class="rel-thumb">
+          <svg viewBox="0 0 64 52" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="52" fill="#0d2218"/>
+            <line x1="32" y1="4" x2="32" y2="48" stroke="#e8b422" stroke-width="2" stroke-dasharray="4 4"/>
+            <rect x="14" y="8" width="36" height="22" rx="3" fill="#2e6b1a"/>
+            <rect x="18" y="11" width="16" height="10" rx="2" fill="#7ec8d8" opacity=".75"/>
+            <circle cx="30" cy="4" r="3" fill="#e8b422"/>
+          </svg>
+        </div>
+        <div><div class="rel-title">RTK vs. GNSS: quando vale o investimento</div><div class="rel-date">15 Mai 2026</div></div>
+      </a>
+      <a href="ndvi-na-soja-zonas-de-manejo.html" class="related-item">
+        <div class="rel-thumb">
+          <svg viewBox="0 0 64 52" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="52" fill="#0d2218"/>
+            <rect x="4" y="10" width="14" height="10" rx="2" fill="#8B0000" opacity=".9"/>
+            <rect x="22" y="8" width="16" height="12" rx="2" fill="#228B22" opacity=".9"/>
+            <rect x="42" y="10" width="18" height="10" rx="2" fill="#32CD32" opacity=".85"/>
+            <rect x="4" y="28" width="20" height="10" rx="2" fill="#3CB371" opacity=".85"/>
+            <rect x="28" y="27" width="16" height="11" rx="2" fill="#ADFF2F" opacity=".7"/>
+            <rect x="48" y="28" width="12" height="10" rx="2" fill="#006400" opacity=".9"/>
+          </svg>
+        </div>
+        <div><div class="rel-title">NDVI na soja: como interpretar mapas</div><div class="rel-date">09 Jun 2026</div></div>
+      </a>
+      <a href="ecossistema-iot.html" class="related-item">
+        <div class="rel-thumb">
+          <svg viewBox="0 0 64 52" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="52" fill="#0a1e14"/>
+            <circle cx="18" cy="18" r="8" fill="#e8b422"/>
+            <circle cx="46" cy="18" r="8" fill="#3d7a50"/>
+            <circle cx="32" cy="36" r="8" fill="#7ec8d8"/>
+            <line x1="18" y1="18" x2="32" y2="36" stroke="#fff" stroke-opacity=".3"/>
+            <line x1="46" y1="18" x2="32" y2="36" stroke="#fff" stroke-opacity=".3"/>
+            <line x1="18" y1="18" x2="46" y2="18" stroke="#fff" stroke-opacity=".3"/>
+          </svg>
+        </div>
+        <div><div class="rel-title">Como construir um ecossistema IoT escalável</div><div class="rel-date">28 Jun 2026</div></div>
+      </a>
+    </div>
+
+    <div class="sb-card" style="background:var(--creme);border:2px solid rgba(200,150,12,.3);text-align:center;">
+      <div style="font-size:2rem;margin-bottom:.8rem;">📊</div>
+      <div class="sb-title" style="text-align:center;">Piloto com métrica</div>
+      <p style="font-size:.84rem;color:var(--tm);line-height:1.6;margin-bottom:1.1rem;">Transforme um teste de tecnologia em decisão econômica, não em aposta.</p>
+      <a href="../index.html#contato" style="display:block;background:var(--vd);color:#fff;font-weight:600;font-size:.87rem;padding:.7rem 1rem;border-radius:8px;text-decoration:none;transition:background .2s;" onmouseover="this.style.background='var(--vm)'" onmouseout="this.style.background='var(--vd)'">Solicitar apoio →</a>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <div class="foot-logo">
+      <img src="https://smartgrain.com.br/favicon.png" alt="SmartGrain"/>
+      <span class="foot-copy">© 2026 SmartGrain Consultoria Agrícola — Brasnorte, Mato Grosso</span>
+    </div>
+    <ul class="foot-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="index.html">Blog</a></li>
+      <li><a href="../index.html#contato">Contato</a></li>
+    </ul>
+  </div>
+</footer>
+
+<div class="wa-ring"></div>
+<a class="wa-btn" href="https://wa.me/5566992291794?text=Olá!%20Li%20o%20artigo%20sobre%20pulverização%20seletiva%20no%20blog%20da%20SmartGrain." target="_blank" rel="noopener noreferrer">
+  <svg class="wa-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="24" cy="24" r="24" fill="#25D366"/>
+    <path d="M34.6 13.4A14.9 14.9 0 0 0 24 9C16.3 9 10 15.3 10 23c0 2.5.7 4.9 1.9 7L10 39l9.3-2.4c2 1.1 4.3 1.7 6.7 1.7 7.7 0 14-6.3 14-14 0-3.7-1.5-7.3-4.1-10.1 0 0-.1-.1-.3-.2zM24 36.7c-2.1 0-4.2-.6-6-1.6l-.4-.2-4.4 1.1 1.2-4.2-.3-.4C13 29.6 12.3 26.3 12.3 23c0-6.5 5.3-11.7 11.7-11.7 3.1 0 6 1.2 8.2 3.4a11.6 11.6 0 0 1 3.4 8.3c0 6.5-5.3 11.7-11.6 11.7zm6.4-8.8c-.3-.2-2-.9-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4 0-.1-.2-.2-.5-.4z" fill="white"/>
+  </svg>
+  <span class="wa-text">Fale pelo WhatsApp</span>
+</a>
+
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+    const doc = document.documentElement;
+    const pct = (window.scrollY / (doc.scrollHeight - doc.clientHeight)) * 100;
+    document.getElementById('progressBar').style.width = Math.min(pct, 100) + '%';
+  }, {passive:true});
+
+  document.getElementById('hamburger').addEventListener('click', () => {
+    const nl = document.querySelector('.nav-links');
+    const open = nl.style.display === 'flex';
+    Object.assign(nl.style, {
+      display: open ? 'none' : 'flex',
+      position: 'fixed',
+      top: '72px',
+      left: '0',
+      right: '0',
+      flexDirection: 'column',
+      background: 'rgba(10,26,16,0.98)',
+      padding: '2rem 5%',
+      gap: '1.5rem',
+      borderBottom: '1px solid rgba(200,150,12,.2)'
+    });
+  });
+</script>
+</body>
+</html>

@@ -48,6 +48,8 @@ def mime_for(path):
         return 'image/jpeg'
     if path.endswith('.png'):
         return 'image/png'
+    if path.endswith('.webp'):
+        return 'image/webp'
     if path.endswith('.gif'):
         return 'image/gif'
     return 'application/octet-stream'

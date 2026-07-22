@@ -99,5 +99,14 @@
     "tempoLeitura": "12 min",
     "imagem": "imagens/ecossistema-iot.png",
     "url": "ecossistema-iot.html"
+  },
+  {
+    "titulo": "Pulverização seletiva no pousio: quando vale testar antes da safra 2026/27",
+    "descricao": "Pulverização seletiva por visão computacional pode cortar herbicida e gerar mapas úteis, mas não em qualquer área. Veja quando testar, contratar ou adiar na fazenda.",
+    "categoria": "Agricultura de Precisão",
+    "data": "2026-07-22",
+    "tempoLeitura": "10 min",
+    "imagem": "imagens/pulverizacao-seletiva-pousio.webp",
+    "url": "pulverizacao-seletiva-pousio.html"
   }
 ]
