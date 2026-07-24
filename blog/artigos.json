@@ -14,7 +14,7 @@
     "categoria": "Telemetria",
     "data": "2026-06-23",
     "tempoLeitura": "9 min",
-    "imagem": "https://smartgrain.com.br/blog/imagens/telemetria-agricola.png",
+    "imagem": "imagens/telemetria-agricola.png",
     "url": "telemetria-nao-e-rastreamento.html"
   },
   {
@@ -60,7 +60,7 @@
     "data": "2026-06-14",
     "tempoLeitura": "8 min",
     "imagem": "imagens/KPIs-gestao-agricola.png",
-    "url": "kpis-agricola.html"
+    "url": "kpis_agricola.html"
   },
   {
     "titulo": "Quanto custa uma máquina parada durante a safra?",

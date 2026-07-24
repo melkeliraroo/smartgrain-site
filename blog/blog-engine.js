@@ -1,106 +1,207 @@
-async function carregarArtigos() {
+(function () {
+  const state = { articles: [], currentHint: '' };
 
-    const resposta = await fetch('artigos.json');
-    const artigos = await resposta.json();
+  function formatDate(value) {
+    const date = new Date(`${value}T12:00:00`);
+    return new Intl.DateTimeFormat('pt-BR', {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric'
+    }).format(date).replace('.', '');
+  }
 
-    const container = document.getElementById('articlesGrid');
+  function imageUrl(article) {
+    return article.imagem;
+  }
 
-    function renderizarArtigos(listaArtigos) {
+  function currentFilename() {
+    return decodeURIComponent(window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  }
 
-    const container = document.getElementById('articlesGrid');
+  function injectStyles() {
+    if (document.getElementById('blog-engine-styles')) return;
+    const style = document.createElement('style');
+    style.id = 'blog-engine-styles';
+    style.textContent = `
+      .be-related{display:flex;gap:.8rem;padding:.85rem 0;border-bottom:1px solid rgba(26,58,42,.08);text-decoration:none;align-items:center}
+      .be-related:last-child{border-bottom:0;padding-bottom:0}
+      .be-related__thumb{width:72px;height:58px;flex:0 0 72px;border-radius:8px;overflow:hidden;background:#edf1ed}
+      .be-related__thumb img{display:block;width:100%!important;height:100%!important;object-fit:cover!important;margin:0!important;border-radius:0!important;box-shadow:none!important}
+      .be-related__body{min-width:0}
+      .be-related__title{color:var(--te,#111a14);font-size:.84rem;font-weight:700;line-height:1.35;transition:color .2s}
+      .be-related__date{color:var(--tm,#3a4a3e);font-size:.7rem;margin-top:.3rem;opacity:.72}
+      .be-related:hover .be-related__title{color:var(--dou,#c8960c)}
+      .be-empty{padding:.9rem 0;color:var(--tm,#3a4a3e);font-size:.83rem;line-height:1.5}
+      .popular-post.be-popular{display:grid;grid-template-columns:64px minmax(0,1fr);gap:.75rem;align-items:center}
+      .be-popular__thumb{width:64px;height:52px;border-radius:7px;overflow:hidden;background:#edf1ed}
+      .be-popular__thumb img{display:block;width:100%;height:100%;object-fit:cover}
+      .be-popular a{font-size:.84rem}
+    `;
+    document.head.appendChild(style);
+  }
 
-    container.innerHTML = '';
+  function relatedMarkup(article) {
+    return `
+      <a href="${article.url}" class="be-related">
+        <span class="be-related__thumb">
+          <img src="${imageUrl(article)}" alt="" width="144" height="116" loading="lazy"/>
+        </span>
+        <span class="be-related__body">
+          <span class="be-related__title">${article.titulo}</span>
+          <span class="be-related__date">${formatDate(article.data)} · ${article.tempoLeitura}</span>
+        </span>
+      </a>`;
+  }
 
-    listaArtigos.slice().reverse().forEach(artigo => {
-
-        const card = document.createElement('article');
-
-        card.className = 'blog-card';
-
-        card.innerHTML = `
-            <img src="${artigo.imagem}" alt="${artigo.titulo}">
-
-            <div class="blog-content">
-
-                <span class="categoria">${artigo.categoria}</span>
-
-                <h2>${artigo.titulo}</h2>
-
-                <p>${artigo.descricao}</p>
-
-                <small>
-                    ${artigo.data} • ${artigo.tempoLeitura}
-                </small>
-
-                <br><br>
-
-                <a href="${artigo.url}">
-                    Ler artigo
-                </a>
-
-            </div>
-        `;
-
-        container.appendChild(card);
-
-    });
-
-}
-renderizarArtigos(artigos);
-const filtros = document.querySelectorAll('.cat-btn');
-
-filtros.forEach(botao => {
-
-    botao.addEventListener('click', () => {
-
-        filtros.forEach(b => b.classList.remove('active'));
-
-        botao.classList.add('active');
-
-        const categoria = botao.dataset.category;
-
-        if (categoria === 'Todos') {
-
-            renderizarArtigos(artigos);
-
-        } else {
-
-            const filtrados = artigos.filter(
-                artigo => artigo.categoria === categoria
-            );
-
-            renderizarArtigos(filtrados);
-
-        }
-
-    });
-
-});
-
-    const popularContainer = document.getElementById('popularPosts');
-
-    if (popularContainer) {
-
-        popularContainer.innerHTML = '';
-
-        artigos.slice().reverse().slice(0,5).forEach(artigo => {
-
-            const item = document.createElement('div');
-
-            item.className = 'popular-post';
-
-            item.innerHTML = `
-                <a href="${artigo.url}">
-                    ${artigo.titulo}
-                </a>
-            `;
-
-            popularContainer.appendChild(item);
-
-        });
-
+  function ensureRelatedContainer() {
+    const existing = document.getElementById('relatedPosts');
+    if (existing) {
+      const existingTitle = existing.parentElement && existing.parentElement.querySelector('.sb-title');
+      if (existingTitle) existingTitle.textContent = '📖 Leia mais';
+      return existing;
     }
 
-}
+    const title = Array.from(document.querySelectorAll('.sb-title')).find((element) =>
+      element.textContent.toLocaleLowerCase('pt-BR').includes('leia tamb')
+      || element.textContent.toLocaleLowerCase('pt-BR').includes('leia mais')
+    );
+    if (!title || !title.parentElement) return null;
 
-carregarArtigos();
+    title.textContent = '📖 Leia mais';
+    const card = title.parentElement;
+    Array.from(card.children).forEach((child) => {
+      if (child !== title) child.remove();
+    });
+    const container = document.createElement('div');
+    container.id = 'relatedPosts';
+    card.appendChild(container);
+    return container;
+  }
+
+  function renderRelated() {
+    const container = ensureRelatedContainer();
+    if (!container || !state.articles.length) return;
+
+    const filename = currentFilename();
+    const current = state.articles.find((article) => article.url.toLowerCase() === filename);
+    const candidates = state.articles
+      .filter((article) =>
+        article.url.toLowerCase() !== filename
+        && current
+        && article.categoria === current.categoria
+      )
+      .sort((a, b) => b.data.localeCompare(a.data))
+      .slice(0, 3);
+
+    container.innerHTML = candidates.length
+      ? candidates.map(relatedMarkup).join('')
+      : '<p class="be-empty">Ainda não há outro artigo publicado nesta categoria.</p>';
+  }
+
+  function renderPopular() {
+    const container = document.getElementById('popularPosts');
+    if (!container) return;
+    const articles = state.articles.slice().sort((a, b) => b.data.localeCompare(a.data)).slice(0, 5);
+    container.innerHTML = articles.map((article) => `
+      <div class="popular-post be-popular">
+        <a class="be-popular__thumb" href="${article.url}" aria-label="${article.titulo}">
+          <img src="${imageUrl(article)}" alt="" width="128" height="104" loading="lazy"/>
+        </a>
+        <a href="${article.url}">${article.titulo}</a>
+      </div>`).join('');
+  }
+
+  function renderArticleGrid(articles) {
+    const container = document.getElementById('articlesGrid');
+    if (!container) return;
+    container.innerHTML = '';
+    articles.slice().sort((a, b) => b.data.localeCompare(a.data)).forEach((article) => {
+      const card = document.createElement('article');
+      card.className = 'blog-card';
+      card.innerHTML = `
+        <img src="${imageUrl(article)}" alt="${article.titulo}" loading="lazy"/>
+        <div class="blog-content">
+          <span class="categoria">${article.categoria}</span>
+          <h2>${article.titulo}</h2>
+          <p>${article.descricao}</p>
+          <small>${formatDate(article.data)} · ${article.tempoLeitura}</small>
+          <br><br>
+          <a href="${article.url}">Ler artigo</a>
+        </div>`;
+      container.appendChild(card);
+    });
+  }
+
+  function setupFilters() {
+    const buttons = document.querySelectorAll('.cat-btn');
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        buttons.forEach((item) => item.classList.remove('active'));
+        button.classList.add('active');
+        const category = button.dataset.category;
+        renderArticleGrid(category === 'Todos'
+          ? state.articles
+          : state.articles.filter((article) => article.categoria === category));
+      });
+    });
+
+    const search = document.getElementById('searchInput');
+    if (search) {
+      search.addEventListener('input', () => {
+        const term = search.value.trim().toLocaleLowerCase('pt-BR');
+        renderArticleGrid(state.articles.filter((article) =>
+          `${article.titulo} ${article.descricao} ${article.categoria}`
+            .toLocaleLowerCase('pt-BR').includes(term)
+        ));
+      });
+    }
+  }
+
+  function loadSalesWidget() {
+    if (document.querySelector('script[src$="sales-widget.js"]') || document.querySelector('.sg-books')) return;
+    const script = document.createElement('script');
+    script.src = 'sales-widget.js';
+    script.defer = true;
+    document.head.appendChild(script);
+  }
+
+  function renderAll() {
+    state.articles = Array.isArray(window.BLOG_ARTICLES) ? window.BLOG_ARTICLES : [];
+    renderArticleGrid(state.articles);
+    renderPopular();
+    renderRelated();
+    setupFilters();
+    loadSalesWidget();
+  }
+
+  function start() {
+    injectStyles();
+    if (Array.isArray(window.BLOG_ARTICLES)) {
+      renderAll();
+      return;
+    }
+
+    const dataScript = document.createElement('script');
+    dataScript.src = 'artigos-data.js';
+    dataScript.onload = renderAll;
+    dataScript.onerror = function () {
+      const related = ensureRelatedContainer();
+      if (related) related.innerHTML = '<p class="be-empty">Não foi possível carregar as sugestões agora.</p>';
+      loadSalesWidget();
+    };
+    document.head.appendChild(dataScript);
+  }
+
+  window.BlogEngine = {
+    init: function (_pageType, currentHint) {
+      state.currentHint = currentHint || '';
+      if (state.articles.length) renderRelated();
+    }
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start, { once: true });
+  } else {
+    start();
+  }
+})();
