@@ -6,7 +6,7 @@
     "data": "2026-06-07",
     "tempoLeitura": "8 min",
     "imagem": "imagens/telemetria.png",
-    "url": "telemetria-agricola-potencial-nao-utilizado.html"
+    "url": "telemetria-agricola-potencial-nao-utilizado"
   },
   {
     "titulo": "Telemetria não é rastreamento: o erro que faz muitos produtores perderem dinheiro",
@@ -15,7 +15,7 @@
     "data": "2026-06-23",
     "tempoLeitura": "9 min",
     "imagem": "imagens/telemetria-agricola.png",
-    "url": "telemetria-nao-e-rastreamento.html"
+    "url": "telemetria-nao-e-rastreamento"
   },
   {
     "titulo": "NDVI na Soja: Como Utilizar Índices de Vegetação para Delimitação de Zonas de Manejo",
@@ -24,7 +24,7 @@
     "data": "2026-06-09",
     "tempoLeitura": "12 min",
     "imagem": "imagens/ndvi-soja.png",
-    "url": "ndvi-na-soja-zonas-de-manejo.html"
+    "url": "ndvi-na-soja-zonas-de-manejo"
   },
   {
     "titulo": "Geoprocessamento Agrícola:Como delimitar talhões com precisão usando SIG",
@@ -33,7 +33,7 @@
     "data": "2026-05-02",
     "tempoLeitura": "9 min",
     "imagem": "imagens/geoprocessamento.png",
-    "url": "geoprocessamento-agricola-delimitar-talhaes-sig.html"
+    "url": "geoprocessamento-agricola-delimitar-talhaes-sig"
   },
   {
     "titulo": "IoT no agro: Conectando sensores, máquinas e dados em uma única plataforma.",
@@ -42,7 +42,7 @@
     "data": "2026-05-15",
     "tempoLeitura": "6 min",
     "imagem": "imagens/IoT.png",
-    "url": "IoT-agricola-conectando-sensores-maquinas-dados.html"
+    "url": "IoT-agricola-conectando-sensores-maquinas-dados"
   },
   {
     "titulo": "Piloto automático RTK vs. GNSS: Quando vale o investimento",
@@ -51,7 +51,7 @@
     "data": "2026-05-15",
     "tempoLeitura": "6 min",
     "imagem": "imagens/RTK-vs-GNSS.png",
-    "url": "RTK-vs-GNSS-quando-vale-investimento.html"
+    "url": "RTK-vs-GNSS-quando-vale-investimento"
   },
   {
     "titulo": "KPIs essesnciais para a gestão agrícola: quais indicadores toda fazenda deveria monitorar",
@@ -60,7 +60,7 @@
     "data": "2026-06-14",
     "tempoLeitura": "8 min",
     "imagem": "imagens/KPIs-gestao-agricola.png",
-    "url": "kpis_agricola.html"
+    "url": "kpis_agricola"
   },
   {
     "titulo": "Quanto custa uma máquina parada durante a safra?",
@@ -69,7 +69,7 @@
     "data": "2026-06-15",
     "tempoLeitura": "8 min",
     "imagem": "imagens/maquina-parada2.png",
-    "url": "custo-maquina-parada.html"
+    "url": "custo-maquina-parada"
   },
 
     {
@@ -79,7 +79,7 @@
     "data": "2026-06-24",
     "tempoLeitura": "12 min",
     "imagem": "imagens/agricultura-de-decisao.png",
-    "url": "agricultura-de-precisao-morreu.html"
+    "url": "agricultura-de-precisao-morreu"
   },
 
    {
@@ -89,7 +89,7 @@
     "data": "2026-06-27",
     "tempoLeitura": "12 min",
     "imagem": "imagens/data-lake.png",
-    "url": "data-lake.html"
+    "url": "data-lake"
   },
     {
     "titulo": "Da Estação Meteorológica ao Sensor de Implemento: Como Construir um Ecossistema IoT Escalável",
@@ -98,7 +98,7 @@
     "data": "2026-06-28",
     "tempoLeitura": "12 min",
     "imagem": "imagens/ecossistema-iot.png",
-    "url": "ecossistema-iot.html"
+    "url": "ecossistema-iot"
   },
   {
     "titulo": "Pulverização seletiva no pousio: quando vale testar antes da safra 2026/27",
@@ -107,6 +107,6 @@
     "data": "2026-07-22",
     "tempoLeitura": "10 min",
     "imagem": "imagens/pulverizacao-seletiva-pousio.webp",
-    "url": "pulverizacao-seletiva-pousio.html"
+    "url": "pulverizacao-seletiva-pousio"
   }
 ]

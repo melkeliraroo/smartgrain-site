@@ -1,28 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://smartgrain.com.br/</loc>
   </url>
-
   <url>
     <loc>https://smartgrain.com.br/blog/</loc>
   </url>
-
-   <url>
-    <loc>https://smartgrain.com.br/blog/ndvi-na-soja-zonas-de-manejo</loc>
+  <url>
+    <loc>https://smartgrain.com.br/servicos/diagnostico-operacional/</loc>
   </url>
-
-   <url>
-    <loc>https://smartgrain.com.br/blog/geoprocessamento-agricola-delimitar-talhaes-sig</loc>
+  <url>
+    <loc>https://smartgrain.com.br/servicos/agrocheck360/</loc>
   </url>
-
+  <url>
+    <loc>https://smartgrain.com.br/servicos/agricultura-digital/</loc>
+  </url>
+  <url>
+    <loc>https://smartgrain.com.br/servicos/agricultura-precisao</loc>
+  </url>
+  <url>
+    <loc>https://smartgrain.com.br/servicos/geoprocessamento/</loc>
+  </url>
+  <url>
+    <loc>https://smartgrain.com.br/servicos/mecanizacao-agricola/</loc>
+  </url>
+  <url>
+    <loc>https://smartgrain.com.br/servicos/projetos-agricultura-precisao/</loc>
+  </url>
   <url>
     <loc>https://smartgrain.com.br/blog/telemetria-agricola-potencial-nao-utilizado</loc>
   </url>
-
+  <url>
+    <loc>https://smartgrain.com.br/blog/telemetria-nao-e-rastreamento</loc>
+  </url>
+  <url>
+    <loc>https://smartgrain.com.br/blog/ndvi-na-soja-zonas-de-manejo</loc>
+  </url>
+  <url>
+    <loc>https://smartgrain.com.br/blog/geoprocessamento-agricola-delimitar-talhaes-sig</loc>
+  </url>
+  <url>
+    <loc>https://smartgrain.com.br/blog/iot-agricola-conectando-sensores-maquinas-dados</loc>
+  </url>
+  <url>
+    <loc>https://smartgrain.com.br/blog/RTK-vs-GNSS-quando-vale-investimento</loc>
+  </url>
+  <url>
+    <loc>https://smartgrain.com.br/blog/kpis_agricola</loc>
+  </url>
+  <url>
+    <loc>https://smartgrain.com.br/blog/custo-maquina-parada</loc>
+  </url>
+  <url>
+    <loc>https://smartgrain.com.br/blog/agricultura-de-precisao-morreu</loc>
+  </url>
+  <url>
+    <loc>https://smartgrain.com.br/blog/data-lake</loc>
+  </url>
+  <url>
+    <loc>https://smartgrain.com.br/blog/ecossistema-iot</loc>
+  </url>
   <url>
     <loc>https://smartgrain.com.br/blog/pulverizacao-seletiva-pousio</loc>
   </url>
-
 </urlset>
