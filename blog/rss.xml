@@ -12,7 +12,7 @@
       <guid isPermaLink="true">https://smartgrain.com.br/blog/telemetria-agricola-potencial-nao-utilizado</guid>
       <description>Descubra como transformar dados operacionais em decisões estratégicas para aumentar a eficiência das máquinas agrícolas.</description>
       <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Telemetria</category>
+      <category>IoT, conectividade e telemetria</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/telemetria.png" type="image/png"/>
     </item>
     <item>
@@ -21,7 +21,7 @@
       <guid isPermaLink="true">https://smartgrain.com.br/blog/telemetria-nao-e-rastreamento</guid>
       <description>Entenda por que usar telemetria apenas para localização é um erro e como a telemetria completa reduz custos, melhora eficiência e evita perdas na lavoura.</description>
       <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Telemetria</category>
+      <category>IoT, conectividade e telemetria</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/telemetria-agricola.png" type="image/png"/>
     </item>
     <item>
@@ -39,7 +39,7 @@
       <guid isPermaLink="true">https://smartgrain.com.br/blog/geoprocessamento-agricola-delimitar-talhaes-sig</guid>
       <description>Metodologia completa para delimitar talhões com SIG, QGIS e GPS para produtores de Juína e norte do Mato Grosso — com ferramentas gratuitas.</description>
       <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
-      <category>Geoprocessamento</category>
+      <category>Agricultura de Precisão</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/geoprocessamento.png" type="image/png"/>
     </item>
     <item>
@@ -48,7 +48,7 @@
       <guid isPermaLink="true">https://smartgrain.com.br/blog/IoT-agricola-conectando-sensores-maquinas-dados</guid>
       <description>Tratores, pulverizadores, colheitadeiras, sensores de solo, drones e estações meteorológicas comunicando-se entre si e enviando dados para um centro de controle unificado.</description>
       <pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate>
-      <category>IoT Agrícola</category>
+      <category>IoT, conectividade e telemetria</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/IoT.png" type="image/png"/>
     </item>
     <item>
@@ -57,7 +57,7 @@
       <guid isPermaLink="true">https://smartgrain.com.br/blog/RTK-vs-GNSS-quando-vale-investimento</guid>
       <description>Tratores, pulverizadores, colheitadeiras, sensores de solo, drones e estações meteorológicas comunicando-se entre si e enviando dados para um centro de controle unificado.</description>
       <pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate>
-      <category>Agricultura de Precisão</category>
+      <category>Máquinas e automação agrícola</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/RTK-vs-GNSS.png" type="image/png"/>
     </item>
     <item>
@@ -66,7 +66,7 @@
       <guid isPermaLink="true">https://smartgrain.com.br/blog/kpis_agricola</guid>
       <description>A gestão agrícola moderna depende menos de percepção e mais de indicadores. Quando a fazenda acompanha os KPIs certos, fica muito mais fácil identificar desperdícios, avaliar máquinas e tomar decisões com base em dados.</description>
       <pubDate>Sun, 14 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Gestão de Dados</category>
+      <category>Dados, software e inteligência artificial</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/KPIs-gestao-agricola.png" type="image/png"/>
     </item>
     <item>
@@ -75,7 +75,7 @@
       <guid isPermaLink="true">https://smartgrain.com.br/blog/custo-maquina-parada</guid>
       <description>A indisponibilidade pesa no resultado da fazenda e por que manutenção preventiva e preditiva fazem diferença.</description>
       <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Mecanização</category>
+      <category>Máquinas e automação agrícola</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/maquina-parada2.png" type="image/png"/>
     </item>
     <item>
@@ -84,7 +84,7 @@
       <guid isPermaLink="true">https://smartgrain.com.br/blog/agricultura-de-precisao-morreu</guid>
       <description>Com a evolução dos sistemas embarcados e da telemetria, a manutenção agrícola está migrando do modelo corretivo para abordagens preditivas. O artigo mostrará como dados operacionais podem antecipar falhas e reduzir significativamente o tempo de indisponibilidade das máquinas.</description>
       <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Agricultura de Precisão</category>
+      <category>Gestão e transformação digital</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/agricultura-de-decisao.png" type="image/png"/>
     </item>
     <item>
@@ -93,7 +93,7 @@
       <guid isPermaLink="true">https://smartgrain.com.br/blog/data-lake</guid>
       <description>O conceito de Data Lake vem ganhando espaço em grandes operações agrícolas. O artigo explica como estruturar um ambiente centralizado para armazenamento e análise de dados provenientes de diferentes fontes, permitindo análises mais completas e estratégicas.</description>
       <pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate>
-      <category>Gestão de Dados</category>
+      <category>Dados, software e inteligência artificial</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/data-lake.png" type="image/png"/>
     </item>
     <item>
@@ -102,7 +102,7 @@
       <guid isPermaLink="true">https://smartgrain.com.br/blog/ecossistema-iot</guid>
       <description>Muitas propriedades iniciam projetos de IoT de forma fragmentada. O artigo mostra uma arquitetura escalável para integração de sensores, gateways, plataformas de análise e sistemas de gestão agrícola, reduzindo retrabalho e aumentando o aproveitamento dos dados coletados.</description>
       <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
-      <category>IoT Agrícola</category>
+      <category>IoT, conectividade e telemetria</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/ecossistema-iot.png" type="image/png"/>
     </item>
     <item>
@@ -129,7 +129,7 @@
       <guid isPermaLink="true">https://smartgrain.com.br/blog/zarc-niveis-de-manejo-seguro-rural</guid>
       <description>O ZARC Níveis de Manejo já altera a lógica do seguro rural em soja e milho safrinha. Veja quais dados a fazenda precisa organizar agora para entrar no piloto com menos improviso.</description>
       <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
-      <category>Agricultura de Precisão</category>
+      <category>Gestão e transformação digital</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/zarc-niveis-de-manejo-seguro-rural.webp" type="image/webp"/>
     </item>
   </channel>

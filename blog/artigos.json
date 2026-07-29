@@ -2,7 +2,7 @@
   {
     "titulo": "Telemetria Agrícola: O Potencial Não Utilizado dos Dados Operacionais",
     "descricao": "Descubra como transformar dados operacionais em decisões estratégicas para aumentar a eficiência das máquinas agrícolas.",
-    "categoria": "Telemetria",
+    "categoria": "IoT, conectividade e telemetria",
     "data": "2026-06-07",
     "tempoLeitura": "8 min",
     "imagem": "imagens/telemetria.png",
@@ -11,7 +11,7 @@
   {
     "titulo": "Telemetria não é rastreamento: o erro que faz muitos produtores perderem dinheiro",
     "descricao": "Entenda por que usar telemetria apenas para localização é um erro e como a telemetria completa reduz custos, melhora eficiência e evita perdas na lavoura.",
-    "categoria": "Telemetria",
+    "categoria": "IoT, conectividade e telemetria",
     "data": "2026-06-23",
     "tempoLeitura": "9 min",
     "imagem": "imagens/telemetria-agricola.png",
@@ -29,7 +29,7 @@
   {
     "titulo": "Geoprocessamento Agrícola:Como delimitar talhões com precisão usando SIG",
     "descricao": "Metodologia completa para delimitar talhões com SIG, QGIS e GPS para produtores de Juína e norte do Mato Grosso — com ferramentas gratuitas.",
-    "categoria": "Geoprocessamento",
+    "categoria": "Agricultura de Precisão",
     "data": "2026-05-02",
     "tempoLeitura": "9 min",
     "imagem": "imagens/geoprocessamento.png",
@@ -38,7 +38,7 @@
   {
     "titulo": "IoT no agro: Conectando sensores, máquinas e dados em uma única plataforma.",
     "descricao": "Tratores, pulverizadores, colheitadeiras, sensores de solo, drones e estações meteorológicas comunicando-se entre si e enviando dados para um centro de controle unificado.",
-    "categoria": "IoT Agrícola",
+    "categoria": "IoT, conectividade e telemetria",
     "data": "2026-05-15",
     "tempoLeitura": "6 min",
     "imagem": "imagens/IoT.png",
@@ -47,7 +47,7 @@
   {
     "titulo": "Piloto automático RTK vs. GNSS: Quando vale o investimento",
     "descricao": "Tratores, pulverizadores, colheitadeiras, sensores de solo, drones e estações meteorológicas comunicando-se entre si e enviando dados para um centro de controle unificado.",
-    "categoria": "Agricultura de Precisão",
+    "categoria": "Máquinas e automação agrícola",
     "data": "2026-05-15",
     "tempoLeitura": "6 min",
     "imagem": "imagens/RTK-vs-GNSS.png",
@@ -56,7 +56,7 @@
   {
     "titulo": "KPIs essesnciais para a gestão agrícola: quais indicadores toda fazenda deveria monitorar",
     "descricao": "A gestão agrícola moderna depende menos de percepção e mais de indicadores. Quando a fazenda acompanha os KPIs certos, fica muito mais fácil identificar desperdícios, avaliar máquinas e tomar decisões com base em dados.",
-    "categoria": "Gestão de Dados",
+    "categoria": "Dados, software e inteligência artificial",
     "data": "2026-06-14",
     "tempoLeitura": "8 min",
     "imagem": "imagens/KPIs-gestao-agricola.png",
@@ -65,7 +65,7 @@
   {
     "titulo": "Quanto custa uma máquina parada durante a safra?",
     "descricao": "A indisponibilidade pesa no resultado da fazenda e por que manutenção preventiva e preditiva fazem diferença.",
-    "categoria": "Mecanização",
+    "categoria": "Máquinas e automação agrícola",
     "data": "2026-06-15",
     "tempoLeitura": "8 min",
     "imagem": "imagens/maquina-parada2.png",
@@ -75,7 +75,7 @@
     {
     "titulo": "A Agricultura de Precisão Morreu? Por Que o Futuro Está na Agricultura de Decisão",
     "descricao": "Com a evolução dos sistemas embarcados e da telemetria, a manutenção agrícola está migrando do modelo corretivo para abordagens preditivas. O artigo mostrará como dados operacionais podem antecipar falhas e reduzir significativamente o tempo de indisponibilidade das máquinas.",
-    "categoria": "Agricultura de Precisão",
+    "categoria": "Gestão e transformação digital",
     "data": "2026-06-24",
     "tempoLeitura": "12 min",
     "imagem": "imagens/agricultura-de-decisao.png",
@@ -85,7 +85,7 @@
    {
     "titulo": "O Data Lake da Fazenda:? Como Unificar Informações de Máquinas, Clima e Produção",
     "descricao": "O conceito de Data Lake vem ganhando espaço em grandes operações agrícolas. O artigo explica como estruturar um ambiente centralizado para armazenamento e análise de dados provenientes de diferentes fontes, permitindo análises mais completas e estratégicas.",
-    "categoria": "Gestão de Dados",
+    "categoria": "Dados, software e inteligência artificial",
     "data": "2026-06-27",
     "tempoLeitura": "12 min",
     "imagem": "imagens/data-lake.png",
@@ -94,7 +94,7 @@
     {
     "titulo": "Da Estação Meteorológica ao Sensor de Implemento: Como Construir um Ecossistema IoT Escalável",
     "descricao": "Muitas propriedades iniciam projetos de IoT de forma fragmentada. O artigo mostra uma arquitetura escalável para integração de sensores, gateways, plataformas de análise e sistemas de gestão agrícola, reduzindo retrabalho e aumentando o aproveitamento dos dados coletados.",
-    "categoria": "IoT Agrícola",
+    "categoria": "IoT, conectividade e telemetria",
     "data": "2026-06-28",
     "tempoLeitura": "12 min",
     "imagem": "imagens/ecossistema-iot.png",
@@ -121,7 +121,7 @@
   {
     "titulo": "ZARC-NM na prática: quais dados organizar agora para decidir melhor o seguro rural em 2026/27",
     "descricao": "O ZARC Níveis de Manejo já altera a lógica do seguro rural em soja e milho safrinha. Veja quais dados a fazenda precisa organizar agora para entrar no piloto com menos improviso.",
-    "categoria": "Agricultura de Precisão",
+    "categoria": "Gestão e transformação digital",
     "data": "2026-07-29",
     "tempoLeitura": "10 min",
     "imagem": "imagens/zarc-niveis-de-manejo-seguro-rural.webp",

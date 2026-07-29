@@ -2,7 +2,7 @@ window.BLOG_ARTICLES = [
   {
     titulo: 'Telemetria Agrícola: O Potencial Não Utilizado dos Dados Operacionais',
     descricao: 'Como transformar dados operacionais em decisões estratégicas para aumentar a eficiência das máquinas agrícolas.',
-    categoria: 'Telemetria',
+    categoria: 'IoT, conectividade e telemetria',
     data: '2026-06-07',
     tempoLeitura: '8 min',
     imagem: 'imagens/telemetria.png',
@@ -11,7 +11,7 @@ window.BLOG_ARTICLES = [
   {
     titulo: 'Telemetria não é rastreamento: o erro que faz muitos produtores perderem dinheiro',
     descricao: 'Por que usar telemetria apenas para localização limita resultados e como extrair valor dos dados operacionais.',
-    categoria: 'Telemetria',
+    categoria: 'IoT, conectividade e telemetria',
     data: '2026-06-23',
     tempoLeitura: '9 min',
     imagem: 'imagens/telemetria-agricola.png',
@@ -29,7 +29,7 @@ window.BLOG_ARTICLES = [
   {
     titulo: 'Geoprocessamento Agrícola: Como delimitar talhões com precisão usando SIG',
     descricao: 'Metodologia para delimitar talhões com SIG, QGIS e GPS usando ferramentas acessíveis.',
-    categoria: 'Geoprocessamento',
+    categoria: 'Agricultura de Precisão',
     data: '2026-05-02',
     tempoLeitura: '9 min',
     imagem: 'imagens/geoprocessamento.png',
@@ -38,7 +38,7 @@ window.BLOG_ARTICLES = [
   {
     titulo: 'IoT no agro: Conectando sensores, máquinas e dados em uma única plataforma',
     descricao: 'Integração de máquinas, sensores e estações meteorológicas em um centro de controle unificado.',
-    categoria: 'IoT Agrícola',
+    categoria: 'IoT, conectividade e telemetria',
     data: '2026-05-15',
     tempoLeitura: '6 min',
     imagem: 'imagens/IoT.png',
@@ -47,7 +47,7 @@ window.BLOG_ARTICLES = [
   {
     titulo: 'Piloto automático RTK vs. GNSS: Quando vale o investimento',
     descricao: 'Entenda as diferenças entre RTK e GNSS e quando o investimento gera retorno no campo.',
-    categoria: 'Agricultura de Precisão',
+    categoria: 'Máquinas e automação agrícola',
     data: '2026-05-15',
     tempoLeitura: '6 min',
     imagem: 'imagens/RTK-vs-GNSS.png',
@@ -56,7 +56,7 @@ window.BLOG_ARTICLES = [
   {
     titulo: 'KPIs essenciais para a gestão agrícola: quais indicadores toda fazenda deveria monitorar',
     descricao: 'Os indicadores que ajudam a identificar desperdícios e tomar decisões agrícolas baseadas em dados.',
-    categoria: 'Gestão de Dados',
+    categoria: 'Dados, software e inteligência artificial',
     data: '2026-06-14',
     tempoLeitura: '8 min',
     imagem: 'imagens/KPIs-gestao-agricola.png',
@@ -65,7 +65,7 @@ window.BLOG_ARTICLES = [
   {
     titulo: 'Quanto custa uma máquina parada durante a safra?',
     descricao: 'Como a indisponibilidade afeta o resultado e por que a manutenção preventiva faz diferença.',
-    categoria: 'Mecanização',
+    categoria: 'Máquinas e automação agrícola',
     data: '2026-06-15',
     tempoLeitura: '8 min',
     imagem: 'imagens/maquina-parada2.png',
@@ -74,7 +74,7 @@ window.BLOG_ARTICLES = [
   {
     titulo: 'A Agricultura de Precisão Morreu? Por Que o Futuro Está na Agricultura de Decisão',
     descricao: 'A evolução da agricultura de precisão para uma gestão integrada e orientada à decisão.',
-    categoria: 'Agricultura de Precisão',
+    categoria: 'Gestão e transformação digital',
     data: '2026-06-24',
     tempoLeitura: '12 min',
     imagem: 'imagens/agricultura-de-decisao.png',
@@ -83,7 +83,7 @@ window.BLOG_ARTICLES = [
   {
     titulo: 'O Data Lake da Fazenda: Como Unificar Informações de Máquinas, Clima e Produção',
     descricao: 'Como centralizar informações agrícolas para realizar análises mais completas e estratégicas.',
-    categoria: 'Gestão de Dados',
+    categoria: 'Dados, software e inteligência artificial',
     data: '2026-06-27',
     tempoLeitura: '12 min',
     imagem: 'imagens/data-lake.png',
@@ -92,7 +92,7 @@ window.BLOG_ARTICLES = [
   {
     titulo: 'Da Estação Meteorológica ao Sensor de Implemento: Como Construir um Ecossistema IoT Escalável',
     descricao: 'Uma arquitetura escalável para integrar sensores, gateways e plataformas de análise agrícola.',
-    categoria: 'IoT Agrícola',
+    categoria: 'IoT, conectividade e telemetria',
     data: '2026-06-28',
     tempoLeitura: '12 min',
     imagem: 'imagens/ecossistema-iot.png',
@@ -119,7 +119,7 @@ window.BLOG_ARTICLES = [
   {
     titulo: 'ZARC-NM na prática: quais dados organizar agora para decidir melhor o seguro rural em 2026/27',
     descricao: 'O ZARC Níveis de Manejo já altera a lógica do seguro rural em soja e milho safrinha. Veja quais dados a fazenda precisa organizar agora para entrar no piloto com menos improviso.',
-    categoria: 'Agricultura de Precisão',
+    categoria: 'Gestão e transformação digital',
     data: '2026-07-29',
     tempoLeitura: '10 min',
     imagem: 'imagens/zarc-niveis-de-manejo-seguro-rural.webp',
