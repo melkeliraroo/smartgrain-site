@@ -998,7 +998,12 @@
         </div>
         <a href="blog/index.html" style="display:inline-flex;align-items:center;gap:.5rem;color:var(--vd);font-weight:600;font-size:.95rem;text-decoration:none;border:1.5px solid var(--vd);padding:.6rem 1.4rem;border-radius:8px;transition:all .2s;white-space:nowrap;" onmouseover="this.style.background='var(--vd)';this.style.color='white'" onmouseout="this.style.background='transparent';this.style.color='var(--vd)'">Ver todos os artigos →</a>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;" class="reveal">
+      <div id="homepageBlogPreview" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-bottom:1.5rem;" class="reveal">
+        <div style="background:#fff;border-radius:16px;border:1px solid rgba(26,58,42,.08);padding:1.6rem;color:var(--tm);line-height:1.7;">
+          Carregando artigos mais recentes...
+        </div>
+      </div>
+      <div id="homepageBlogPreviewFallback" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;" class="reveal">
 
         <!-- Post 1 -->
 <a href="blog/telemetria-agricola-potencial-nao-utilizado.html"
@@ -1258,5 +1263,6 @@
     <span class="wa-text">Fale pelo WhatsApp</span>
   </a>
 
+<script src="blog/homepage-blog-preview.js"></script>
 </body>
 </html>
