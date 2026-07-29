@@ -14,8 +14,20 @@
     return article.imagem;
   }
 
+  function articleHref(article) {
+    return /\.html$/i.test(article.url) ? article.url : `${article.url}.html`;
+  }
+
+  function articleSlug(article) {
+    return (article.url || '').replace(/\.html$/i, '').toLowerCase();
+  }
+
   function currentFilename() {
     return decodeURIComponent(window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  }
+
+  function currentSlug() {
+    return currentFilename().replace(/\.html$/i, '');
   }
 
   function injectStyles() {
@@ -42,7 +54,7 @@
 
   function relatedMarkup(article) {
     return `
-      <a href="${article.url}" class="be-related">
+      <a href="${articleHref(article)}" class="be-related">
         <span class="be-related__thumb">
           <img src="${imageUrl(article)}" alt="" width="144" height="116" loading="lazy"/>
         </span>
@@ -82,11 +94,11 @@
     const container = ensureRelatedContainer();
     if (!container || !state.articles.length) return;
 
-    const filename = currentFilename();
-    const current = state.articles.find((article) => article.url.toLowerCase() === filename);
+    const slug = currentSlug();
+    const current = state.articles.find((article) => articleSlug(article) === slug);
     const candidates = state.articles
       .filter((article) =>
-        article.url.toLowerCase() !== filename
+        articleSlug(article) !== slug
         && current
         && article.categoria === current.categoria
       )
@@ -104,11 +116,37 @@
     const articles = state.articles.slice().sort((a, b) => b.data.localeCompare(a.data)).slice(0, 5);
     container.innerHTML = articles.map((article) => `
       <div class="popular-post be-popular">
-        <a class="be-popular__thumb" href="${article.url}" aria-label="${article.titulo}">
+        <a class="be-popular__thumb" href="${articleHref(article)}" aria-label="${article.titulo}">
           <img src="${imageUrl(article)}" alt="" width="128" height="104" loading="lazy"/>
         </a>
-        <a href="${article.url}">${article.titulo}</a>
+        <a href="${articleHref(article)}">${article.titulo}</a>
       </div>`).join('');
+  }
+
+  function renderFeatured() {
+    const container = document.getElementById('featuredCard');
+    if (!container || !state.articles.length) return;
+
+    const article = state.articles.slice().sort((a, b) => b.data.localeCompare(a.data))[0];
+    container.innerHTML = `
+      <a class="featured-card" href="${articleHref(article)}">
+        <div class="featured-img">
+          <img src="${imageUrl(article)}" alt="${article.titulo}" width="1200" height="630" loading="eager"/>
+          <span class="featured-label">Destaque</span>
+        </div>
+        <div class="featured-body">
+          <div class="article-meta">
+            <span class="article-cat">${article.categoria}</span>
+            <span class="article-dot"></span>
+            <span class="article-date">${formatDate(article.data)}</span>
+            <span class="article-dot"></span>
+            <span class="article-read">${article.tempoLeitura}</span>
+          </div>
+          <h2 class="featured-title">${article.titulo}</h2>
+          <p class="featured-excerpt">${article.descricao}</p>
+          <span class="read-more">Ler artigo →</span>
+        </div>
+      </a>`;
   }
 
   function renderArticleGrid(articles) {
@@ -126,7 +164,7 @@
           <p>${article.descricao}</p>
           <small>${formatDate(article.data)} · ${article.tempoLeitura}</small>
           <br><br>
-          <a href="${article.url}">Ler artigo</a>
+          <a href="${articleHref(article)}">Ler artigo</a>
         </div>`;
       container.appendChild(card);
     });
@@ -167,9 +205,12 @@
 
   function renderAll() {
     state.articles = Array.isArray(window.BLOG_ARTICLES) ? window.BLOG_ARTICLES : [];
+    renderFeatured();
     renderArticleGrid(state.articles);
     renderPopular();
     renderRelated();
+    const count = document.getElementById('artCount');
+    if (count) count.textContent = String(state.articles.length);
     setupFilters();
     loadSalesWidget();
   }

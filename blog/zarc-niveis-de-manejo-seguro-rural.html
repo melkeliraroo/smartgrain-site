@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="icon" type="image/png" href="../favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="../favicon.png"/>
+  <link rel="apple-touch-icon" href="../favicon.png"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZARC-NM na prática: quais dados organizar agora para decidir melhor o seguro rural em 2026/27 | SmartGrain</title>
+  <meta name="description" content="O ZARC Níveis de Manejo já altera a lógica do seguro rural em soja e milho safrinha. Veja quais dados a fazenda precisa organizar agora para entrar no piloto com menos improviso."/>
+  <meta name="keywords" content="ZARC Níveis de Manejo, ZarcNM, seguro rural, gestão de risco climático, análise de solo, agricultura de precisão, milho segunda safra, soja"/>
+  <meta name="author" content="Francyeli Aureliano Lira, SmartGrain Consultoria Agrícola"/>
+  <meta name="robots" content="index,follow"/>
+  <meta property="og:title" content="ZARC-NM na prática: quais dados organizar agora para decidir melhor o seguro rural em 2026/27"/>
+  <meta property="og:description" content="Um guia prático para decidir o que a fazenda precisa organizar em solo, manejo e dados antes de entrar no ZARC-NM da safra 2026/27."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:locale" content="pt_BR"/>
+  <meta property="article:published_time" content="2026-07-29"/>
+  <meta property="article:section" content="Agricultura de Precisão"/>
+  <meta property="og:image" content="https://smartgrain.com.br/blog/imagens/zarc-niveis-de-manejo-seguro-rural.webp"/>
+  <link rel="canonical" href="https://smartgrain.com.br/blog/zarc-niveis-de-manejo-seguro-rural"/>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "ZARC-NM na prática: quais dados organizar agora para decidir melhor o seguro rural em 2026/27",
+    "description": "Guia prático para preparar dados de solo, manejo e georreferenciamento antes da contratação do seguro rural no contexto do ZARC Níveis de Manejo.",
+    "author": {
+      "@type": "Person",
+      "name": "Francyeli Aureliano Lira",
+      "jobTitle": "Co-Fundadora e Especialista em Big Data aplicado ao agronegócio"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SmartGrain Consultoria Agrícola"
+    },
+    "datePublished": "2026-07-29",
+    "articleSection": "Agricultura de Precisão",
+    "keywords": "ZARC Níveis de Manejo, ZarcNM, seguro rural, gestão de risco climático, análise de solo, agricultura de precisão",
+    "inLanguage": "pt-BR"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--vd:#1a3a2a;--vm:#2d5a3d;--vc:#3d7a50;--dou:#c8960c;--doul:#e8b422;--dous:#f5d87a;--creme:#faf7f0;--branco:#fff;--te:#111a14;--tm:#3a4a3e}
+    html{scroll-behavior:smooth}
+    body{font-family:"DM Sans",sans-serif;background:var(--creme);color:var(--te);overflow-x:hidden}
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:72px;background:rgba(26,58,42,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(200,150,12,.2);transition:box-shadow .3s}
+    nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,.3)}
+    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .nav-logo img{width:40px;height:40px;object-fit:contain;border-radius:8px}
+    .nav-logo-text{font-family:"Fraunces",serif;font-weight:700;font-size:1.2rem;color:#fff;letter-spacing:-.02em}
+    .nav-logo-text span{color:var(--doul)}
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
+    .nav-links a:hover,.nav-links a.active{color:var(--doul)}
+    .nav-cta{background:var(--dou);color:var(--vd)!important;font-weight:600!important;padding:.45rem 1.2rem;border-radius:6px}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+    .hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px}
+    .reading-progress{position:fixed;top:72px;left:0;right:0;height:3px;background:rgba(255,255,255,.1);z-index:199}
+    .reading-progress-bar{height:100%;width:0%;background:linear-gradient(to right,var(--dou),var(--doul));transition:width .1s linear}
+    .art-hero{min-height:560px;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:var(--vd)}
+    .art-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+    .art-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,22,12,.98) 0%,rgba(8,22,12,.7) 40%,rgba(8,22,12,.25) 100%)}
+    .art-hero-content{position:relative;z-index:2;max-width:860px;margin:0 auto;padding:120px 5% 3.5rem;width:100%}
+    .breadcrumb{display:flex;align-items:center;gap:.5rem;margin-bottom:1.5rem;font-size:.82rem;color:rgba(255,255,255,.45);flex-wrap:wrap}
+    .breadcrumb a{color:rgba(255,255,255,.45);text-decoration:none;transition:color .2s}
+    .breadcrumb a:hover{color:var(--doul)}
+    .breadcrumb span{color:var(--doul)}
+    .art-cat-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(200,150,12,.18);border:1px solid rgba(200,150,12,.4);color:var(--dous);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.35rem .9rem;border-radius:50px;margin-bottom:1.2rem}
+    .art-hero-title{font-family:"Fraunces",serif;font-weight:900;font-size:clamp(1.9rem,4vw,3.2rem);line-height:1.1;letter-spacing:-.03em;color:#fff;margin-bottom:.9rem}
+    .art-hero-title em{font-style:italic;color:var(--doul)}
+    .art-hero-impact{font-size:1.08rem;color:rgba(255,255,255,.72);line-height:1.75;max-width:700px;margin-bottom:1.8rem;font-weight:300}
+    .art-meta-bar{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.12)}
+    .meta-author{display:flex;align-items:center;gap:.75rem}
+    .meta-author img{width:40px;height:40px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid rgba(200,150,12,.5)}
+    .meta-author-info strong{display:block;font-size:.88rem;color:#fff;font-weight:600}
+    .meta-author-info span{font-size:.78rem;color:rgba(255,255,255,.45)}
+    .meta-dot{width:3px;height:3px;background:rgba(255,255,255,.25);border-radius:50%}
+    .meta-item{font-size:.82rem;color:rgba(255,255,255,.45);display:flex;align-items:center;gap:.35rem}
+    .art-layout{max-width:1100px;margin:0 auto;padding:4rem 5% 6rem;display:grid;grid-template-columns:1fr 300px;gap:5rem;align-items:start}
+    .art-body h2{font-family:"Fraunces",serif;font-weight:800;font-size:1.6rem;line-height:1.25;letter-spacing:-.02em;color:var(--te);margin:2.8rem 0 1rem}
+    .art-body h3{font-family:"Fraunces",serif;font-weight:700;font-size:1.22rem;line-height:1.3;color:var(--vd);margin:2rem 0 .8rem}
+    .art-body p{font-size:1.05rem;line-height:1.87;color:var(--tm);margin-bottom:1.4rem;text-align:justify}
+    .art-body p strong{color:var(--te)}
+    .art-body ul{margin:1rem 0 1.5rem 1.2rem;display:flex;flex-direction:column;gap:.65rem}
+    .art-body ul li{font-size:1.05rem;line-height:1.75;color:var(--tm);padding-left:.4rem}
+    .art-body ul li::marker{color:var(--dou)}
+    .pullquote{border-left:4px solid var(--dou);background:rgba(200,150,12,.06);border-radius:0 12px 12px 0;padding:1.5rem 1.8rem;margin:2.5rem 0}
+    .pullquote p{font-family:"Fraunces",serif;font-style:italic;font-size:1.2rem;line-height:1.65;color:var(--te);margin-bottom:0!important}
+    .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2.5rem 0}
+    .stat-card{background:var(--branco);border-radius:12px;padding:1.4rem;border:1px solid rgba(26,58,42,.08);text-align:center;border-top:3px solid var(--dou)}
+    .stat-num{font-family:"Fraunces",serif;font-weight:900;font-size:2rem;color:var(--dou);letter-spacing:-.04em;line-height:1;margin-bottom:.4rem}
+    .stat-label{font-size:.82rem;color:var(--tm);line-height:1.4}
+    .art-img-block{margin:2.5rem 0;border-radius:16px;overflow:hidden;box-shadow:0 8px 32px rgba(26,58,42,.12)}
+    .art-img-block img{width:100%;height:auto;display:block}
+    .art-img-caption{font-size:.82rem;color:var(--tm);text-align:center;padding:.8rem 1rem;background:var(--branco);border:1px solid rgba(26,58,42,.08);border-top:none;border-radius:0 0 16px 16px;font-style:italic}
+    .questions-box{background:var(--vd);border-radius:16px;padding:2rem;margin:2.5rem 0}
+    .questions-box h3{font-family:"Fraunces",serif;color:#fff;font-size:1.15rem;margin-bottom:1.2rem;margin-top:0!important}
+    .questions-box ul{margin-left:0!important}
+    .questions-box ul li{color:rgba(255,255,255,.8);padding-left:0!important;display:flex;align-items:flex-start;gap:.7rem}
+    .questions-box ul li::marker{content:none}
+    .questions-box ul li::before{content:"→";color:var(--doul);font-weight:700;flex-shrink:0}
+    .art-cta{background:linear-gradient(135deg,var(--vd) 0%,var(--vm) 100%);border-radius:16px;padding:2.5rem;margin:3rem 0;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;border:1px solid rgba(200,150,12,.2)}
+    .art-cta-text strong{display:block;font-family:"Fraunces",serif;font-weight:800;font-size:1.35rem;color:#fff;margin-bottom:.5rem}
+    .art-cta-text p{color:rgba(255,255,255,.65);font-size:.95rem;margin-bottom:0!important}
+    .btn-cta{background:var(--dou);color:var(--vd);font-weight:700;font-size:.95rem;padding:.9rem 1.8rem;border-radius:8px;text-decoration:none;white-space:nowrap;flex-shrink:0;transition:background .2s,transform .2s}
+    .btn-cta:hover{background:var(--doul);transform:translateY(-2px)}
+    .art-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:2rem 0}
+    .art-tag{font-size:.78rem;font-weight:600;padding:.3rem .8rem;border-radius:20px;background:var(--creme);border:1px solid rgba(26,58,42,.12);color:var(--tm)}
+    .referencias{background:var(--branco);border-radius:16px;padding:2rem;margin-top:3rem;border:1px solid rgba(26,58,42,.08)}
+    .referencias h2{font-family:"Fraunces",serif;font-weight:700;font-size:1.2rem;color:var(--te);margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:2px solid var(--dou);margin-top:0!important}
+    .ref-list{display:flex;flex-direction:column;gap:.6rem}
+    .ref-item{display:flex;align-items:flex-start;gap:.8rem;font-size:.85rem;color:var(--tm);line-height:1.55}
+    .ref-num{flex-shrink:0;width:22px;height:22px;background:var(--vd);color:var(--doul);font-weight:700;font-size:.72rem;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:.1rem}
+    .ref-item a{color:var(--vc)}
+    .sidebar{display:flex;flex-direction:column;gap:1.8rem;position:sticky;top:92px}
+    .sb-card{background:var(--branco);border-radius:16px;padding:1.6rem;border:1px solid rgba(26,58,42,.08)}
+    .sb-title{font-family:"Fraunces",serif;font-weight:700;font-size:1rem;color:var(--te);margin-bottom:1rem;padding-bottom:.7rem;border-bottom:2px solid var(--dou)}
+    .author-card{background:var(--vd);border-radius:16px;padding:1.6rem;text-align:center}
+    .author-card img{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;border:3px solid var(--dou);margin-bottom:.9rem}
+    .author-name{font-family:"Fraunces",serif;font-weight:700;color:#fff;font-size:1rem;margin-bottom:.2rem}
+    .author-role{font-size:.78rem;color:var(--doul);margin-bottom:.8rem}
+    .author-bio{font-size:.83rem;color:rgba(255,255,255,.6);line-height:1.65;margin-bottom:1.2rem}
+    .btn-wa-small{display:block;background:#25D366;color:#fff;font-weight:600;font-size:.85rem;padding:.65rem 1rem;border-radius:8px;text-decoration:none;text-align:center;transition:background .2s}
+    .btn-wa-small:hover{background:#20bc59}
+    .related-item{display:flex;gap:.8rem;padding:.8rem 0;border-bottom:1px solid rgba(26,58,42,.07);text-decoration:none}
+    .related-item:last-child{border-bottom:none;padding-bottom:0}
+    .rel-thumb{width:64px;height:52px;border-radius:8px;overflow:hidden;flex-shrink:0;background:#edf1ed}
+    .rel-thumb img{width:100%;height:100%;display:block;object-fit:cover}
+    .rel-title{font-size:.84rem;font-weight:600;color:var(--te);line-height:1.35;transition:color .2s}
+    .related-item:hover .rel-title{color:var(--dou)}
+    .rel-date{font-size:.74rem;color:var(--tm);margin-top:.3rem}
+    .book-stack{display:grid;gap:.75rem}
+    .book-card{display:grid;grid-template-columns:72px minmax(0,1fr);gap:.8rem;align-items:start;padding:.8rem;border:1px solid rgba(26,58,42,.1);border-radius:12px;background:linear-gradient(180deg,#fff 0%,#f8f5ee 100%)}
+    .book-cover{display:block;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(26,58,42,.16)}
+    .book-cover img{display:block;width:100%;height:auto}
+    .book-type{display:block;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#9b7206}
+    .book-title{display:block;font-size:.88rem;font-weight:700;line-height:1.3;color:var(--te);margin:.18rem 0}
+    .book-copy{font-size:.77rem;color:var(--tm);line-height:1.45;margin-bottom:.65rem}
+    .book-link{display:inline-block;background:var(--vd);color:#fff!important;font-size:.75rem;font-weight:700;padding:.58rem .72rem;border-radius:8px;text-decoration:none;transition:background .2s}
+    .book-link:hover{background:var(--vm)}
+    .nl-sb input{width:100%;background:var(--creme);border:1px solid rgba(26,58,42,.15);border-radius:8px;padding:.65rem .9rem;font-family:"DM Sans",sans-serif;font-size:.88rem;color:var(--te);outline:none;margin-bottom:.6rem}
+    .nl-sb input:focus{border-color:var(--dou)}
+    .btn-nl{width:100%;background:var(--dou);color:var(--vd);font-family:"DM Sans",sans-serif;font-weight:700;font-size:.88rem;padding:.7rem;border:none;border-radius:8px;cursor:pointer;transition:background .2s}
+    .btn-nl:hover{background:var(--doul)}
+    .wa-btn{position:fixed;bottom:28px;right:28px;z-index:999;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;font-family:"DM Sans",sans-serif;font-weight:600;padding:.75rem 1.2rem .75rem .85rem;border-radius:50px;text-decoration:none;box-shadow:0 6px 24px rgba(37,211,102,.45);transition:transform .25s,max-width .3s,padding .3s;overflow:hidden;max-width:56px}
+    .wa-btn:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(37,211,102,.55);max-width:260px;padding:.75rem 1.4rem .75rem .85rem}
+    .wa-icon{flex-shrink:0;width:32px;height:32px}
+    .wa-text{white-space:nowrap;opacity:0;transition:opacity .2s ease .1s}
+    .wa-btn:hover .wa-text{opacity:1}
+    .wa-ring{position:fixed;bottom:28px;right:28px;z-index:998;width:56px;height:56px;border-radius:50%;border:3px solid rgba(37,211,102,.5);animation:waPulse 2.5s ease-out infinite;pointer-events:none}
+    @keyframes waPulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(2.2);opacity:0}}
+    footer{background:#0a1a10;padding:3rem 5%;border-top:1px solid rgba(200,150,12,.12)}
+    .foot-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
+    .foot-logo{display:flex;align-items:center;gap:8px}
+    .foot-logo img{width:30px;height:30px;object-fit:contain;border-radius:6px;opacity:.75}
+    .foot-copy{font-size:.85rem;color:rgba(255,255,255,.35)}
+    .foot-links{display:flex;gap:2rem;list-style:none}
+    .foot-links a{color:rgba(255,255,255,.35);text-decoration:none;font-size:.85rem;transition:color .2s}
+    .foot-links a:hover{color:var(--doul)}
+    @media(max-width:900px){.art-layout{grid-template-columns:1fr;gap:3rem}.sidebar{position:static}.stat-grid{grid-template-columns:1fr 1fr}.art-cta{flex-direction:column}.nav-links{display:none}.hamburger{display:flex}}
+    @media(max-width:600px){.stat-grid{grid-template-columns:1fr}.art-hero-title{font-size:1.7rem}}
+  </style>
+</head>
+<body>
+
+<div class="reading-progress"><div class="reading-progress-bar" id="progressBar"></div></div>
+
+<nav id="navbar">
+  <a href="../index.html" class="nav-logo">
+    <img src="../favicon.png" alt="Logo SmartGrain"/>
+    <span class="nav-logo-text">Smart<span>Grain</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html#sobre">Sobre</a></li>
+    <li><a href="../index.html#servicos">Serviços</a></li>
+    <li><a href="../index.html#agrocheck">AgroCheck 360</a></li>
+    <li><a href="index.html" class="active">Blog</a></li>
+    <li><a href="../index.html#contato" class="nav-cta">Fale Conosco</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="art-hero">
+  <img class="art-hero-img" src="imagens/zarc-niveis-de-manejo-seguro-rural.webp" alt="Talhões de soja ao amanhecer com sobreposição visual de mapa de manejo, linhas de contorno e indicadores de dados agrícolas"/>
+  <div class="art-hero-overlay"></div>
+  <div class="art-hero-content">
+    <div class="breadcrumb">
+      <a href="../index.html">Início</a><span>›</span>
+      <a href="index.html">Blog</a><span>›</span>
+      <span>Agricultura de Precisão</span>
+    </div>
+    <div class="art-cat-badge">🛰️ Agricultura de Precisão</div>
+    <h1 class="art-hero-title">ZARC-NM na prática:<br/><em>quais dados organizar agora para decidir melhor o seguro rural em 2026/27</em></h1>
+    <p class="art-hero-impact">O gargalo não começa no banco nem na seguradora. Começa na fazenda, quando <strong style="color:var(--dous);">solo, manejo e talhão ainda estão mal documentados</strong> e a equipe tenta correr atrás disso perto da contratação do seguro.</p>
+    <div class="art-meta-bar">
+      <div class="meta-author">
+        <img src="imagens/francyeli.png" alt="Francyeli Aureliano Lira"/>
+        <div class="meta-author-info">
+          <strong>Francyeli Aureliano Lira</strong>
+          <span>Co-Fundadora & Especialista em Big Data aplicado ao agronegócio</span>
+        </div>
+      </div>
+      <div class="meta-dot"></div>
+      <div class="meta-item">📅 29 de julho de 2026</div>
+      <div class="meta-dot"></div>
+      <div class="meta-item">⏱️ 10 min de leitura</div>
+      <div class="meta-dot"></div>
+      <div class="meta-item">🧾 Seguro e gestão de risco</div>
+    </div>
+  </div>
+</div>
+
+<div class="art-layout">
+  <article class="art-body">
+    <p><strong>Resumo executivo.</strong> O Zoneamento Agrícola de Risco Climático em Níveis de Manejo, ou <strong>ZARC-NM</strong>, deixou de ser uma curiosidade metodológica e entrou na agenda operacional de quem precisa ligar manejo do solo, histórico do talhão e contratação de seguro rural. A página oficial da Embrapa informa que, na safra <strong>2026/2027</strong>, o piloto foi ampliado para a soja no Rio Grande do Sul, Santa Catarina, Paraná e Mato Grosso do Sul, além do milho segunda safra no Paraná e em Mato Grosso do Sul (<a href="https://www.embrapa.br/en/rede-zarc-embrapa/niveis-de-manejo" target="_blank" rel="noopener">Embrapa</a>). O ponto central não é “entrar na moda”. É decidir <strong>se a fazenda já tem dados confiáveis para capturar valor</strong> com esse modelo sem transformar a contratação do seguro em mais uma corrida de última hora.</p>
+
+    <div class="stat-grid">
+      <div class="stat-card"><div class="stat-num">NM1 a NM4</div><div class="stat-label">quatro níveis de manejo classificados com base em indicadores objetivos e auditáveis, segundo a Embrapa</div></div>
+      <div class="stat-card"><div class="stat-num">6 indicadores</div><div class="stat-label">entram na nota: palhada, revolvimento, rotação e atributos químicos em duas camadas de solo</div></div>
+      <div class="stat-card"><div class="stat-num">2026/27</div><div class="stat-label">marcou a fase 2 do piloto e a ampliação geográfica do ZARC-NM para soja e milho safrinha</div></div>
+    </div>
+
+    <h2>Qual decisão este artigo ajuda a tomar</h2>
+    <p>Este não é um texto para discutir se o ZARC-NM é “interessante”. A decisão prática é outra: <strong>vale começar agora a organizar dados, escolher talhões e alinhar operadores credenciados, ou a fazenda ainda deve esperar mais um ciclo?</strong> Essa pergunta importa porque o benefício potencial vem acompanhado de disciplina operacional. Não basta ter boa lavoura. É preciso provar, por talhão, como o manejo vem sendo conduzido e se os dados estão em formato utilizável.</p>
+
+    <p>Em 28 de abril de 2026, a Resolução CGSR nº 111 aprovou a segunda etapa do projeto-piloto do ZARC-NM no Programa de Subvenção ao Prêmio do Seguro Rural, conforme a página de legislação do Ministério da Agricultura e Pecuária (<a href="https://www.gov.br/agricultura/pt-br/assuntos/riscos-seguro/seguro-rural/legislacao" target="_blank" rel="noopener">MAPA</a>). Isso muda a conversa: gestão de risco passa a exigir governança de dados agrícolas com muito mais rastreabilidade.</p>
+
+    <h2>A situação prática na propriedade</h2>
+    <p>Na maioria das fazendas, as informações críticas ainda estão espalhadas. A análise de solo fica em PDF ou planilha. O histórico de culturas mora em outro sistema. O contorno do talhão está em um arquivo de geoprocessamento que ninguém revisou recentemente. E a área que “sempre foi plantio direto” nem sempre tem a evidência organizada da forma exigida por um processo auditável. O problema não é tecnológico. É <strong>integração, antecedência e consistência</strong>.</p>
+
+    <div class="pullquote">
+      <p>O ganho do ZARC-NM não nasce da papelada. Nasce quando a fazenda já maneja bem o solo e consegue transformar isso em dado verificável no momento certo.</p>
+    </div>
+
+    <h2>Como o ZARC-NM funciona de verdade</h2>
+    <p>Pela explicação da Embrapa, o ZARC-NM é uma evolução metodológica do Zarc tradicional. Em vez de olhar apenas clima, solo e ciclo da cultura, ele incorpora <strong>a qualidade do manejo do solo</strong> como fator determinante na mitigação do risco climático (<a href="https://www.embrapa.br/en/rede-zarc-embrapa/niveis-de-manejo" target="_blank" rel="noopener">Embrapa</a>). Em termos práticos, áreas com sistema conservacionista mais consolidado tendem a infiltrar e reter mais água, respondendo melhor a períodos de deficiência hídrica.</p>
+
+    <p>A classificação final vai de <strong>NM1 a NM4</strong>. Ela é calculada a partir de seis indicadores quantitativos: tempo sem revolvimento do solo, cobertura com palhada na semeadura, saturação por bases na camada de 0 a 20 cm, teor de cálcio na camada de 20 a 40 cm, saturação por alumínio na camada de 20 a 40 cm e diversidade de cultivos nos últimos três anos. Além disso, há pré-requisitos. Em áreas com mais de 3% de declividade, por exemplo, a semeadura em nível ou contorno precisa cobrir pelo menos 75% da gleba para viabilizar níveis superiores.</p>
+
+    <div class="art-img-block">
+      <img src="imagens/zarc-niveis-de-manejo-seguro-rural.webp" alt="Talhões agrícolas com linhas de contorno, mapa colorido de manejo e indicadores de dados sobre a lavoura"/>
+      <div class="art-img-caption">No ZARC-NM, mapa bonito não resolve sozinho. O que pesa é a combinação entre talhão georreferenciado, análise de solo adequada e histórico de manejo registrável.</div>
+    </div>
+
+    <p>A consequência econômica aparece no seguro. A tabela oficial da Embrapa para a fase 2 do piloto indica, na soja de RS, SC, PR e MS, subvenção de 20% para NM1, 30% para NM2, 35% para NM3 e 40% para NM4. No milho segunda safra em PR e MS, os percentuais oficiais são 40%, 45%, 50% e 50%, respectivamente (<a href="https://www.embrapa.br/en/rede-zarc-embrapa/niveis-de-manejo" target="_blank" rel="noopener">Embrapa</a>). Isso é relevante, mas não significa benefício automático. Significa apenas que <strong>manejo comprovado pode mudar a condição econômica da apólice</strong>.</p>
+
+    <h2>O que precisa estar pronto antes de falar com a seguradora</h2>
+    <h3>1. Talhões georreferenciados e revisados</h3>
+    <p>Se o polígono da gleba estiver desatualizado, o problema começa cedo. O operador de contrato precisa registrar o contorno georreferenciado da área. Isso exige revisar limites, nomes dos talhões e consistência entre o mapa usado pela fazenda, o que aparece no Sistema de Informações de Níveis de Manejo e o que de fato será segurado.</p>
+
+    <h3>2. Análise de solo feita com antecedência e no padrão certo</h3>
+    <p>A própria Embrapa orienta que as análises sejam feitas com regularidade e antecedência para que os resultados já estejam registrados no sistema quando chegar o momento da contratação. No fluxo atual, o laboratório credenciado registra digitalmente os resultados e não basta apresentar um laudo solto depois. Se a amostragem estiver atrasada, o cronograma inteiro trava.</p>
+
+    <h3>3. Histórico de culturas e manejo sem lacunas</h3>
+    <p>Rotação, sucessão e tempo sem revolvimento precisam deixar de ser “conhecimento tácito” do gerente ou do operador mais antigo. O dado precisa existir de forma organizada, porque entra na classificação. Se houve troca de arrendamento, software ou base histórica, esse passivo precisa ser tratado agora, não na semana de fechar a apólice.</p>
+
+    <h3>4. Integração entre parceiros, não só entre máquinas</h3>
+    <p>A documentação pública da API do SiNM deixa claro que existem perfis distintos para operador de contrato, operador de análise de solo e operador de sensoriamento remoto, cada um com responsabilidade própria (<a href="https://www.gitlab.cnptia.embrapa.br/zarc-nivel-manejo/zarc-nm-docs" target="_blank" rel="noopener">GitLab Embrapa</a>). Ou seja: integração não é só telemetria ou conexão entre plataforma e máquina. É também governança entre laboratório, consultoria, seguradora, cooperativa e time interno.</p>
+
+    <h2>Passo a passo para sair do discurso e entrar no piloto</h2>
+    <h3>1. Escolha poucos talhões com chance real de boa classificação</h3>
+    <p>O pior caminho é tentar começar em toda a fazenda. Faz mais sentido selecionar áreas com plantio direto consolidado, boa cobertura, rotação conhecida e limite georreferenciado confiável. O piloto precisa gerar aprendizado e não retrabalho.</p>
+
+    <h3>2. Faça uma auditoria rápida do acervo de dados</h3>
+    <p>Monte uma planilha simples por talhão com cinco blocos: polígono validado, laudos de solo compatíveis, histórico de culturas dos últimos três anos, evidência de manejo em nível ou contorno quando necessário e parceiro responsável por cada envio. Se algum campo crítico ficar em branco, você já achou o gargalo.</p>
+
+    <h3>3. Confirme o fluxo operacional com os credenciados</h3>
+    <p>A página da Embrapa já lista laboratórios, operadores de contrato e operadores de geoprocessamento credenciados. Na prática, o gerente agrícola precisa saber quem coletará ou validará a análise, quem enviará o dado e quem responderá se surgir inconsistência perto da contratação.</p>
+
+    <h3>4. Trate integração como projeto de dados</h3>
+    <p>Em julho de 2026, a documentação pública do SiNM registrou a descontinuação da coleção Postman e o direcionamento para uso do Swagger. Também informa que as análises de solo passaram a ser tratadas em fluxos separados para química e física, e que o racional da classificação será ampliado na versão v6.2026 (<a href="https://www.gitlab.cnptia.embrapa.br/zarc-nivel-manejo/zarc-nm-docs" target="_blank" rel="noopener">GitLab Embrapa</a>). Para a fazenda, isso significa uma coisa: se houver integração via software próprio ou parceiro tecnológico, o momento de alinhar payload, credencial e formato é agora.</p>
+
+    <h3>5. Só então discuta apólice e timing comercial</h3>
+    <p>Depois que os dados estiverem consistentes, a conversa com seguradora, cooperativa ou agente financeiro melhora. Sem isso, a negociação fica baseada em expectativa. Com a base pronta, a fazenda passa a discutir enquadramento possível, tempo de processamento e prioridade de talhões com objetividade.</p>
+
+    <h2>Dados e recursos que entram na conta</h2>
+    <ul>
+      <li><strong>Polígono georreferenciado por gleba</strong> com revisão recente e aderência ao mapa usado pela operação.</li>
+      <li><strong>Análises química e física de solo</strong> no padrão aceito pelo fluxo de operadores credenciados.</li>
+      <li><strong>Histórico de culturas dos últimos três anos</strong> para sustentar rotação e sucessão.</li>
+      <li><strong>Registro de práticas conservacionistas</strong>, especialmente quando a declividade exige semeadura em nível ou contorno.</li>
+      <li><strong>Parceiros credenciados</strong> para contrato, geoprocessamento e laboratório, com responsabilidades combinadas.</li>
+      <li><strong>Capacidade interna de conferência</strong> para não terceirizar cegamente um processo que impacta risco e custo.</li>
+    </ul>
+
+    <h2>Custos, riscos e limitações que não podem ser ignorados</h2>
+    <p>O primeiro risco é imaginar que a simples existência de manejo conservacionista já resolve tudo. Sem evidência organizada, a fazenda pode ter bom sistema produtivo e mesmo assim não capturar o benefício no prazo. O segundo risco é achar que toda área deve entrar de imediato. Em operações heterogêneas, algumas glebas podem estar prontas e outras não. Misturar tudo só aumenta atrito.</p>
+
+    <p>Também existe risco de <strong>excesso de extrapolação</strong>. Em 13 de julho de 2026, a Embrapa Soja informou o início de um projeto para adaptar os indicadores do ZARC-NM às condições do Brasil tropical (<a href="https://www.embrapa.br/en/web/soja/busca-de-noticias/-/noticia/145854212/pesquisa-vai-adaptar-indicadores-do-zarc-niveis-de-manejo-para-as-condicoes-do-brasil-tropical" target="_blank" rel="noopener">Embrapa Soja</a>). Convém evitar conclusões universais fora da área e das culturas já cobertas.</p>
+
+    <p>Há ainda custos menos visíveis: coleta de solo fora de época, limpeza de base histórica, ajuste de shapefile, revisão cadastral, tempo da equipe e alinhamento com parceiros externos. Nada disso invalida o ZARC-NM. Apenas mostra que a decisão é menos “comprar uma ideia” e mais <strong>organizar um processo</strong>.</p>
+
+    <h2>Indicadores para acompanhar em um piloto sério</h2>
+    <ul>
+      <li><strong>% de talhões com dossiê completo</strong>: polígono, solo, histórico e parceiro definido.</li>
+      <li><strong>Tempo entre coleta de solo e registro utilizável</strong> no fluxo do operador.</li>
+      <li><strong>Número de inconsistências por talhão</strong> antes da classificação final.</li>
+      <li><strong>Distribuição dos níveis NM</strong> nas áreas candidatas, sem confundir resultado preliminar com potencial teórico.</li>
+      <li><strong>Tempo de resposta dos parceiros</strong> entre correção solicitada e novo envio.</li>
+      <li><strong>Diferença entre áreas elegíveis e áreas desejadas</strong>, para separar expectativa comercial de prontidão operacional.</li>
+    </ul>
+
+    <div class="questions-box">
+      <h3>Checklist de decisão para a próxima semana</h3>
+      <ul>
+        <li>Quais talhões da fazenda já têm polígono, histórico de culturas e análise de solo em condição de uso?</li>
+        <li>Existe laboratório credenciado e operador de contrato já definidos para esses talhões?</li>
+        <li>A equipe sabe onde estão as evidências de palhada, rotação e ausência de revolvimento?</li>
+        <li>Há integração de dados suficiente para revisar inconsistências antes de negociar a apólice?</li>
+        <li>O ganho esperado depende de soja, milho safrinha, estado coberto pelo piloto e regra vigente do PSR?</li>
+      </ul>
+    </div>
+
+    <h2>Conclusão prática</h2>
+    <p>O ZARC-NM não é só mais um painel bonito de risco. Em 2026, ele virou uma <strong>ponte concreta entre manejo do solo, documentação do talhão e condição econômica do seguro rural</strong>. Para produtor e gerente agrícola, a decisão inteligente não é perguntar primeiro “quanto eu vou ganhar”. É perguntar: <strong>quais áreas eu consigo comprovar bem, com antecedência e com parceiros certos?</strong></p>
+
+    <p>Se a resposta ainda for vaga, o melhor passo não é desistir. É começar pequeno: selecionar talhões fortes, organizar base de solo e histórico, fechar o fluxo com os credenciados e aprender com um piloto operacional. Quem fizer isso agora chega na safra 2026/27 discutindo risco com dado, não com memória.</p>
+
+    <div class="art-cta">
+      <div class="art-cta-text">
+        <strong>Quer organizar o dado antes de discutir a apólice?</strong>
+        <p>A SmartGrain pode apoiar a revisão de talhões, estruturação da base e leitura operacional do que falta para entrar no ZARC-NM com menos improviso.</p>
+      </div>
+      <a href="../index.html#contato" class="btn-cta">Solicitar diagnóstico →</a>
+    </div>
+
+    <div class="art-tags">
+      <span class="art-tag">ZARC-NM</span>
+      <span class="art-tag">Seguro rural</span>
+      <span class="art-tag">Gestão de risco</span>
+      <span class="art-tag">Análise de solo</span>
+      <span class="art-tag">Soja</span>
+      <span class="art-tag">Milho safrinha</span>
+      <span class="art-tag">Geoprocessamento</span>
+      <span class="art-tag">Dados agrícolas</span>
+    </div>
+
+    <div class="referencias">
+      <h2>📚 Fontes</h2>
+      <div class="ref-list">
+        <div class="ref-item"><div class="ref-num">1</div><span><strong>Embrapa.</strong> Página oficial do ZARC Níveis de Manejo, com metodologia, indicadores, operadores credenciados e tabela de subvenção da fase 2 do piloto. <a href="https://www.embrapa.br/en/rede-zarc-embrapa/niveis-de-manejo" target="_blank" rel="noopener">Link</a>.</span></div>
+        <div class="ref-item"><div class="ref-num">2</div><span><strong>Embrapa.</strong> “Zarc Níveis de Manejo será ampliado e terá maior subvenção no seguro agrícola”, publicada em 29 de abril de 2026. <a href="https://www.embrapa.br/en/50mais/busca-de-noticias/-/noticia/115969743/zarc-niveis-de-manejo-sera-ampliado-e-tera-maior-subvencao-no-seguro-agricola?p_auth=DB4I3RUz" target="_blank" rel="noopener">Link</a>.</span></div>
+        <div class="ref-item"><div class="ref-num">3</div><span><strong>MAPA.</strong> Legislação do Seguro Rural, incluindo a Resolução CGSR nº 111, de 28 de abril de 2026, que aprova a segunda etapa do projeto-piloto do ZARC-NM. <a href="https://www.gov.br/agricultura/pt-br/assuntos/riscos-seguro/seguro-rural/legislacao" target="_blank" rel="noopener">Link</a>.</span></div>
+        <div class="ref-item"><div class="ref-num">4</div><span><strong>MAPA.</strong> “Novo painel do Zarc moderniza consulta às janelas de plantio e reforça gestão de riscos na agricultura”, publicada em 5 de fevereiro de 2026. <a href="https://www.gov.br/agricultura/pt-br/assuntos/noticias/novo-painel-do-zarc-moderniza-consulta-as-janelas-de-plantio-e-reforca-gestao-de-riscos-na-agricultura" target="_blank" rel="noopener">Link</a>.</span></div>
+        <div class="ref-item"><div class="ref-num">5</div><span><strong>GitLab Embrapa.</strong> Documentação pública da API Zarc-NM (SiNM), com fluxo de autenticação, perfis de operadores e mudanças recentes de integração em julho de 2026. <a href="https://www.gitlab.cnptia.embrapa.br/zarc-nivel-manejo/zarc-nm-docs" target="_blank" rel="noopener">Link</a>.</span></div>
+        <div class="ref-item"><div class="ref-num">6</div><span><strong>Embrapa Soja.</strong> “Pesquisa vai adaptar indicadores do Zarc Níveis de Manejo para as condições do Brasil tropical”, publicada em 13 de julho de 2026. <a href="https://www.embrapa.br/en/web/soja/busca-de-noticias/-/noticia/145854212/pesquisa-vai-adaptar-indicadores-do-zarc-niveis-de-manejo-para-as-condicoes-do-brasil-tropical" target="_blank" rel="noopener">Link</a>.</span></div>
+        <div class="ref-item"><div class="ref-num">7</div><span><strong>Portal de Dados Abertos do MAPA.</strong> Tábua de risco da safra 2026/2027, com atualização recente da base publicada. <a href="https://dados.agricultura.gov.br/pt_BR/dataset/tabua-de-risco-zoneamento-agricola-de-risco-climatico/resource/139e5a60-1f43-4cc8-aeab-a35dbbf816c0" target="_blank" rel="noopener">Link</a>.</span></div>
+      </div>
+    </div>
+  </article>
+
+  <aside class="sidebar">
+    <div class="author-card">
+      <img src="imagens/francyeli.png" alt="Francyeli Aureliano Lira">
+      <div class="author-name">Francyeli Aureliano Lira</div>
+      <div class="author-role">Co-Fundadora & Especialista em Big Data aplicado ao agronegócio</div>
+      <p class="author-bio">Formada em Agrocomputação, atua estruturando dados, integrações e inteligência aplicada para transformar informação dispersa do campo em decisão operacional.</p>
+      <a href="https://wa.me/5566992291794?text=Olá!%20Li%20o%20rascunho%20sobre%20ZARC-NM%20e%20quero%20conversar%20sobre%20organização%20de%20dados%20na%20fazenda." target="_blank" class="btn-wa-small">💬 Falar com a autora</a>
+    </div>
+
+    <div class="sb-card">
+      <div class="sb-title">📚 Livros da SmartGrain</div>
+      <p style="font-size:.85rem;color:var(--tm);line-height:1.6;margin-bottom:1rem;">Para aprofundar fundamentos de agricultura digital e adoção prática de tecnologia no campo.</p>
+      <div class="book-stack">
+        <div class="book-card">
+          <a class="book-cover" href="https://hotmart.com/pt-br/marketplace/produtos/agrocultura-digital-o-futuro-do-agronegocio-brasileiro/K102919888J?sck=HOTMART_PRODUCT_PAGE" target="_blank" rel="noopener noreferrer sponsored" aria-label="Comprar o e-book Agrocultura Digital">
+            <img src="imagens/livros/agrocultura-digital.jpg" alt="Capa do e-book Agrocultura Digital" width="600" height="900" loading="lazy">
+          </a>
+          <div>
+            <span class="book-type">E-book</span>
+            <strong class="book-title">Agrocultura Digital</strong>
+            <p class="book-copy">Tecnologia, dados e transformação digital no agronegócio em linguagem aplicada ao campo.</p>
+            <a class="book-link" href="https://hotmart.com/pt-br/marketplace/produtos/agrocultura-digital-o-futuro-do-agronegocio-brasileiro/K102919888J?sck=HOTMART_PRODUCT_PAGE" target="_blank" rel="noopener noreferrer sponsored">Comprar e-book</a>
+          </div>
+        </div>
+        <div class="book-card">
+          <a class="book-cover" href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-agro-4-0-qup9m/M104168155C" target="_blank" rel="noopener noreferrer sponsored" aria-label="Comprar o livro Agro 4.0">
+            <img src="imagens/livros/agro-4-0.jpg" alt="Capa do livro Agro 4.0" width="620" height="902" loading="lazy">
+          </a>
+          <div>
+            <span class="book-type">Livro físico</span>
+            <strong class="book-title">Agro 4.0</strong>
+            <p class="book-copy">Visão prática sobre como a tecnologia reorganiza processos e decisões dentro da fazenda.</p>
+            <a class="book-link" href="https://hotmart.com/pt-br/marketplace/produtos/hagsxd-agro-4-0-qup9m/M104168155C" target="_blank" rel="noopener noreferrer sponsored">Comprar livro</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sb-card">
+      <div class="sb-title">📩 Receba mais artigos</div>
+      <p style="font-size:.85rem;color:var(--tm);line-height:1.6;margin-bottom:1rem;">Tecnologia, geoprocessamento e decisões práticas para a safra.</p>
+      <div class="nl-sb">
+        <input type="text" placeholder="Seu nome"/>
+        <input type="email" placeholder="seu@email.com"/>
+        <button class="btn-nl">Quero receber →</button>
+      </div>
+    </div>
+
+    <div class="sb-card">
+      <div class="sb-title">📖 Leia também</div>
+      <a href="data-lake.html" class="related-item">
+        <div class="rel-thumb">
+          <img src="imagens/data-lake.png" alt="Capa do artigo sobre data lake na fazenda" width="128" height="104" loading="lazy">
+        </div>
+        <div><div class="rel-title">O Data Lake da Fazenda: Como Unificar Informações de Máquinas, Clima e Produção</div><div class="rel-date">27 Jun 2026</div></div>
+      </a>
+      <a href="geoprocessamento-agricola-delimitar-talhaes-sig.html" class="related-item">
+        <div class="rel-thumb">
+          <img src="imagens/geoprocessamento.png" alt="Capa do artigo sobre geoprocessamento agrícola" width="128" height="104" loading="lazy">
+        </div>
+        <div><div class="rel-title">Geoprocessamento Agrícola: Como delimitar talhões com precisão usando SIG</div><div class="rel-date">02 Mai 2026</div></div>
+      </a>
+      <a href="ndvi-na-soja-zonas-de-manejo.html" class="related-item">
+        <div class="rel-thumb">
+          <img src="imagens/ndvi-soja.png" alt="Capa do artigo sobre NDVI na soja" width="128" height="104" loading="lazy">
+        </div>
+        <div><div class="rel-title">NDVI na Soja: Como Utilizar Índices de Vegetação para Delimitação de Zonas de Manejo</div><div class="rel-date">09 Jun 2026</div></div>
+      </a>
+    </div>
+
+    <div class="sb-card" style="background:var(--creme);border:2px solid rgba(200,150,12,.3);text-align:center;">
+      <div style="font-size:2rem;margin-bottom:.8rem;">🗂️</div>
+      <div class="sb-title" style="text-align:center;">Base pronta</div>
+      <p style="font-size:.84rem;color:var(--tm);line-height:1.6;margin-bottom:1.1rem;">Seguro rural melhor começa com dado limpo, talhão revisado e fluxo definido.</p>
+      <a href="../index.html#contato" style="display:block;background:var(--vd);color:#fff;font-weight:600;font-size:.87rem;padding:.7rem 1rem;border-radius:8px;text-decoration:none;transition:background .2s;" onmouseover="this.style.background='var(--vm)'" onmouseout="this.style.background='var(--vd)'">Solicitar apoio →</a>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <div class="foot-logo">
+      <img src="../favicon.png" alt="SmartGrain"/>
+      <span class="foot-copy">© 2026 SmartGrain Consultoria Agrícola — Juína-MT</span>
+    </div>
+    <ul class="foot-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="index.html">Blog</a></li>
+      <li><a href="../index.html#contato">Contato</a></li>
+    </ul>
+  </div>
+</footer>
+
+<div class="wa-ring"></div>
+<a class="wa-btn" href="https://wa.me/5566992291794?text=Olá!%20Li%20o%20rascunho%20sobre%20ZARC-NM." target="_blank" rel="noopener noreferrer">
+  <svg class="wa-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="24" cy="24" r="24" fill="#25D366"/>
+    <path d="M34.6 13.4A14.9 14.9 0 0 0 24 9C16.3 9 10 15.3 10 23c0 2.5.7 4.9 1.9 7L10 39l9.3-2.4c2 1.1 4.3 1.7 6.7 1.7 7.7 0 14-6.3 14-14 0-3.7-1.5-7.3-4.1-10.1 0 0-.1-.1-.3-.2zM24 36.7c-2.1 0-4.2-.6-6-1.6l-.4-.2-4.4 1.1 1.2-4.2-.3-.4C13 29.6 12.3 26.3 12.3 23c0-6.5 5.3-11.7 11.7-11.7 3.1 0 6 1.2 8.2 3.4a11.6 11.6 0 0 1 3.4 8.3c0 6.5-5.3 11.7-11.6 11.7zm6.4-8.8c-.3-.2-2-.9-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4-.1-.5-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4 0-.1-.2-.2-.5-.4z" fill="white"/>
+  </svg>
+  <span class="wa-text">Fale pelo WhatsApp</span>
+</a>
+
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+    const doc = document.documentElement;
+    const pct = (window.scrollY / (doc.scrollHeight - doc.clientHeight)) * 100;
+    document.getElementById('progressBar').style.width = Math.min(pct, 100) + '%';
+  }, {passive:true});
+
+  document.getElementById('hamburger').addEventListener('click', () => {
+    const nl = document.querySelector('.nav-links');
+    const open = nl.style.display === 'flex';
+    Object.assign(nl.style, {
+      display: open ? 'none' : 'flex',
+      position: 'fixed',
+      top: '72px',
+      left: '0',
+      right: '0',
+      flexDirection: 'column',
+      background: 'rgba(10,26,16,0.98)',
+      padding: '2rem 5%',
+      gap: '1.5rem',
+      borderBottom: '1px solid rgba(200,150,12,.2)'
+    });
+  });
+</script>
+</body>
+</html>
