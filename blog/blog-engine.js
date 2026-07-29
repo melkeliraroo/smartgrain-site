@@ -1,5 +1,10 @@
 (function () {
-  const state = { articles: [], currentHint: '' };
+  const state = {
+    articles: [],
+    currentHint: '',
+    activeCategory: 'Todos',
+    searchTerm: ''
+  };
 
   function formatDate(value) {
     const date = new Date(`${value}T12:00:00`);
@@ -123,11 +128,16 @@
       </div>`).join('');
   }
 
-  function renderFeatured() {
+  function renderFeatured(articles) {
     const container = document.getElementById('featuredCard');
-    if (!container || !state.articles.length) return;
+    if (!container) return;
 
-    const article = state.articles.slice().sort((a, b) => b.data.localeCompare(a.data))[0];
+    const article = articles.slice().sort((a, b) => b.data.localeCompare(a.data))[0];
+    if (!article) {
+      container.innerHTML = '<p class="be-empty">Nenhum artigo encontrado para este filtro.</p>';
+      return;
+    }
+
     container.innerHTML = `
       <a class="featured-card" href="${articleHref(article)}">
         <div class="featured-img">
@@ -147,6 +157,24 @@
           <span class="read-more">Ler artigo →</span>
         </div>
       </a>`;
+  }
+
+  function filteredArticles() {
+    const term = state.searchTerm.toLocaleLowerCase('pt-BR');
+    return state.articles.filter((article) => {
+      const matchesCategory = state.activeCategory === 'Todos'
+        || article.categoria === state.activeCategory;
+      const matchesSearch = !term
+        || `${article.titulo} ${article.descricao} ${article.categoria}`
+          .toLocaleLowerCase('pt-BR').includes(term);
+      return matchesCategory && matchesSearch;
+    });
+  }
+
+  function renderView() {
+    const articles = filteredArticles();
+    renderFeatured(articles);
+    renderArticleGrid(articles);
   }
 
   function renderArticleGrid(articles) {
@@ -176,21 +204,20 @@
       button.addEventListener('click', () => {
         buttons.forEach((item) => item.classList.remove('active'));
         button.classList.add('active');
-        const category = button.dataset.category;
-        renderArticleGrid(category === 'Todos'
-          ? state.articles
-          : state.articles.filter((article) => article.categoria === category));
+        state.activeCategory = button.dataset.category || 'Todos';
+        renderView();
       });
     });
 
     const search = document.getElementById('searchInput');
     if (search) {
       search.addEventListener('input', () => {
-        const term = search.value.trim().toLocaleLowerCase('pt-BR');
-        renderArticleGrid(state.articles.filter((article) =>
-          `${article.titulo} ${article.descricao} ${article.categoria}`
-            .toLocaleLowerCase('pt-BR').includes(term)
-        ));
+        state.searchTerm = search.value.trim();
+        state.activeCategory = 'Todos';
+        buttons.forEach((button) => {
+          button.classList.toggle('active', button.dataset.category === 'Todos');
+        });
+        renderView();
       });
     }
   }
@@ -205,8 +232,7 @@
 
   function renderAll() {
     state.articles = Array.isArray(window.BLOG_ARTICLES) ? window.BLOG_ARTICLES : [];
-    renderFeatured();
-    renderArticleGrid(state.articles);
+    renderView();
     renderPopular();
     renderRelated();
     const count = document.getElementById('artCount');
