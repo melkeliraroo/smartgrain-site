@@ -106,5 +106,14 @@ window.BLOG_ARTICLES = [
     tempoLeitura: '10 min',
     imagem: 'imagens/pulverizacao-seletiva-pousio.webp',
     url: 'pulverizacao-seletiva-pousio'
+  },
+  {
+    titulo: 'Novas regras para drones no campo: o que revisar antes de contratar uma operação',
+    descricao: 'Como revisar risco operacional, equipe, documentos e dados antes de liberar uma operação agrícola com drone.',
+    categoria: 'Agricultura de Precisão',
+    data: '2026-07-28',
+    tempoLeitura: '11 min',
+    imagem: 'imagens/novas-regras-drones-operacao-agricola.webp',
+    url: 'novas-regras-drones-operacao-agricola'
   }
 ];

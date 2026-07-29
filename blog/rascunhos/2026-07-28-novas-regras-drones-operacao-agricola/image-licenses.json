@@ -1,0 +1,21 @@
+{
+  "images": [
+    {
+      "file": "imagens/cover.webp",
+      "duplicate_file": "capa-newsletter.webp",
+      "source_page": null,
+      "file_url": null,
+      "creator": "OpenAI imagegen",
+      "license": "AI-generated-original",
+      "license_url": null,
+      "tool": "OpenAI imagegen, modo integrado",
+      "generated_at": "2026-07-28",
+      "accessed_at": "2026-07-28",
+      "prompt_summary": "Gerente agrícola confere tablet e checklist ao lado de drone pulverizador parado em lavoura de soja no Mato Grosso, em composição documental sem marcas nem texto.",
+      "changes": "Conversão para WebP, redimensionamento e compressão editorial.",
+      "credit": "Imagem original gerada por IA para este rascunho. Não afirmar proteção autoral garantida.",
+      "alt": "Gerente agrícola confere tablet e checklist ao lado de um drone pulverizador parado em plataforma de apoio diante de uma lavoura de soja."
+    }
+  ],
+  "external_images": []
+}

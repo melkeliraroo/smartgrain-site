@@ -5,7 +5,7 @@
     <link>https://smartgrain.com.br/blog/</link>
     <description>Artigos e insights sobre agricultura digital, telemetria e agricultura de precisão.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Wed, 22 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>Telemetria Agrícola: O Potencial Não Utilizado dos Dados Operacionais</title>
       <link>https://smartgrain.com.br/blog/telemetria-agricola-potencial-nao-utilizado</link>
@@ -113,6 +113,15 @@
       <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
       <category>Agricultura de Precisão</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/pulverizacao-seletiva-pousio.webp" type="image/webp"/>
+    </item>
+    <item>
+      <title>Novas regras para drones no campo: o que revisar antes de contratar uma operação</title>
+      <link>https://smartgrain.com.br/blog/novas-regras-drones-operacao-agricola</link>
+      <guid isPermaLink="true">https://smartgrain.com.br/blog/novas-regras-drones-operacao-agricola</guid>
+      <description>Entenda como o RBAC 100 muda a contratação de drones agrícolas e quais documentos, responsabilidades, custos e indicadores revisar antes do voo.</description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+      <category>Agricultura de Precisão</category>
+      <enclosure url="https://smartgrain.com.br/blog/imagens/novas-regras-drones-operacao-agricola.webp" type="image/webp"/>
     </item>
   </channel>
 </rss>

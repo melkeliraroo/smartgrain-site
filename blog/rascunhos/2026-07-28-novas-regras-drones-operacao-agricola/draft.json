@@ -1,0 +1,30 @@
+{
+  "status": "published",
+  "site": "https://smartgrain.com.br/blog",
+  "created_at": "2026-07-28",
+  "approved": true,
+  "approved_at": "2026-07-28",
+  "published_at": "2026-07-28",
+  "published_url": "https://smartgrain.com.br/blog/novas-regras-drones-operacao-agricola",
+  "title": "Novas regras para drones no campo: o que revisar antes de contratar uma operação",
+  "subtitle": "Com o RBAC 100 em vigor, a fazenda precisa validar risco operacional, equipe, registros e integração regulatória antes de liberar o voo.",
+  "slug": "novas-regras-drones-operacao-agricola",
+  "category": "Agricultura de Precisão",
+  "description": "Entenda como o RBAC 100 muda a contratação de drones agrícolas e quais documentos, responsabilidades, custos e indicadores revisar antes do voo.",
+  "keywords": [
+    "RBAC 100",
+    "drones agrícolas",
+    "operação aeroagrícola",
+    "aplicação com drone",
+    "gestão de risco",
+    "SIPEAGRO",
+    "agricultura de precisão",
+    "Mato Grosso"
+  ],
+  "cover": "imagens/cover.webp",
+  "cover_alt": "Gerente agrícola confere tablet e checklist ao lado de um drone pulverizador parado em plataforma de apoio diante de uma lavoura de soja.",
+  "newsletter_file": "newsletter.txt",
+  "linkedin_status": "pending_browser_publication",
+  "author": "Melkezedeque Alves Lira",
+  "audience": "produtores e gerentes agrícolas"
+}

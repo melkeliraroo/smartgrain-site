@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
+import calendar
 import json
-import time
 import datetime
 import email.utils
 import xml.etree.ElementTree as ET
@@ -38,7 +38,7 @@ for a in js:
 
 if dates:
     last = max(dates)
-    ts = time.mktime(last.timetuple())
+    ts = calendar.timegm(last.timetuple())
     ET.SubElement(channel, 'lastBuildDate').text = email.utils.formatdate(ts, usegmt=True)
 
 # helper to detect mime type by extension
@@ -78,7 +78,7 @@ for a in js:
             except Exception:
                 continue
         if dt:
-            ts = time.mktime(dt.timetuple())
+            ts = calendar.timegm(dt.timetuple())
             ET.SubElement(item, 'pubDate').text = email.utils.formatdate(ts, usegmt=True)
 
     cat = a.get('categoria')
