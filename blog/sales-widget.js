@@ -4,10 +4,10 @@
       type: 'E-book',
       title: 'Agro 4.0 — versão digital',
       description: 'Como a tecnologia está revolucionando o campo, em formato digital.',
-      image: 'imagens/livros/agrocultura-digital.jpg',
+      image: 'imagens/livros/agro-4-0-ebook.jpg',
       imageAlt: 'Capa do e-book Agro 4.0',
-      imageWidth: 600,
-      imageHeight: 900,
+      imageWidth: 620,
+      imageHeight: 930,
       url: 'https://hotmart.com/pt-br/marketplace/produtos/agrocultura-digital-o-futuro-do-agronegocio-brasileiro/K102919888J?sck=HOTMART_PRODUCT_PAGE',
       action: 'Conhecer o e-book'
     },
