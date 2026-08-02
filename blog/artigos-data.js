@@ -124,4 +124,14 @@ window.BLOG_ARTICLES = [
     tempoLeitura: '10 min',
     imagem: 'imagens/zarc-niveis-de-manejo-seguro-rural.webp',
     url: 'zarc-niveis-de-manejo-seguro-rural'
-  }];
+  },
+  {
+    titulo: 'Reparo remoto na safra: o que exigir antes de depender só da oficina',
+    descricao: 'Montadoras com operação no Brasil já oferecem suporte remoto, leitura de falhas e acesso ao monitor. Veja o que exigir antes da próxima safra para reduzir paradas caras.',
+    categoria: 'Máquinas e automação agrícola',
+    data: '2026-08-02',
+    tempoLeitura: '11 min',
+    imagem: 'imagens/diagnostico-remoto-safra-maquinas.webp',
+    url: 'diagnostico-remoto-safra-maquinas'
+  }
+];
