@@ -126,24 +126,6 @@ window.BLOG_ARTICLES = [
     url: 'zarc-niveis-de-manejo-seguro-rural'
   },
   {
-    titulo: 'John Deere na Expert XP: o que essa estreia sinaliza para a gestão agrícola',
-    descricao: 'A presença da John Deere na Expert XP 2026 sinaliza que máquina, conectividade, dados e capital estão entrando na mesma conversa. Veja o que isso muda para a gestão da fazenda.',
-    categoria: 'Agricultura de Precisão',
-    data: '2026-07-29',
-    tempoLeitura: '10 min',
-    imagem: 'imagens/john-deere-expert-xp-decisao-no-campo.webp',
-    url: 'john-deere-expert-xp-decisao-no-campo'
-  },
-  {
-    titulo: 'Carbono do solo: o que eu exigiria antes de entrar em um projeto',
-    descricao: 'Veja quais dados, métodos, custos, riscos e cláusulas revisar antes de incluir a fazenda em um projeto de carbono do solo.',
-    categoria: 'Gestão e transformação digital',
-    data: '2026-07-30',
-    tempoLeitura: '11 min',
-    imagem: 'imagens/carbono-solo-projeto-mrv.webp',
-    url: 'carbono-solo-projeto-mrv'
-  },
-  {
     titulo: 'Reparo remoto na safra: o que exigir antes de depender só da oficina',
     descricao: 'Montadoras com operação no Brasil já oferecem suporte remoto, leitura de falhas e acesso ao monitor. Veja o que exigir antes da próxima safra para reduzir paradas caras.',
     categoria: 'Máquinas e automação agrícola',
