@@ -71,8 +71,7 @@
     "imagem": "imagens/maquina-parada2.png",
     "url": "custo-maquina-parada"
   },
-
-    {
+  {
     "titulo": "A Agricultura de Precisão Morreu? Por Que o Futuro Está na Agricultura de Decisão",
     "descricao": "Com a evolução dos sistemas embarcados e da telemetria, a manutenção agrícola está migrando do modelo corretivo para abordagens preditivas. O artigo mostrará como dados operacionais podem antecipar falhas e reduzir significativamente o tempo de indisponibilidade das máquinas.",
     "categoria": "Gestão e transformação digital",
@@ -81,8 +80,7 @@
     "imagem": "imagens/agricultura-de-decisao.png",
     "url": "agricultura-de-precisao-morreu"
   },
-
-   {
+  {
     "titulo": "O Data Lake da Fazenda:? Como Unificar Informações de Máquinas, Clima e Produção",
     "descricao": "O conceito de Data Lake vem ganhando espaço em grandes operações agrícolas. O artigo explica como estruturar um ambiente centralizado para armazenamento e análise de dados provenientes de diferentes fontes, permitindo análises mais completas e estratégicas.",
     "categoria": "Dados, software e inteligência artificial",
@@ -91,7 +89,7 @@
     "imagem": "imagens/data-lake.png",
     "url": "data-lake"
   },
-    {
+  {
     "titulo": "Da Estação Meteorológica ao Sensor de Implemento: Como Construir um Ecossistema IoT Escalável",
     "descricao": "Muitas propriedades iniciam projetos de IoT de forma fragmentada. O artigo mostra uma arquitetura escalável para integração de sensores, gateways, plataformas de análise e sistemas de gestão agrícola, reduzindo retrabalho e aumentando o aproveitamento dos dados coletados.",
     "categoria": "IoT, conectividade e telemetria",
@@ -153,5 +151,14 @@
     "tempoLeitura": "11 min",
     "imagem": "imagens/diagnostico-remoto-safra-maquinas.webp",
     "url": "diagnostico-remoto-safra-maquinas"
+  },
+  {
+    "titulo": "G?meo digital da fazenda: o que precisa existir antes de simular a safra",
+    "descricao": "Entenda quando um g?meo digital da fazenda faz sentido e quais dados, integra??es, custos e limites precisam estar resolvidos antes de simular a safra.",
+    "categoria": "Dados, software e intelig?ncia artificial",
+    "data": "2026-08-04",
+    "tempoLeitura": "11 min",
+    "imagem": "imagens/gemeo-digital-fazenda-simular-safra.webp",
+    "url": "gemeo-digital-fazenda-simular-safra"
   }
 ]

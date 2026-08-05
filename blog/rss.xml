@@ -5,7 +5,7 @@
     <link>https://smartgrain.com.br/blog/</link>
     <description>Artigos e insights sobre agricultura digital, telemetria e agricultura de precisão.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Sun, 02 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>Telemetria Agrícola: O Potencial Não Utilizado dos Dados Operacionais</title>
       <link>https://smartgrain.com.br/blog/telemetria-agricola-potencial-nao-utilizado</link>
@@ -158,6 +158,15 @@
       <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
       <category>Máquinas e automação agrícola</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/diagnostico-remoto-safra-maquinas.webp" type="image/webp"/>
+    </item>
+    <item>
+      <title>G?meo digital da fazenda: o que precisa existir antes de simular a safra</title>
+      <link>https://smartgrain.com.br/blog/gemeo-digital-fazenda-simular-safra</link>
+      <guid isPermaLink="true">https://smartgrain.com.br/blog/gemeo-digital-fazenda-simular-safra</guid>
+      <description>Entenda quando um g?meo digital da fazenda faz sentido e quais dados, integra??es, custos e limites precisam estar resolvidos antes de simular a safra.</description>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+      <category>Dados, software e intelig?ncia artificial</category>
+      <enclosure url="https://smartgrain.com.br/blog/imagens/gemeo-digital-fazenda-simular-safra.webp" type="image/webp"/>
     </item>
   </channel>
 </rss>
