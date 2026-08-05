@@ -1,0 +1,216 @@
+Status: rascunho, não aprovado e não publicado
+
+TÍTULO
+
+Carbono do solo: o que eu exigiria antes de entrar em um projeto
+
+SUBTÍTULO
+
+Novos modelos e regras de MRV mostram que medir é mais importante do que prometer. Um roteiro prático para avaliar método, contrato, dados e risco antes de aderir.
+
+ARTIGO
+
+RESUMO EXECUTIVO
+
+Nas últimas semanas, três sinais colocaram o carbono do solo numa conversa mais madura. Em junho, a Embrapa apresentou o ProCarbon-Soil, um modelo desenvolvido e testado com dados da agricultura brasileira. Em 6 de julho, pesquisadores publicaram um fluxo de mapeamento digital para monitoramento, relato e verificação, o MRV. E, também em junho, a Verra esclareceu pontos da metodologia VM0042 sobre linha de base, adicionalidade, elegibilidade e reamostragem.
+
+O que me chama atenção não é a promessa de um novo mercado. É o movimento na direção oposta: quanto mais o tema amadurece, menos espaço deveria sobrar para promessa sem método. Carbono no solo não aparece porque um aplicativo coloriu o talhão de verde. Ele precisa ser mensurado ou estimado dentro de uma metodologia aceita, com amostras, histórico, modelo calibrado, incerteza declarada e verificação.
+
+Este artigo ajuda a tomar uma decisão concreta: vale incluir a fazenda num projeto de carbono agora, iniciar um piloto ou esperar? Minha resposta é condicional. Antes de discutir preço por crédito, eu exigiria clareza sobre o que será medido, quem assume o risco, quem controla os dados e como a fazenda sai do contrato.
+
+A MUDANÇA DE TOM QUE EU VEJO
+
+O ProCarbon-Soil é relevante porque foi concebido para condições tropicais. O artigo científico descreve um modelo com duas variáveis de estado, carbono total e decomponibilidade, em vez de vários compartimentos que não podem ser medidos diretamente. Segundo a Embrapa, o modelo está na fase final de validação para acreditação junto a certificadoras. Isso é um fato publicado. Não significa que qualquer projeto que o utilize já esteja certificado, nem que o modelo possa substituir todos os requisitos da metodologia escolhida.
+
+O estudo publicado na npj Sustainable Agriculture traz outro avanço: combina amostras físicas com mapeamento digital do solo para estimar o estoque de carbono e sua incerteza no nível do campo e do projeto. Os autores mostram que a incerteza muda com densidade de amostragem, escala e intervalo de tempo. O estudo usa um projeto hipotético nos Estados Unidos. Portanto, seus números não devem ser transferidos para o Mato Grosso. O aprendizado útil é metodológico: um mapa sério precisa mostrar não apenas a estimativa, mas o grau de confiança nela.
+
+A VM0042, por sua vez, é uma metodologia ativa do Verified Carbon Standard para práticas melhoradas de manejo agrícola. Ela admite diferentes abordagens de quantificação e exige tratamento explícito de linha de base, adicionalidade, perdas de produção, reavaliação, métodos de mensuração e incerteza. Em 11 de junho, a Verra publicou esclarecimentos justamente sobre esses pontos. Minha inferência é que projetos bons ficarão mais técnicos e auditáveis. Projetos frágeis continuarão vendendo simplicidade demais.
+
+O PROBLEMA COMEÇA ANTES DA PRIMEIRA AMOSTRA
+
+Quando uma proposta chega à fazenda, a conversa costuma começar pelo potencial de receita. Eu começaria pelo perímetro, pelo histórico e pelo contrato. Qual área entra? Quais talhões ficam de fora? Qual prática será considerada nova? Desde quando existe plantio direto, rotação, cobertura, correção ou integração? Que documento prova esse histórico?
+
+Essa linha de base importa porque o crédito representa uma redução ou remoção em relação a um cenário de referência. Se a fazenda já pratica determinado manejo há anos, a simples continuidade pode não demonstrar adicionalidade. Isso não torna o bom manejo menos valioso agronomicamente. Apenas mostra que benefício agronômico e elegibilidade para crédito são perguntas diferentes.
+
+Também existe um tema jurídico que não pode ser deixado para depois. A Lei 15.042/2024 reconhece a titularidade originária dos créditos ao gerador do projeto e permite compartilhamento ou cessão por contrato com o desenvolvedor. A lei também prevê averbação desse contrato no registro de imóveis quando um imóvel serve de base ao projeto. Esse ponto exige advogado. A recomendação prática é simples: não assinar exclusividade, cessão ou compromisso de longo prazo como se fosse apenas um termo comercial.
+
+COMO O MRV FUNCIONA NA PRÁTICA
+
+MRV é o conjunto de regras para mensurar, relatar e verificar uma mudança. No carbono do solo, isso começa com desenho amostral. É preciso definir estratos, pontos, profundidade, repetição temporal, método de laboratório, densidade aparente e controle de qualidade. O teor de carbono, sozinho, não informa o estoque por hectare. Para converter concentração em estoque, o cálculo precisa considerar a massa de solo representada.
+
+Depois vem a camada de modelo. Modelos biogeoquímicos ou estatísticos podem ampliar a informação das amostras e estimar mudanças no espaço e no tempo. Eles não eliminam a necessidade de dados confiáveis. Quanto maior a distância entre o que o modelo espera e o que a fazenda realmente registra, maior o risco de ajuste frágil.
+
+Por fim, há a verificação independente. A equipe do projeto prepara evidências, cálculos e relatórios. Um organismo habilitado revisa método, dados e conformidade. Só depois dessa cadeia se discute emissão de créditos conforme o padrão aplicável. Minha opinião é que o produtor deveria pedir esse fluxo por escrito, com responsáveis, prazos e entregáveis. Se a proposta pula da amostra para a receita, falta uma parte importante.
+
+O PASSO A PASSO QUE EU USARIA
+
+Primeiro, faria um inventário do que já existe. Mapas de talhões, análises de solo, produtividade, operações, culturas, plantas de cobertura, correção, preparo, aplicação de fertilizantes e imagens históricas. O objetivo é medir a qualidade do histórico, não criar uma pasta bonita para a reunião.
+
+Depois, pediria ao desenvolvedor a metodologia completa. Não basta dizer que o projeto “segue padrões internacionais”. Qual padrão, qual versão, qual abordagem de quantificação, qual profundidade, qual laboratório e qual regra de incerteza? A atualização da VM0042 mostra que versões e esclarecimentos importam.
+
+Em seguida, separaria uma área piloto representativa. O piloto deve testar logística de amostragem, consistência de cadastro, custo operacional, capacidade de repetir o protocolo e impacto do manejo. Ele não serve para provar antecipadamente que haverá crédito. Serve para descobrir se a fazenda e o desenvolvedor conseguem produzir evidência.
+
+Também compararia o mapa com a realidade de campo. Zonas de solo, relevo, histórico de cultivo e produtividade ajudam a estratificar, mas não podem ser usados apenas para confirmar a narrativa desejada. Pontos discrepantes precisam ser investigados, e amostras devem ter rastreabilidade desde a coleta até o laboratório.
+
+Por último, revisaria o contrato com apoio técnico, jurídico e contábil. Metodologia, propriedade de dados, divisão dos créditos, custos, tributos, permanência, reversão, auditoria, substituição do padrão, saída antecipada e destino dos dados precisam estar claros.
+
+DADOS, PESSOAS E RECURSOS NECESSÁRIOS
+
+Um projeto consistente exige mais do que amostrador e laboratório. A fazenda precisa de limite georreferenciado confiável, histórico de manejo por talhão, responsáveis pelos registros, protocolo de coleta, cadeia de custódia e acesso aos resultados brutos. Também precisa de alguém capaz de confrontar o relatório com a operação real.
+
+O desenvolvedor deve explicar quem calibra o modelo, qual conjunto de dados sustenta a aplicação regional, como a incerteza é calculada e qual parte dela reduz o volume creditável. Deve informar ainda como trata falhas de dados, mudanças de cultura, arrendamento, venda do imóvel, seca, incêndio ou alteração de manejo.
+
+No Mato Grosso, distância, janela operacional, diversidade de solos e conectividade podem elevar o custo de amostragem e controle. Isso não inviabiliza o projeto, mas muda a logística. Amostra sem localização precisa, cadastro duplicado ou histórico montado depois do fato pode comprometer a rastreabilidade.
+
+CUSTOS E RISCOS QUE NÃO CABEM NA PROMESSA
+
+Os custos incluem desenho técnico, coleta, laboratório, sistema de dados, modelagem, validação, verificação, registro, assistência e tempo da equipe. Alguns contratos antecipam esses valores e recuperam depois. Outros os descontam da receita. O produtor precisa entender quem paga se o projeto não gerar crédito.
+
+Há risco de permanência. Se o carbono estocado voltar à atmosfera, a metodologia pode exigir reserva, desconto ou compensação. Há risco de desempenho, porque a mudança real pode ser menor do que a projetada. Há risco metodológico, caso o padrão atualize regras. E há risco contratual, se a área ficar comprometida por prazo incompatível com arrendamento, sucessão ou financiamento.
+
+Existe ainda o risco de confundir um benefício provável com uma receita certa. Cobertura do solo, rotação e melhor manejo podem trazer ganhos agronômicos independentes do mercado de carbono. Essa é uma recomendação prática: o manejo deve fazer sentido primeiro para o sistema produtivo. O crédito, se vier, precisa ser consequência de resultado mensurado e verificado.
+
+INDICADORES QUE EU ACOMPANHARIA
+
+Antes de qualquer tonelada de dióxido de carbono equivalente, eu acompanharia completude do histórico por talhão, percentual de amostras com cadeia de custódia completa, custo de MRV por hectare, tempo entre coleta e resultado, taxa de dados rejeitados, incerteza estimada, aderência ao protocolo e mudanças operacionais exigidas.
+
+Também perguntaria qual parte da estimativa vira desconto por incerteza, quando ocorre a reamostragem e quantos anos são necessários para distinguir mudança real de variação espacial e analítica. Um indicador pouco glamouroso, mas decisivo, é a capacidade de exportar dados brutos e relatórios se o contrato terminar.
+
+CHECKLIST PARA A DECISÃO
+
+[ ] A área do projeto e os talhões elegíveis estão identificados sem sobreposição.
+
+[ ] O histórico de manejo tem fonte, período, responsável e evidência verificável.
+
+[ ] A metodologia, a versão e os esclarecimentos aplicáveis foram entregues.
+
+[ ] O plano de amostragem informa estratos, profundidade, densidade aparente, repetição e laboratório.
+
+[ ] O modelo tem validação adequada às condições de solo, clima e sistema produtivo.
+
+[ ] A incerteza aparece no relatório e no cálculo do volume creditável.
+
+[ ] Custos, divisão de créditos, tributos e risco de não emissão estão explícitos.
+
+[ ] Titularidade, cessão, exclusividade, averbação, permanência, reversão e saída foram revisadas por advogado.
+
+[ ] A fazenda terá acesso aos dados brutos, mapas, laudos e modelos derivados.
+
+[ ] O manejo proposto faz sentido agronômico mesmo sem receita de carbono.
+
+CONCLUSÃO
+
+O carbono do solo está ficando mais mensurável, mas ainda não ficou simples. O avanço do ProCarbon-Soil, do mapeamento digital e das metodologias de MRV é positivo porque aproxima o mercado da realidade física do solo tropical. Também aumenta a responsabilidade de quem promete.
+
+Eu não descartaria um bom projeto. Tampouco entraria apenas porque a estimativa parece atraente. Na próxima semana, eu pediria metodologia, contrato, desenho amostral, regra de incerteza e política de dados. Se esses cinco itens não couberem numa conversa objetiva, a fazenda ainda não recebeu informação suficiente para decidir.
+
+As recomendações dependem de cultura, clima, solo, histórico de uso, maquinário, conectividade, prazo do contrato e regulamentação. Revisão agronômica, jurídica e contábil é indispensável antes de qualquer adesão.
+
+FONTES
+
+1. Embrapa. New model calculates carbon dynamics in tropical agriculture. 9 de junho de 2026. https://www.embrapa.br/en/busca-de-noticias/-/noticia/144746278/new-model-calculates-carbon-dynamics-in-tropical-agriculture
+2. Barioni, L. G. et al. ProCarbon-Soil: A dynamic model for improved model-data compatibility in carbon farming. Soil Science Society of America Journal, 2026. https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/1187720/1/AP-ProCarbonSoil-2026.pdf
+3. Wadoux, A. M. J-C. et al. A digital soil mapping approach to soil carbon monitoring, reporting and verification. npj Sustainable Agriculture, 6 de julho de 2026. https://www.nature.com/articles/s44264-026-00125-0
+4. Verra. VM0042 Improved Agricultural Land Management, versão 2.2. https://verra.org/methodologies/vm0042-improved-agricultural-land-management-v2-2/
+5. Verra. Corrections and Clarifications to IALM Methodology. 11 de junho de 2026. https://verra.org/program-notice/corrections-and-clarifications-to-ialm-methodology-vm0042/
+6. Presidência da República. Lei 15.042, de 11 de dezembro de 2024. https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l15042.htm
+7. Embrapa. Plataforma para análise de solos em projetos de agricultura de precisão e mercado de carbono. https://www.embrapa.br/en/busca-de-solucoes-tecnologicas/-/produto-servico/10991/plataforma-para-analise-de-solos-em-projetos-de-agricultura-de-precisao-e-mercado-de-carbono
+
+TEXTO PARA DIVULGAÇÃO NO FEED
+
+Carbono do solo está ficando mais técnico. E isso é uma boa notícia.
+
+Novos modelos tropicais, mapeamento digital e regras mais claras de MRV ajudam a separar evidência de promessa. Mas também tornam a decisão do produtor mais exigente.
+
+Nesta edição, compartilho o que eu pediria antes de incluir um talhão em um projeto: metodologia, desenho amostral, regra de incerteza, contrato e política de dados.
+
+O manejo precisa fazer sentido para a fazenda mesmo sem a receita do crédito.
+
+Link da newsletter: inserir somente depois da publicação no LinkedIn.
+
+#AgriculturaDePrecisão #CarbonoNoSolo #GestãoAgrícola #MRV #Agronegócio
+
+METADADOS EDITORIAIS E SEO
+
+Título SEO: Carbono do solo: checklist antes de entrar em projeto de MRV
+Slug sugerido: carbono-solo-projeto-mrv
+Descrição SEO: Veja quais dados, métodos, custos, riscos e cláusulas revisar antes de incluir a fazenda em um projeto de carbono do solo.
+Palavras-chave: carbono do solo, MRV, ProCarbon-Soil, crédito de carbono agrícola, amostragem de solo, agricultura de precisão, VM0042, gestão agrícola
+Texto alternativo da capa: Gerente agrícola ajoelhado em lavoura de soja examina um testemunho de solo ao lado de sonda, receptor geodésico e tablet com mapa.
+
+PESQUISA E SELEÇÃO DA PAUTA
+
+1. Carbono do solo e MRV antes de aderir a um projeto
+Novidade: o ProCarbon-Soil foi publicado em 2026, um estudo de mapeamento digital saiu em 6 de julho e a VM0042 recebeu esclarecimentos em 11 de junho.
+Decisão afetada: testar, contratar, negociar ou adiar a entrada em projeto de carbono.
+Benefício prático: organiza método, linha de base, amostragem, incerteza, dados e cláusulas antes de comprometer a área.
+Risco de exagero: tratar modelo emergente como certificação ou receita garantida.
+Pontuação: impacto econômico 5; aplicabilidade 5; atualidade 5; evidência 5; aderência ao público 5; total 25.
+
+2. Auditoria de adoção digital antes de comprar nova tecnologia
+Novidade: publicação da Embrapa em 2026 analisou 150 produtores de soja e quantificou barreiras de custo, escala, mão de obra e conhecimento.
+Decisão afetada: comprar, compartilhar ou contratar tecnologia e suporte.
+Benefício prático: reduz aquisição sem equipe, processo ou caso de uso.
+Risco de exagero: extrapolar resultados de São Paulo para toda propriedade do Mato Grosso.
+Pontuação: impacto econômico 5; aplicabilidade 5; atualidade 4; evidência 5; aderência ao público 5; total 24.
+
+3. Conectividade M2M e contratos de sensores agrícolas
+Novidade: tomada de subsídios da Anatel sobre IoT e M2M encerra em 30 de julho de 2026 e cita cerca de 30 milhões de acessos.
+Decisão afetada: contratar conectividade, definir redundância e evitar aprisionamento ao fornecedor.
+Benefício prático: melhora especificação de cobertura, contingência, portabilidade e propriedade de dados.
+Risco de exagero: confundir consulta regulatória com nova regra já aprovada.
+Pontuação: impacto econômico 4; aplicabilidade 5; atualidade 5; evidência 4; aderência ao público 5; total 23.
+
+4. Drones e IA para identificar tolerância à seca
+Novidade: pesquisa brasileira divulgada em 14 de julho combinou imagens RGB, multiespectrais e IA em híbridos de milho.
+Decisão afetada: testar sensoriamento em ensaios ou aguardar maturação da ferramenta.
+Benefício prático: separa pesquisa promissora de recomendação pronta para lavoura comercial.
+Risco de exagero: transferir resultado de fenotipagem experimental diretamente para manejo.
+Pontuação: impacto econômico 4; aplicabilidade 3; atualidade 5; evidência 5; aderência ao público 4; total 21.
+
+Pauta escolhida: Carbono do solo: o que eu exigiria antes de entrar em um projeto.
+
+Pergunta decisória: quais evidências técnicas, dados, custos e cláusulas o produtor deve exigir antes de incluir seus talhões em um projeto de carbono do solo?
+
+Promessa editorial: oferecer um roteiro para avaliar método, amostragem, incerteza, governança de dados e contrato, sem prometer geração de crédito, preço, certificação ou retorno financeiro.
+
+FONTES COM ESCOPO DE EVIDÊNCIA
+
+Embrapa, ProCarbon-Soil: sustenta o estágio de desenvolvimento, a calibração tropical e o objetivo do modelo. Acesso em 30 de julho de 2026. https://www.embrapa.br/en/busca-de-noticias/-/noticia/144746278/new-model-calculates-carbon-dynamics-in-tropical-agriculture
+
+Barioni et al., artigo do ProCarbon-Soil: sustenta a arquitetura científica do modelo e seus limites. Acesso em 30 de julho de 2026. https://www.alice.cnptia.embrapa.br/alice/bitstream/doc/1187720/1/AP-ProCarbonSoil-2026.pdf
+
+Wadoux et al., npj Sustainable Agriculture: sustenta a relação entre amostras físicas, mapeamento digital, estimativa espacial e incerteza. Acesso em 30 de julho de 2026. https://www.nature.com/articles/s44264-026-00125-0
+
+Verra, VM0042 versão 2.2: sustenta os requisitos do método, as formas aceitas de mensuração e o tratamento de linha de base, adicionalidade e incerteza. Acesso em 30 de julho de 2026. https://verra.org/methodologies/vm0042-improved-agricultural-land-management-v2-2/
+
+Verra, esclarecimentos de 11 de junho: sustenta o sinal recente sobre elegibilidade, linha de base, adicionalidade, unidades e reamostragem. Acesso em 30 de julho de 2026. https://verra.org/program-notice/corrections-and-clarifications-to-ialm-methodology-vm0042/
+
+Presidência da República, Lei 15.042/2024: sustenta definições de crédito e MRV, titularidade originária e averbação contratual no registro de imóveis. Acesso em 30 de julho de 2026. https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l15042.htm
+
+Embrapa, plataforma AGLIBS: sustenta a existência de tecnologia brasileira que integra análise de solo, inteligência artificial e MRV. Acesso em 30 de julho de 2026. https://www.embrapa.br/en/busca-de-solucoes-tecnologicas/-/produto-servico/10991/plataforma-para-analise-de-solos-em-projetos-de-agricultura-de-precisao-e-mercado-de-carbono
+
+REGISTRO DA CAPA E DA LICENÇA
+
+Arquivo principal: capa-newsletter.webp.
+Arquivo para o artigo: imagens/cover.webp.
+Licença registrada: AI-generated-original.
+Ferramenta: OpenAI imagegen, modo integrado.
+Data de geração: 30 de julho de 2026.
+Prompt resumido: gerente agrícola examina testemunho de solo em ponto de amostragem georreferenciado numa lavoura de soja do Mato Grosso, com fotografia documental, sem marcas e sem texto.
+Alterações: conversão de PNG para WebP e compressão editorial, sem alteração de conteúdo.
+Texto alternativo: Gerente agrícola ajoelhado em lavoura de soja examina um testemunho de solo ao lado de sonda, receptor geodésico e tablet com mapa.
+Imagens externas: nenhuma.
+
+CHECKLIST DE REVISÃO E APROVAÇÃO HUMANA
+
+[ ] Confirmar que a voz em primeira pessoa representa Melkezedeque Alves Lira.
+[ ] Revisar o texto com cientista do solo ou engenheiro agrônomo experiente em carbono.
+[ ] Confirmar o estágio do ProCarbon-Soil e a versão da VM0042 na data de publicação.
+[ ] Solicitar revisão jurídica da Lei 15.042/2024 e do contrato proposto.
+[ ] Validar titularidade, cessão, exclusividade, averbação, permanência, reversão e saída.
+[ ] Revisar tratamento tributário e contábil antes de mencionar qualquer cenário financeiro.
+[ ] Confirmar propriedade, portabilidade, retenção e uso secundário dos dados da fazenda.
+[ ] Aprovar título, subtítulo, capa, metadados e texto do feed.
+[ ] Inserir link somente depois de eventual publicação humana no LinkedIn.
+[ ] Manter status de rascunho até aprovação explícita.

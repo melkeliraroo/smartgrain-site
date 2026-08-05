@@ -8,7 +8,7 @@
       imageAlt: 'Capa do e-book Agro 4.0',
       imageWidth: 620,
       imageHeight: 930,
-      url: 'https://hotmart.com/pt-br/marketplace/produtos/agrocultura-digital-o-futuro-do-agronegocio-brasileiro/K102919888J?sck=HOTMART_PRODUCT_PAGE',
+      url: 'https://tinyurl.com/2a48ryj6',
       action: 'Conhecer o e-book'
     },
     {
@@ -19,7 +19,7 @@
       imageAlt: 'Capa do livro físico Agro 4.0',
       imageWidth: 620,
       imageHeight: 902,
-      url: 'https://hotmart.com/pt-br/marketplace/produtos/hagsxd-agro-4-0-qup9m/M104168155C',
+      url: 'https://tinyurl.com/232ys7ke',
       action: 'Conhecer o livro'
     }
   ];

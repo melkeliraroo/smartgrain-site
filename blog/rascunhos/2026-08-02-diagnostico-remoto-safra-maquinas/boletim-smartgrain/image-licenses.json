@@ -1,0 +1,33 @@
+[
+  {
+    "file": "imagens/cover.webp",
+    "duplicate_file": "capa-newsletter.webp",
+    "source_page": null,
+    "file_url": null,
+    "creator": "OpenAI imagegen",
+    "license": "AI-generated-original",
+    "license_url": null,
+    "tool": "OpenAI imagegen, modo integrado",
+    "generated_at": "2026-08-02",
+    "accessed_at": "2026-08-02",
+    "prompt_summary": "Capa editorial com colhedora de grãos ao entardecer em Mato Grosso, gerente agrícola e técnico de serviço lendo tablet, com sobreposições discretas de diagnóstico eletrônico e suporte remoto, sem marcas nem texto.",
+    "changes": "Conversão do PNG gerado para WebP, sem alteração de conteúdo.",
+    "credit": "Imagem original gerada por IA para este rascunho. Não afirmar proteção autoral garantida.",
+    "alt": "Gerente agrícola e técnico de serviço analisam um tablet ao lado de uma colhedora e de uma picape no fim da tarde, com sobreposições visuais que sugerem diagnóstico eletrônico e monitoramento remoto."
+  },
+  {
+    "file": "imagens/diagnostico-remoto-fluxo.webp",
+    "source_page": null,
+    "file_url": null,
+    "creator": "OpenAI imagegen",
+    "license": "AI-generated-original",
+    "license_url": null,
+    "tool": "OpenAI imagegen, modo integrado",
+    "generated_at": "2026-08-02",
+    "accessed_at": "2026-08-02",
+    "prompt_summary": "Ilustração didática sem texto mostrando sensores em colhedora e trator, fluxo de dados para tablet, apoio remoto em estação técnica e retorno da máquina ao trabalho.",
+    "changes": "Conversão do PNG gerado para WebP, sem alteração de conteúdo.",
+    "credit": "Imagem original gerada por IA para este rascunho. Não afirmar proteção autoral garantida.",
+    "alt": "Ilustração didática mostrando sensores acesos em uma colhedora e em um trator, fluxo de dados para um tablet, apoio remoto em estação técnica e retorno da máquina ao trabalho após reparo eletrônico."
+  }
+]
