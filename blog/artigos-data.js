@@ -1,120 +1,120 @@
 window.BLOG_ARTICLES = [
   {
-    titulo: 'Telemetria Agrícola: O Potencial Não Utilizado dos Dados Operacionais',
-    descricao: 'Como transformar dados operacionais em decisões estratégicas para aumentar a eficiência das máquinas agrícolas.',
-    categoria: 'IoT, conectividade e telemetria',
-    data: '2026-06-07',
-    tempoLeitura: '8 min',
-    imagem: 'imagens/telemetria.png',
-    url: 'telemetria-agricola-potencial-nao-utilizado'
+    titulo: "Telemetria Agrícola: O Potencial Não Utilizado dos Dados Operacionais",
+    descricao: "Descubra como transformar dados operacionais em decisões estratégicas para aumentar a eficiência das máquinas agrícolas.",
+    categoria: "IoT, conectividade e telemetria",
+    data: "2026-06-07",
+    tempoLeitura: "8 min",
+    imagem: "imagens/telemetria.png",
+    url: "telemetria-agricola-potencial-nao-utilizado"
   },
   {
-    titulo: 'Telemetria não é rastreamento: o erro que faz muitos produtores perderem dinheiro',
-    descricao: 'Por que usar telemetria apenas para localização limita resultados e como extrair valor dos dados operacionais.',
-    categoria: 'IoT, conectividade e telemetria',
-    data: '2026-06-23',
-    tempoLeitura: '9 min',
-    imagem: 'imagens/telemetria-agricola.png',
-    url: 'telemetria-nao-e-rastreamento'
+    titulo: "Telemetria não é rastreamento: o erro que faz muitos produtores perderem dinheiro",
+    descricao: "Entenda por que usar telemetria apenas para localização é um erro e como a telemetria completa reduz custos, melhora eficiência e evita perdas na lavoura.",
+    categoria: "IoT, conectividade e telemetria",
+    data: "2026-06-23",
+    tempoLeitura: "9 min",
+    imagem: "imagens/telemetria-agricola.png",
+    url: "telemetria-nao-e-rastreamento"
   },
   {
-    titulo: 'NDVI na Soja: Como Utilizar Índices de Vegetação para Delimitação de Zonas de Manejo',
-    descricao: 'Como o NDVI ajuda a identificar variabilidade espacial e definir zonas de manejo mais eficientes.',
-    categoria: 'Agricultura de Precisão',
-    data: '2026-06-09',
-    tempoLeitura: '12 min',
-    imagem: 'imagens/ndvi-soja.png',
-    url: 'ndvi-na-soja-zonas-de-manejo'
+    titulo: "NDVI na Soja: Como Utilizar Índices de Vegetação para Delimitação de Zonas de Manejo",
+    descricao: "Entenda como o NDVI pode auxiliar na identificação da variabilidade espacial e na definição de zonas de manejo mais eficientes.",
+    categoria: "Agricultura de Precisão",
+    data: "2026-06-09",
+    tempoLeitura: "12 min",
+    imagem: "imagens/ndvi-soja.png",
+    url: "ndvi-na-soja-zonas-de-manejo"
   },
   {
-    titulo: 'Geoprocessamento Agrícola: Como delimitar talhões com precisão usando SIG',
-    descricao: 'Metodologia para delimitar talhões com SIG, QGIS e GPS usando ferramentas acessíveis.',
-    categoria: 'Agricultura de Precisão',
-    data: '2026-05-02',
-    tempoLeitura: '9 min',
-    imagem: 'imagens/geoprocessamento.png',
-    url: 'geoprocessamento-agricola-delimitar-talhaes-sig'
+    titulo: "Geoprocessamento Agrícola:Como delimitar talhões com precisão usando SIG",
+    descricao: "Metodologia completa para delimitar talhões com SIG, QGIS e GPS para produtores de Juína e norte do Mato Grosso — com ferramentas gratuitas.",
+    categoria: "Agricultura de Precisão",
+    data: "2026-05-02",
+    tempoLeitura: "9 min",
+    imagem: "imagens/geoprocessamento.png",
+    url: "geoprocessamento-agricola-delimitar-talhaes-sig"
   },
   {
-    titulo: 'IoT no agro: Conectando sensores, máquinas e dados em uma única plataforma',
-    descricao: 'Integração de máquinas, sensores e estações meteorológicas em um centro de controle unificado.',
-    categoria: 'IoT, conectividade e telemetria',
-    data: '2026-05-15',
-    tempoLeitura: '6 min',
-    imagem: 'imagens/IoT.png',
-    url: 'IoT-agricola-conectando-sensores-maquinas-dados'
+    titulo: "IoT no agro: Conectando sensores, máquinas e dados em uma única plataforma.",
+    descricao: "Tratores, pulverizadores, colheitadeiras, sensores de solo, drones e estações meteorológicas comunicando-se entre si e enviando dados para um centro de controle unificado.",
+    categoria: "IoT, conectividade e telemetria",
+    data: "2026-05-15",
+    tempoLeitura: "6 min",
+    imagem: "imagens/IoT.png",
+    url: "IoT-agricola-conectando-sensores-maquinas-dados"
   },
   {
-    titulo: 'Piloto automático RTK vs. GNSS: Quando vale o investimento',
-    descricao: 'Entenda as diferenças entre RTK e GNSS e quando o investimento gera retorno no campo.',
-    categoria: 'Máquinas e automação agrícola',
-    data: '2026-05-15',
-    tempoLeitura: '6 min',
-    imagem: 'imagens/RTK-vs-GNSS.png',
-    url: 'RTK-vs-GNSS-quando-vale-investimento'
+    titulo: "Piloto automático RTK vs. GNSS: Quando vale o investimento",
+    descricao: "Tratores, pulverizadores, colheitadeiras, sensores de solo, drones e estações meteorológicas comunicando-se entre si e enviando dados para um centro de controle unificado.",
+    categoria: "Máquinas e automação agrícola",
+    data: "2026-05-15",
+    tempoLeitura: "6 min",
+    imagem: "imagens/RTK-vs-GNSS.png",
+    url: "RTK-vs-GNSS-quando-vale-investimento"
   },
   {
-    titulo: 'KPIs essenciais para a gestão agrícola: quais indicadores toda fazenda deveria monitorar',
-    descricao: 'Os indicadores que ajudam a identificar desperdícios e tomar decisões agrícolas baseadas em dados.',
-    categoria: 'Dados, software e inteligência artificial',
-    data: '2026-06-14',
-    tempoLeitura: '8 min',
-    imagem: 'imagens/KPIs-gestao-agricola.png',
-    url: 'kpis_agricola'
+    titulo: "KPIs essesnciais para a gestão agrícola: quais indicadores toda fazenda deveria monitorar",
+    descricao: "A gestão agrícola moderna depende menos de percepção e mais de indicadores. Quando a fazenda acompanha os KPIs certos, fica muito mais fácil identificar desperdícios, avaliar máquinas e tomar decisões com base em dados.",
+    categoria: "Dados, software e inteligência artificial",
+    data: "2026-06-14",
+    tempoLeitura: "8 min",
+    imagem: "imagens/KPIs-gestao-agricola.png",
+    url: "kpis_agricola"
   },
   {
-    titulo: 'Quanto custa uma máquina parada durante a safra?',
-    descricao: 'Como a indisponibilidade afeta o resultado e por que a manutenção preventiva faz diferença.',
-    categoria: 'Máquinas e automação agrícola',
-    data: '2026-06-15',
-    tempoLeitura: '8 min',
-    imagem: 'imagens/maquina-parada2.png',
-    url: 'custo-maquina-parada'
+    titulo: "Quanto custa uma máquina parada durante a safra?",
+    descricao: "A indisponibilidade pesa no resultado da fazenda e por que manutenção preventiva e preditiva fazem diferença.",
+    categoria: "Máquinas e automação agrícola",
+    data: "2026-06-15",
+    tempoLeitura: "8 min",
+    imagem: "imagens/maquina-parada2.png",
+    url: "custo-maquina-parada"
   },
   {
-    titulo: 'A Agricultura de Precisão Morreu? Por Que o Futuro Está na Agricultura de Decisão',
-    descricao: 'A evolução da agricultura de precisão para uma gestão integrada e orientada à decisão.',
-    categoria: 'Gestão e transformação digital',
-    data: '2026-06-24',
-    tempoLeitura: '12 min',
-    imagem: 'imagens/agricultura-de-decisao.png',
-    url: 'agricultura-de-precisao-morreu'
+    titulo: "A Agricultura de Precisão Morreu? Por Que o Futuro Está na Agricultura de Decisão",
+    descricao: "Com a evolução dos sistemas embarcados e da telemetria, a manutenção agrícola está migrando do modelo corretivo para abordagens preditivas. O artigo mostrará como dados operacionais podem antecipar falhas e reduzir significativamente o tempo de indisponibilidade das máquinas.",
+    categoria: "Gestão e transformação digital",
+    data: "2026-06-24",
+    tempoLeitura: "12 min",
+    imagem: "imagens/agricultura-de-decisao.png",
+    url: "agricultura-de-precisao-morreu"
   },
   {
-    titulo: 'O Data Lake da Fazenda: Como Unificar Informações de Máquinas, Clima e Produção',
-    descricao: 'Como centralizar informações agrícolas para realizar análises mais completas e estratégicas.',
-    categoria: 'Dados, software e inteligência artificial',
-    data: '2026-06-27',
-    tempoLeitura: '12 min',
-    imagem: 'imagens/data-lake.png',
-    url: 'data-lake'
+    titulo: "O Data Lake da Fazenda:? Como Unificar Informações de Máquinas, Clima e Produção",
+    descricao: "O conceito de Data Lake vem ganhando espaço em grandes operações agrícolas. O artigo explica como estruturar um ambiente centralizado para armazenamento e análise de dados provenientes de diferentes fontes, permitindo análises mais completas e estratégicas.",
+    categoria: "Dados, software e inteligência artificial",
+    data: "2026-06-27",
+    tempoLeitura: "12 min",
+    imagem: "imagens/data-lake.png",
+    url: "data-lake"
   },
   {
-    titulo: 'Da Estação Meteorológica ao Sensor de Implemento: Como Construir um Ecossistema IoT Escalável',
-    descricao: 'Uma arquitetura escalável para integrar sensores, gateways e plataformas de análise agrícola.',
-    categoria: 'IoT, conectividade e telemetria',
-    data: '2026-06-28',
-    tempoLeitura: '12 min',
-    imagem: 'imagens/ecossistema-iot.png',
-    url: 'ecossistema-iot'
+    titulo: "Da Estação Meteorológica ao Sensor de Implemento: Como Construir um Ecossistema IoT Escalável",
+    descricao: "Muitas propriedades iniciam projetos de IoT de forma fragmentada. O artigo mostra uma arquitetura escalável para integração de sensores, gateways, plataformas de análise e sistemas de gestão agrícola, reduzindo retrabalho e aumentando o aproveitamento dos dados coletados.",
+    categoria: "IoT, conectividade e telemetria",
+    data: "2026-06-28",
+    tempoLeitura: "12 min",
+    imagem: "imagens/ecossistema-iot.png",
+    url: "ecossistema-iot"
   },
   {
-    titulo: 'Pulverização seletiva no pousio: quando vale testar antes da safra 2026/27',
-    descricao: 'Quando testar pulverização seletiva, contratar o serviço ou adiar o investimento na fazenda.',
-    categoria: 'Agricultura de Precisão',
-    data: '2026-07-22',
-    tempoLeitura: '10 min',
-    imagem: 'imagens/pulverizacao-seletiva-pousio.webp',
-    url: 'pulverizacao-seletiva-pousio'
+    titulo: "Pulverização seletiva no pousio: quando vale testar antes da safra 2026/27",
+    descricao: "Pulverização seletiva por visão computacional pode cortar herbicida e gerar mapas úteis, mas não em qualquer área. Veja quando testar, contratar ou adiar na fazenda.",
+    categoria: "Agricultura de Precisão",
+    data: "2026-07-22",
+    tempoLeitura: "10 min",
+    imagem: "imagens/pulverizacao-seletiva-pousio.webp",
+    url: "pulverizacao-seletiva-pousio"
   },
   {
-    titulo: 'Novas regras para drones no campo: o que revisar antes de contratar uma operação',
-    descricao: 'Como revisar risco operacional, equipe, documentos e dados antes de liberar uma operação agrícola com drone.',
-    categoria: 'Agricultura de Precisão',
-    data: '2026-07-28',
-    tempoLeitura: '11 min',
-    imagem: 'imagens/novas-regras-drones-operacao-agricola.webp',
-    url: 'novas-regras-drones-operacao-agricola'
+    titulo: "Novas regras para drones no campo: o que revisar antes de contratar uma operação",
+    descricao: "Entenda como o RBAC 100 muda a contratação de drones agrícolas e quais documentos, responsabilidades, custos e indicadores revisar antes do voo.",
+    categoria: "Agricultura de Precisão",
+    data: "2026-07-28",
+    tempoLeitura: "11 min",
+    imagem: "imagens/novas-regras-drones-operacao-agricola.webp",
+    url: "novas-regras-drones-operacao-agricola"
   },
   {
     titulo: 'ZARC-NM na prática: quais dados organizar agora para decidir melhor o seguro rural em 2026/27',
@@ -126,12 +126,11 @@ window.BLOG_ARTICLES = [
     url: 'zarc-niveis-de-manejo-seguro-rural'
   },
   {
-    titulo: 'Reparo remoto na safra: o que exigir antes de depender só da oficina',
-    descricao: 'Montadoras com operação no Brasil já oferecem suporte remoto, leitura de falhas e acesso ao monitor. Veja o que exigir antes da próxima safra para reduzir paradas caras.',
-    categoria: 'Máquinas e automação agrícola',
-    data: '2026-08-02',
+    titulo: 'Gêmeo digital da fazenda: o que precisa existir antes de simular a safra',
+    descricao: 'Entenda quando um gêmeo digital da fazenda faz sentido e quais dados, integrações, custos e limites precisam estar resolvidos antes de simular a safra.',
+    categoria: 'Dados, software e inteligência artificial',
+    data: '2026-08-04',
     tempoLeitura: '11 min',
-    imagem: 'imagens/diagnostico-remoto-safra-maquinas.webp',
-    url: 'diagnostico-remoto-safra-maquinas'
-  }
-];
+    imagem: 'imagens/gemeo-digital-fazenda-simular-safra.webp',
+    url: 'gemeo-digital-fazenda-simular-safra'
+  }];
