@@ -5,7 +5,7 @@
     <link>https://smartgrain.com.br/blog/</link>
     <description>Artigos e insights sobre agricultura digital, telemetria e agricultura de precisão.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 00:00:00 GMT</lastBuildDate>
     <item>
       <title>Telemetria Agrícola: O Potencial Não Utilizado dos Dados Operacionais</title>
       <link>https://smartgrain.com.br/blog/telemetria-agricola-potencial-nao-utilizado</link>
@@ -149,6 +149,24 @@
       <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
       <category>Gestão e transformação digital</category>
       <enclosure url="https://smartgrain.com.br/blog/imagens/carbono-solo-projeto-mrv.webp" type="image/webp"/>
+    </item>
+    <item>
+      <title>Reparo remoto na safra: o que exigir antes de depender só da oficina</title>
+      <link>https://smartgrain.com.br/blog/diagnostico-remoto-safra-maquinas</link>
+      <guid isPermaLink="true">https://smartgrain.com.br/blog/diagnostico-remoto-safra-maquinas</guid>
+      <description>Montadoras com operação no Brasil já oferecem suporte remoto, leitura de falhas e acesso ao monitor. Veja o que exigir antes da próxima safra para reduzir paradas caras.</description>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
+      <category>Máquinas e automação agrícola</category>
+      <enclosure url="https://smartgrain.com.br/blog/imagens/diagnostico-remoto-safra-maquinas.webp" type="image/webp"/>
+    </item>
+    <item>
+      <title>Gêmeo digital da fazenda: o que precisa existir antes de simular a safra</title>
+      <link>https://smartgrain.com.br/blog/gemeo-digital-fazenda-simular-safra</link>
+      <guid isPermaLink="true">https://smartgrain.com.br/blog/gemeo-digital-fazenda-simular-safra</guid>
+      <description>Entenda quando um gêmeo digital da fazenda faz sentido e quais dados, integrações, custos e limites precisam estar resolvidos antes de simular a safra.</description>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+      <category>Dados, software e inteligência artificial</category>
+      <enclosure url="https://smartgrain.com.br/blog/imagens/gemeo-digital-fazenda-simular-safra.webp" type="image/webp"/>
     </item>
   </channel>
 </rss>
