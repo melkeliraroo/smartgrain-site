@@ -1,0 +1,17 @@
+{
+  "name": "Leitor de Artigos — SmartGrain",
+  "short_name": "Leitor SmartGrain",
+  "description": "Ouça artigos científicos em PDF na íntegra, em português ou inglês.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#faf7f0",
+  "theme_color": "#1a3a2a",
+  "lang": "pt-BR",
+  "categories": ["education", "productivity", "utilities"],
+  "icons": [
+    { "src": "../favicon.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any" },
+    { "src": "../favicon.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
